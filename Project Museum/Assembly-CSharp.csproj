@@ -56,12 +56,12 @@
     <Analyzer Include="E:\Programas\Visual Studio IDE\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Fix_mayhaps.cs" />
     <Compile Include="Assets\Scripts\MoveCam.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovementAdvanced.cs" />
     <Compile Include="Assets\Scripts\PlayerCam.cs" />
     <Compile Include="Assets\Scripts\SuperMechanic.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovementAdvanced.cs" />
-    <Compile Include="Assets\Scripts\Fix_mayhaps.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
