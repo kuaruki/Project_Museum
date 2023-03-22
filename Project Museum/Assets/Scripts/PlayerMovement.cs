@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     private float moveSpeed;
     public float walkSpeed;
-    public float crouchSpeed;
+    public float sprintSpeed;
 
     public float groundDrag;
 
@@ -21,13 +21,16 @@ public class PlayerMovement : MonoBehaviour
 
 
     [Header("Crouching")]
-    public float crouchspeed;
+    public float crouchSpeed;
     public float crouchYScale;
     private float startYScale;
+
+
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
     public KeyCode crouchKey = KeyCode.LeftControl;
+    public KeyCode sprintKey = KeyCode.LeftShift;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -47,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     public enum MovementState
     {
         walking,
+        sprinting,
         crouching,
         air
     }
@@ -97,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
 
             Invoke(nameof(resetJump), jumpCooldown);
         }
-
+        
         //start crouch
         if (Input.GetKeyDown(crouchKey))
         {
@@ -120,8 +124,15 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.crouching;
             moveSpeed = crouchSpeed;
         }
+        //Mode - Sprinting 
+        else if(grounded && Input.GetKey(sprintKey))
+        {
+            state = MovementState.sprinting;
+            moveSpeed = sprintSpeed;   
+        }
+        
         //Mode - walking
-        if (grounded)
+        else if (grounded)
         {
             state = MovementState.walking;
             moveSpeed = walkSpeed;
