@@ -62,6 +62,8 @@
     <Compile Include="Assets\Scripts\PlayerMovementAdvanced.cs" />
     <Compile Include="Assets\Scripts\PlayerCam.cs" />
     <Compile Include="Assets\Scripts\SuperMechanic.cs" />
+    <Compile Include="Assets\Scripts\Interactor.cs" />
+    <Compile Include="Assets\Scripts\NumGen.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
