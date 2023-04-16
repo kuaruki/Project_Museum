@@ -1,0 +1,3687 @@
+fileFormatVersion: 2
+guid: d55656a16f41a5743bbcfc8bca3ad73e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tuokb2tst3f31_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 3471
+        width: 688
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c8dfb44f3d1184588500903f6a6112
+      internalID: 334174469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_1
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 3507
+        width: 55
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91cb92c1308ed64fbc2fc69f87d2654
+      internalID: -602008626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_2
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 3393
+        width: 251
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421f77ee6566c3548a94f56b7864b87a
+      internalID: -1373226739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_3
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 3389
+        width: 251
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9f72c85202d7646a2168bbb717f148
+      internalID: -2126712737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_4
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 3387
+        width: 250
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c16861af1c3f94e9e6a221bede63a6
+      internalID: 2089441052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_5
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 3318
+        width: 452
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d32ca561b738584e9dda2495d80dac7
+      internalID: 2035761474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_6
+      rect:
+        serializedVersion: 2
+        x: 2698
+        y: 3320
+        width: 456
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6516394056d3e58418b0d36bf708ff5d
+      internalID: 1417271961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_7
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 3617
+        width: 316
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795f7eb61c3d1dd45bf0806d43b96540
+      internalID: 2067309791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_8
+      rect:
+        serializedVersion: 2
+        x: 3615
+        y: 3646
+        width: 128
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67cf065b39458744c9d46ec1e2832357
+      internalID: 1630343487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 3274
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcad8982b72badf42a200382270fb6c1
+      internalID: 447279360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_10
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 3274
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0704c9e636e5b49ab01c5fb4be3694
+      internalID: 904782087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_11
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 3394
+        width: 317
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db839f95906bfe449953754d3c69c328
+      internalID: 1924599286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_12
+      rect:
+        serializedVersion: 2
+        x: 3636
+        y: 3387
+        width: 200
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88d8e2eeedb5094dafad51df56afc89
+      internalID: -61033372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_13
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 3238
+        width: 315
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7c1b4e87b21434881336d612d14059
+      internalID: 339590336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_14
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 3158
+        width: 81
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fccf70141abb18e4f89dd8708693a71f
+      internalID: 1055801817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_15
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 3164
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5f5e09aacbe4d4bbc898a1f2f453be
+      internalID: 1050355717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_16
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 3168
+        width: 71
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056e75f5902a631428094960f590545a
+      internalID: -700220092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_17
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 2936
+        width: 478
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb5a7a45f803ad48bedfcc94b565593
+      internalID: 1573427394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_18
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 2903
+        width: 554
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bea6244e475bbd4ebdcf1904c5e7d9d
+      internalID: 1970298620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_19
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 2901
+        width: 318
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217f89b01d68ff3469a1dac20a15b16e
+      internalID: -1889826827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_20
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 3217
+        width: 316
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a834ad2b4b61bef498d6afc761945235
+      internalID: 1377085149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_21
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 3187
+        width: 247
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6168379c23fcfbd4ab51a74249495cce
+      internalID: 1414454618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_22
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2907
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62852a313f799af4aaa4b0aaf62f633f
+      internalID: -1152718376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2882
+        width: 96
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e3ebded63a9a14fa861a9b65b922ad
+      internalID: -1356650509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_24
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 3054
+        width: 82
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694efbacd9c027e499d38af23607e038
+      internalID: -1357208251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_25
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 3063
+        width: 120
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87bbaaa980dd79743b005c517aaa7a13
+      internalID: -1127710944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_26
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 2819
+        width: 636
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26809fda7fa8b54687170700d58099e
+      internalID: -1272324723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_27
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 2897
+        width: 463
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0586b826db29b224fba0c510b31b3c74
+      internalID: 1345907781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_28
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 2991
+        width: 116
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768471cdf4ed8bf4aaa6dd1163c934db
+      internalID: -1831859136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_29
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 2991
+        width: 63
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63647f0aa3198824bb5174255cb6ec0c
+      internalID: -1994487930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_30
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 2918
+        width: 204
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb2107318fa89b4784b2b5d1c9dacae
+      internalID: 258786714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_31
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 2562
+        width: 619
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067bbf39c4824f04ea72a3e6048c98cd
+      internalID: 193719722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_32
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2716
+        width: 135
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e4414c1f9eb5447b06c9f27844f8d6
+      internalID: -1646742502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_33
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 2751
+        width: 103
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b90d0d402ce4a4c9bfa99f7a917030
+      internalID: 967121832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_34
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 2652
+        width: 132
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c257825e924914d8ec4135e1b54af9
+      internalID: 890991021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_35
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 2663
+        width: 130
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6b031875f33f94faac0d1106aafc01
+      internalID: 930809422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_36
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 2661
+        width: 130
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7db527e5d43534d99d2cab4718e96f
+      internalID: -849619906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_37
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 2762
+        width: 141
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d64b537ccebc6b4aadf7e4407a66121
+      internalID: -923653651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_38
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 2545
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f10ec5167a22344819a6cdbf642c8c
+      internalID: -1939104203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_39
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 2338
+        width: 640
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa2ac0855b18e0459cb0033b021b340
+      internalID: -560291396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_40
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 2633
+        width: 313
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805c673989446324a83d8db3249d1aad
+      internalID: 299043632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_41
+      rect:
+        serializedVersion: 2
+        x: 3598
+        y: 2650
+        width: 240
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0140be0c1296e499e3836ae8acbe4f
+      internalID: -1860692025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_42
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2520
+        width: 179
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0729d1ff1c929bd4a977e60bd0bc1c9e
+      internalID: -1562445834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_43
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 2520
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16656805d9ef3c478fbe2f3e6411753
+      internalID: 2006889755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_44
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 2520
+        width: 222
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00feae6cd59c2c64b9f6c43198e46c49
+      internalID: 1349270195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_45
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 2528
+        width: 158
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0fcedfd7c42ff4aa192804e7a67d8d
+      internalID: -562169297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_46
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 2598
+        width: 141
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf0a5f990835f24c99e75f1b71b120d
+      internalID: -1960972723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_47
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 2341
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f544421b2e211e4791afcec112029aa
+      internalID: 674388196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_48
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 2338
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cac88f303e1b1f41b69d8540f773489
+      internalID: 1227563653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_49
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 2301
+        width: 216
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f88a2c4fcec2824794722f72d7f23e4
+      internalID: 832891148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_50
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 2334
+        width: 171
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc80703b74cd4f248b36da80dd133b6e
+      internalID: -1783256371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_51
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 2141
+        width: 600
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ccb75597a33744d82726e1460ed024
+      internalID: -870204296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_52
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 2143
+        width: 204
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e42cdc9c2cf67448a43f1a6d3af6ef2
+      internalID: -272447184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_53
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 2282
+        width: 209
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a03682774ea844fad2525e50dbbb9b
+      internalID: 999098678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_54
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 2139
+        width: 360
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c649ad7360cd664286025ba8e5fe3b9
+      internalID: 373329385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_55
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 2250
+        width: 621
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523d51e72f186a849a4d826fd43829a9
+      internalID: -494209397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_56
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2164
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58063286567bbb94abee6ddf56a5b2fc
+      internalID: -817049869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_57
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 2168
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50657a80d61388941bb08482666e320c
+      internalID: -753798321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_58
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 2157
+        width: 174
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3745931a174e7e440a601823f5c7e44b
+      internalID: -757051735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_59
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 2153
+        width: 160
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530d73e21d629104282cb300107c7374
+      internalID: 270909563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_60
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 1938
+        width: 634
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764e8bf0e1fa5e14991cdf54978fe242
+      internalID: 2125931617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_61
+      rect:
+        serializedVersion: 2
+        x: 3189
+        y: 2033
+        width: 323
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea017702a7fe94b409601625dfcc11bc
+      internalID: -198090047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_62
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 2029
+        width: 58
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f2a7b08bec58942bd58cd4036c7ccd
+      internalID: -1683274158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_63
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 2031
+        width: 54
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6d08d58f26e634fa011fc1506845a4
+      internalID: -1284077218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_64
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 2029
+        width: 57
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9eb6bfafa738e46abaa6bf1f154f00
+      internalID: 2106863188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_65
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 2029
+        width: 57
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37ce68af91e1154c90af800084a9ce7
+      internalID: 1922559781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_66
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2031
+        width: 59
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4981b1bf598e530449feaff5171d63e5
+      internalID: 146152132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_67
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 2033
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715574193dc02c248b3f39ba46624e49
+      internalID: -381385916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_68
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 2031
+        width: 59
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9210ce935983ec449bfc72782266b7d
+      internalID: 522903337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_69
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 2031
+        width: 55
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa2110541af4c649a0aa34106dd30e0
+      internalID: -1497536154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_70
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 2031
+        width: 113
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5daf7924eb10d6f449fbb4a614e64397
+      internalID: 696801034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_71
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1671
+        width: 328
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4762b683ca3c9af43a90b80050451085
+      internalID: 557425930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_72
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1812
+        width: 128
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5e9e248f064b14aab39d48cf67f70d
+      internalID: -494870218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_73
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 1890
+        width: 190
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4562f04fa9a300c4cae7ba094fb2c0cf
+      internalID: 1238717718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_74
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 1938
+        width: 680
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c33a54e53192f47b637c438a16f862
+      internalID: -542934178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_75
+      rect:
+        serializedVersion: 2
+        x: 3543
+        y: 2039
+        width: 324
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15710225636c5a4287e5707ceb05fe5
+      internalID: -1139207814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_76
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1920
+        width: 41
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0653821af9bea44786190793b0dafdf
+      internalID: 212779075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_77
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1919
+        width: 51
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3012a436e91801845bd16b75cb743808
+      internalID: -1950723028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_78
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1919
+        width: 39
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f249838a2371fdc4da86cc52e4c758a9
+      internalID: -503848002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_79
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1922
+        width: 46
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3bf8be26bdafa45be12966ac636e31
+      internalID: -1546206412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_80
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1920
+        width: 52
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d528a0f68f8e874ea7709a1ca210ef9
+      internalID: -667679727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_81
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 1919
+        width: 33
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e421af9ae74b0e1408eccf061311a43d
+      internalID: 146806393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_82
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1919
+        width: 59
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d978882425e02e4baa297332a36d6ec
+      internalID: -1045830998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_83
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1930
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72db6a8ac943e94439a858d5082ac7d3
+      internalID: -336549112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_84
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1934
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c998a8b8c9bee574e905335a5be80d46
+      internalID: -549446685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_85
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1787
+        width: 332
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d033af862a9784ebbbb4fd879be97d
+      internalID: -62310984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_86
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1787
+        width: 331
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec90aacca0c8b848ac480f7a3169251
+      internalID: -1152294371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_87
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 1801
+        width: 147
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5609afa5b2277a24d87d859b87e5064a
+      internalID: 1038135995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_88
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 1839
+        width: 613
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5413199c63faf1f4e8ec60b1ae048939
+      internalID: -950200469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_89
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 1578
+        width: 303
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02b9506e3c393d439971f5f8f6624f5
+      internalID: 1189406445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_90
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 1583
+        width: 303
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca565877e64a050498f5e7d55adf16ce
+      internalID: -69444382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_91
+      rect:
+        serializedVersion: 2
+        x: 3189
+        y: 1797
+        width: 112
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c623bb3ccd13fb04a926f16c1540b60a
+      internalID: -961808861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_92
+      rect:
+        serializedVersion: 2
+        x: 3334
+        y: 1804
+        width: 119
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906172ffc2d9a97498d9acc5dc247a28
+      internalID: -1567700143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_93
+      rect:
+        serializedVersion: 2
+        x: 3478
+        y: 1795
+        width: 99
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5e9e6b7f5789c4eba2b4222ed83050
+      internalID: 1143343259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_94
+      rect:
+        serializedVersion: 2
+        x: 3636
+        y: 1610
+        width: 97
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383e85b3bf42a39428334bbca7059dd6
+      internalID: -538886740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_95
+      rect:
+        serializedVersion: 2
+        x: 3754
+        y: 1610
+        width: 97
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f538d628a1f7ad409813d434025561a
+      internalID: 73497574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_96
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1460
+        width: 158
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ec6e090cbb2a9449dadbe583734e18
+      internalID: -529307333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_97
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1473
+        width: 586
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6904a5ff5e0677a40bc8d8ad7be79703
+      internalID: 65243124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_98
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1422
+        width: 323
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c63b7b8c06639245b184b0e75e8718d
+      internalID: -1425557446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_99
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 1722
+        width: 614
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31892c548c13d2d4ab0882da0a5c9fc4
+      internalID: 1888363989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_100
+      rect:
+        serializedVersion: 2
+        x: 3194
+        y: 1608
+        width: 111
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92981485afcea984c9ccc81f41aec45b
+      internalID: 256907815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_101
+      rect:
+        serializedVersion: 2
+        x: 3480
+        y: 1591
+        width: 105
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a922a31511a74ce4e899ca2556742ec7
+      internalID: 498168112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_102
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 1635
+        width: 283
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38e742982e19734cbf00c6fd8b173ab
+      internalID: -570339994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_103
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 1591
+        width: 307
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f347a365189ac9e4786c964482af93d7
+      internalID: -85250815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_104
+      rect:
+        serializedVersion: 2
+        x: 3335
+        y: 1610
+        width: 115
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94e976c06f74754682332d937e659cf
+      internalID: -1725776479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_105
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1100
+        width: 158
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac081f58820fa024b8af3afd30de35a1
+      internalID: -365404842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_106
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1115
+        width: 610
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8067634fc545b94199485ef1329cc4d
+      internalID: -2092332776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_107
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1302
+        width: 430
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c48e6ad21a2a7438b40df0255cbf40
+      internalID: -987901800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_108
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1256
+        width: 320
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afefff99583e809419955ce73ebec2b6
+      internalID: -472325135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_109
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 1224
+        width: 625
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5370239a2d170c149813dfe7db5a48b3
+      internalID: -1731211125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_110
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 1113
+        width: 287
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8464292d8ce02d746af0902b5a237e92
+      internalID: 990425643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_111
+      rect:
+        serializedVersion: 2
+        x: 2854
+        y: 1147
+        width: 173
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb804b8aa0aa327499302924451db393
+      internalID: 1232937781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_112
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 1224
+        width: 580
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e53d45d3d2b1c42b6d6933e265a12a
+      internalID: 2069494258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_113
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 129
+        width: 967
+        height: 933
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc563eed8ca3df44b5103b311c670af
+      internalID: -279885961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_114
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 470
+        width: 703
+        height: 731
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b442e359d7524e48b0ea3e9f996a2e3
+      internalID: 496615214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_115
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 961
+        width: 135
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf4039be139d6a4d9dd77ac6a9f9840
+      internalID: 813311154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_116
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 997
+        width: 70
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826c1e7e27dd3b64c8b90a895d473074
+      internalID: -635844749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_117
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 770
+        width: 303
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872a0f3264526c44f99406cbbd8fed7c
+      internalID: -160350754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_118
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 932
+        width: 195
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fc870c5d4ddf6409140210414a31aa
+      internalID: 1024823278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_119
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 1014
+        width: 101
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c09dc1375586b43af26148816f9430
+      internalID: 1401833427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_120
+      rect:
+        serializedVersion: 2
+        x: 2859
+        y: 1014
+        width: 126
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff1ffe13e5e4fe42abeb43b7e70c0b3
+      internalID: 702722912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_121
+      rect:
+        serializedVersion: 2
+        x: 3027
+        y: 1001
+        width: 101
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7beb1e5438c00d94782981ac97a5ba41
+      internalID: -1745825638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_122
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 1003
+        width: 99
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1258ad6ec49b42942aa78b6b5aed9508
+      internalID: -430777178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_123
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 966
+        width: 465
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca79f22180c66234a9769d780ec26b49
+      internalID: -42481338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_124
+      rect:
+        serializedVersion: 2
+        x: 2859
+        y: 879
+        width: 122
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5e193cf24255d44b619aed13a67f70
+      internalID: 106080497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_125
+      rect:
+        serializedVersion: 2
+        x: 3078
+        y: 982
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848962232d753cb4f9f5da9c4cc2ec8f
+      internalID: 609925773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_126
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 765
+        width: 137
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297549122c2df8f409a04eee1b6200a3
+      internalID: -1514522487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_127
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 896
+        width: 101
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2695d969818e1d94ba1fba4f8d8c6537
+      internalID: -1423174715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_128
+      rect:
+        serializedVersion: 2
+        x: 3027
+        y: 867
+        width: 101
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47305acb921cf1a408d1ac4324a8191d
+      internalID: 946152855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_129
+      rect:
+        serializedVersion: 2
+        x: 3141
+        y: 866
+        width: 107
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9783ed38d722b6847b9e38e8b499dd79
+      internalID: -1597854264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_130
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 660
+        width: 188
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7932452c918b347be6cafcfc79ece1
+      internalID: 1213178235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_131
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 622
+        width: 196
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb079feb2dbecfe4998cf9b07e29009e
+      internalID: -1580892681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_132
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 688
+        width: 287
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50bb9d5801ccf54f8fefc56fb495d20
+      internalID: -1096559633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_133
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 664
+        width: 102
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f5ef92213010c40a1167990534fcb5
+      internalID: 2019869437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_134
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 679
+        width: 219
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a606675a2090a3141888d80e272788fd
+      internalID: 1853502751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_135
+      rect:
+        serializedVersion: 2
+        x: 3286
+        y: 664
+        width: 284
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106454de37cc4aa41ae2514a735b29d0
+      internalID: 1311998252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_136
+      rect:
+        serializedVersion: 2
+        x: 3629
+        y: 675
+        width: 222
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734eaa06746a2404099aaf4accb45800
+      internalID: 1811109200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_137
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 393
+        width: 110
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5586ab51781e04a99cff9b1e4782f9
+      internalID: -1984080195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_138
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 378
+        width: 148
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c65ec23a0adc045bb4822393d97624
+      internalID: 462558658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_139
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 384
+        width: 130
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd0ea30dfc6a4446b911c9c5eb256fe
+      internalID: -145171979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_140
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 405
+        width: 135
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca6b648507d91740a2eb172a926c3cc
+      internalID: -314876723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_141
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 468
+        width: 99
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4bf2faee55c56488d35b9b4f253b65
+      internalID: -389586256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_142
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 49
+        width: 1352
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4e8382f847bc54b9db0ab38f4e885a
+      internalID: -1556978904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_143
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 56
+        width: 427
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf12f5733216dd9499fa5fd8cc83c47e
+      internalID: -803354562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_144
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 353
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a51472fd0296cc4383670adf9ba3fc6
+      internalID: 1311634284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_145
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 332
+        width: 112
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d9395b8a808524ab1f92e781c57bda
+      internalID: -1752302987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_146
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 304
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cfefcb8d35f1e4eb162b1431fb39c6
+      internalID: 718106037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_147
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 243
+        width: 144
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724fed552dfd64f43bd53ab4554fbe56
+      internalID: 1485087035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_148
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 372
+        width: 89
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5640bd030c8359b49bbab93d9ca0bd5f
+      internalID: 1019163405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_149
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 247
+        width: 110
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5599bf6efdff58d4186349a4d9750c7e
+      internalID: -1867782954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_150
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 239
+        width: 84
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c99e57c3c1b204a9c8a2cf927caa3b
+      internalID: 654429503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_151
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 216
+        width: 116
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f7d06eb614d91439916b8403807f91
+      internalID: 716342003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_152
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 186
+        width: 112
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363d30c26cf01b742b14a5e6aa3fb555
+      internalID: -828821159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_153
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 224
+        width: 88
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556cfee697ef4b243b9b0460ac369d40
+      internalID: 1357447861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_154
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 214
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64eddd79192abb4c9b5dfe7efc547e1
+      internalID: 1038101177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_155
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 94
+        width: 104
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fac105cb078b654bb79ca3ab550453d
+      internalID: 1495036643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_156
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 136
+        width: 106
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b348a6980ff3a3f4982a0e5b3d045209
+      internalID: 1113216273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_157
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 123
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428647dc8875f8845ad0543314fbbc49
+      internalID: 318428084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_158
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 79
+        width: 109
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc873861d217c44697ddefd698a06cf
+      internalID: 46471271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_159
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 92
+        width: 97
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544d94f1d21ee2a4e9fa471deaac3f95
+      internalID: -1588377964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_160
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 81
+        width: 167
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa46cd2b9ac53264c9ee69b59ea4574f
+      internalID: 587855646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tuokb2tst3f31_161
+      rect:
+        serializedVersion: 2
+        x: 2237
+        y: 64
+        width: 118
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765f5870197b2504e9cf58974350f8a0
+      internalID: 1585014456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4b4bc8747a89707408489e2131b51a49
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tuokb2tst3f31_125: 609925773
+      tuokb2tst3f31_130: 1213178235
+      tuokb2tst3f31_148: 1019163405
+      tuokb2tst3f31_117: -160350754
+      tuokb2tst3f31_104: -1725776479
+      tuokb2tst3f31_154: 1038101177
+      tuokb2tst3f31_147: 1485087035
+      tuokb2tst3f31_60: 2125931617
+      tuokb2tst3f31_46: -1960972723
+      tuokb2tst3f31_112: 2069494258
+      tuokb2tst3f31_155: 1495036643
+      tuokb2tst3f31_41: -1860692025
+      tuokb2tst3f31_26: -1272324723
+      tuokb2tst3f31_96: -529307333
+      tuokb2tst3f31_99: 1888363989
+      tuokb2tst3f31_160: 587855646
+      tuokb2tst3f31_10: 904782087
+      tuokb2tst3f31_93: 1143343259
+      tuokb2tst3f31_54: 373329385
+      tuokb2tst3f31_42: -1562445834
+      tuokb2tst3f31_105: -365404842
+      tuokb2tst3f31_57: -753798321
+      tuokb2tst3f31_114: 496615214
+      tuokb2tst3f31_64: 2106863188
+      tuokb2tst3f31_55: -494209397
+      tuokb2tst3f31_51: -870204296
+      tuokb2tst3f31_40: 299043632
+      tuokb2tst3f31_121: -1745825638
+      tuokb2tst3f31_29: -1994487930
+      tuokb2tst3f31_97: 65243124
+      tuokb2tst3f31_134: 1853502751
+      tuokb2tst3f31_8: 1630343487
+      tuokb2tst3f31_102: -570339994
+      tuokb2tst3f31_137: -1984080195
+      tuokb2tst3f31_19: -1889826827
+      tuokb2tst3f31_127: -1423174715
+      tuokb2tst3f31_144: 1311634284
+      tuokb2tst3f31_146: 718106037
+      tuokb2tst3f31_33: 967121832
+      tuokb2tst3f31_14: 1055801817
+      tuokb2tst3f31_116: -635844749
+      tuokb2tst3f31_118: 1024823278
+      tuokb2tst3f31_30: 258786714
+      tuokb2tst3f31_143: -803354562
+      tuokb2tst3f31_157: 318428084
+      tuokb2tst3f31_124: 106080497
+      tuokb2tst3f31_101: 498168112
+      tuokb2tst3f31_135: 1311998252
+      tuokb2tst3f31_152: -828821159
+      tuokb2tst3f31_52: -272447184
+      tuokb2tst3f31_35: 930809422
+      tuokb2tst3f31_11: 1924599286
+      tuokb2tst3f31_21: 1414454618
+      tuokb2tst3f31_69: -1497536154
+      tuokb2tst3f31_95: 73497574
+      tuokb2tst3f31_156: 1113216273
+      tuokb2tst3f31_107: -987901800
+      tuokb2tst3f31_65: 1922559781
+      tuokb2tst3f31_16: -700220092
+      tuokb2tst3f31_88: -950200469
+      tuokb2tst3f31_86: -1152294371
+      tuokb2tst3f31_92: -1567700143
+      tuokb2tst3f31_91: -961808861
+      tuokb2tst3f31_133: 2019869437
+      tuokb2tst3f31_28: -1831859136
+      tuokb2tst3f31_90: -69444382
+      tuokb2tst3f31_84: -549446685
+      tuokb2tst3f31_119: 1401833427
+      tuokb2tst3f31_94: -538886740
+      tuokb2tst3f31_0: 334174469
+      tuokb2tst3f31_151: 716342003
+      tuokb2tst3f31_128: 946152855
+      tuokb2tst3f31_141: -389586256
+      tuokb2tst3f31_87: 1038135995
+      tuokb2tst3f31_98: -1425557446
+      tuokb2tst3f31_58: -757051735
+      tuokb2tst3f31_34: 890991021
+      tuokb2tst3f31_115: 813311154
+      tuokb2tst3f31_5: 2035761474
+      tuokb2tst3f31_32: -1646742502
+      tuokb2tst3f31_122: -430777178
+      tuokb2tst3f31_73: 1238717718
+      tuokb2tst3f31_139: -145171979
+      tuokb2tst3f31_150: 654429503
+      tuokb2tst3f31_61: -198090047
+      tuokb2tst3f31_6: 1417271961
+      tuokb2tst3f31_36: -849619906
+      tuokb2tst3f31_20: 1377085149
+      tuokb2tst3f31_39: -560291396
+      tuokb2tst3f31_145: -1752302987
+      tuokb2tst3f31_70: 696801034
+      tuokb2tst3f31_53: 999098678
+      tuokb2tst3f31_12: -61033372
+      tuokb2tst3f31_120: 702722912
+      tuokb2tst3f31_138: 462558658
+      tuokb2tst3f31_161: 1585014456
+      tuokb2tst3f31_140: -314876723
+      tuokb2tst3f31_83: -336549112
+      tuokb2tst3f31_77: -1950723028
+      tuokb2tst3f31_22: -1152718376
+      tuokb2tst3f31_108: -472325135
+      tuokb2tst3f31_66: 146152132
+      tuokb2tst3f31_74: -542934178
+      tuokb2tst3f31_81: 146806393
+      tuokb2tst3f31_153: 1357447861
+      tuokb2tst3f31_15: 1050355717
+      tuokb2tst3f31_100: 256907815
+      tuokb2tst3f31_129: -1597854264
+      tuokb2tst3f31_3: -2126712737
+      tuokb2tst3f31_24: -1357208251
+      tuokb2tst3f31_4: 2089441052
+      tuokb2tst3f31_13: 339590336
+      tuokb2tst3f31_109: -1731211125
+      tuokb2tst3f31_76: 212779075
+      tuokb2tst3f31_47: 674388196
+      tuokb2tst3f31_126: -1514522487
+      tuokb2tst3f31_44: 1349270195
+      tuokb2tst3f31_132: -1096559633
+      tuokb2tst3f31_85: -62310984
+      tuokb2tst3f31_37: -923653651
+      tuokb2tst3f31_78: -503848002
+      tuokb2tst3f31_142: -1556978904
+      tuokb2tst3f31_131: -1580892681
+      tuokb2tst3f31_158: 46471271
+      tuokb2tst3f31_123: -42481338
+      tuokb2tst3f31_103: -85250815
+      tuokb2tst3f31_45: -562169297
+      tuokb2tst3f31_71: 557425930
+      tuokb2tst3f31_72: -494870218
+      tuokb2tst3f31_67: -381385916
+      tuokb2tst3f31_111: 1232937781
+      tuokb2tst3f31_159: -1588377964
+      tuokb2tst3f31_62: -1683274158
+      tuokb2tst3f31_49: 832891148
+      tuokb2tst3f31_63: -1284077218
+      tuokb2tst3f31_89: 1189406445
+      tuokb2tst3f31_113: -279885961
+      tuokb2tst3f31_50: -1783256371
+      tuokb2tst3f31_149: -1867782954
+      tuokb2tst3f31_56: -817049869
+      tuokb2tst3f31_17: 1573427394
+      tuokb2tst3f31_38: -1939104203
+      tuokb2tst3f31_68: 522903337
+      tuokb2tst3f31_80: -667679727
+      tuokb2tst3f31_9: 447279360
+      tuokb2tst3f31_48: 1227563653
+      tuokb2tst3f31_7: 2067309791
+      tuokb2tst3f31_43: 2006889755
+      tuokb2tst3f31_1: -602008626
+      tuokb2tst3f31_110: 990425643
+      tuokb2tst3f31_23: -1356650509
+      tuokb2tst3f31_25: -1127710944
+      tuokb2tst3f31_106: -2092332776
+      tuokb2tst3f31_82: -1045830998
+      tuokb2tst3f31_136: 1811109200
+      tuokb2tst3f31_2: -1373226739
+      tuokb2tst3f31_27: 1345907781
+      tuokb2tst3f31_59: 270909563
+      tuokb2tst3f31_79: -1546206412
+      tuokb2tst3f31_75: -1139207814
+      tuokb2tst3f31_31: 193719722
+      tuokb2tst3f31_18: 1970298620
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
