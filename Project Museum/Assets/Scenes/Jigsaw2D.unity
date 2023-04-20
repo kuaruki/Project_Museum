@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70805900}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -4.875, y: -0.0039978027, z: 0.26}
+  m_LocalPosition: {x: -4.875, y: -0.0039978027, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -221,7 +221,6 @@ GameObject:
   - component: {fileID: 142162904}
   - component: {fileID: 142162903}
   - component: {fileID: 142162909}
-  - component: {fileID: 142162908}
   m_Layer: 0
   m_Name: Puzzle_4
   m_TagString: Puzzle
@@ -385,20 +384,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!114 &142162908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142162902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &142162909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,7 +507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198159014}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.011001587, y: 3.389, z: 0.26}
+  m_LocalPosition: {x: 0.011001587, y: 3.389, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -885,7 +870,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346359316}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1669998, y: 3.4050026, z: 0.26}
+  m_LocalPosition: {x: -3.1669998, y: 3.4050026, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -958,7 +943,6 @@ GameObject:
   - component: {fileID: 400988535}
   - component: {fileID: 400988534}
   - component: {fileID: 400988540}
-  - component: {fileID: 400988539}
   m_Layer: 0
   m_Name: Puzzle_14
   m_TagString: Puzzle
@@ -1122,20 +1106,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &400988539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400988533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &400988540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,7 +1145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425020315}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -3.151001, y: -1.449997, z: 0.26}
+  m_LocalPosition: {x: -3.151001, y: -1.449997, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1259,7 +1229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490873211}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -1.4389954, y: -1.7139969, z: 0.26}
+  m_LocalPosition: {x: -1.4389954, y: -1.7139969, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1343,7 +1313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491618728}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.447998, y: 3.149002, z: 0.26}
+  m_LocalPosition: {x: -1.447998, y: 3.149002, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1427,7 +1397,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494470060}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.627342, y: 1.7030029, z: 0.26}
+  m_LocalPosition: {x: -4.627342, y: 1.7030029, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1642,7 +1612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631666249}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.4469986, y: 1.6920013, z: 0.26}
+  m_LocalPosition: {x: -1.4469986, y: 1.6920013, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1883,7 +1853,6 @@ GameObject:
   - component: {fileID: 816521502}
   - component: {fileID: 816521501}
   - component: {fileID: 816521507}
-  - component: {fileID: 816521506}
   m_Layer: 0
   m_Name: Puzzle_12
   m_TagString: Puzzle
@@ -2047,20 +2016,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!114 &816521506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816521500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &816521507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2089,7 +2044,6 @@ GameObject:
   - component: {fileID: 820007039}
   - component: {fileID: 820007038}
   - component: {fileID: 820007044}
-  - component: {fileID: 820007043}
   m_Layer: 0
   m_Name: Puzzle_5
   m_TagString: Puzzle
@@ -2253,20 +2207,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &820007043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820007037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &820007044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2295,7 +2235,6 @@ GameObject:
   - component: {fileID: 824002942}
   - component: {fileID: 824002941}
   - component: {fileID: 824002947}
-  - component: {fileID: 824002946}
   m_Layer: 0
   m_Name: Puzzle_11
   m_TagString: Puzzle
@@ -2459,20 +2398,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &824002946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824002940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &824002947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2679,7 +2604,6 @@ GameObject:
   - component: {fileID: 880807119}
   - component: {fileID: 880807118}
   - component: {fileID: 880807124}
-  - component: {fileID: 880807123}
   m_Layer: 0
   m_Name: Puzzle_6
   m_TagString: Puzzle
@@ -2843,20 +2767,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &880807123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880807117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &880807124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2885,7 +2795,6 @@ GameObject:
   - component: {fileID: 965213743}
   - component: {fileID: 965213742}
   - component: {fileID: 965213748}
-  - component: {fileID: 965213747}
   m_Layer: 0
   m_Name: Puzzle_15
   m_TagString: Puzzle
@@ -3049,20 +2958,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
---- !u!114 &965213747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965213741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &965213748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3270,7 +3165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026912943}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.2610016, y: 1.6949997, z: 0.26}
+  m_LocalPosition: {x: 0.2610016, y: 1.6949997, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3354,7 +3249,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091834703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.8717957, y: 3.155384, z: 0.26}
+  m_LocalPosition: {x: -4.8717957, y: 3.155384, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3438,7 +3333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098370201}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -3.1569977, y: -0.0039978027, z: 0.26}
+  m_LocalPosition: {x: -3.1569977, y: -0.0039978027, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3690,7 +3585,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132322124}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.24500275, y: -1.4599991, z: 0.26}
+  m_LocalPosition: {x: 0.24500275, y: -1.4599991, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3763,7 +3658,6 @@ GameObject:
   - component: {fileID: 1141894258}
   - component: {fileID: 1141894257}
   - component: {fileID: 1141894263}
-  - component: {fileID: 1141894262}
   m_Layer: 0
   m_Name: Puzzle_13
   m_TagString: Puzzle
@@ -3927,20 +3821,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.088}
---- !u!114 &1141894262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141894256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &1141894263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4067,7 +3947,6 @@ GameObject:
   - component: {fileID: 1318744924}
   - component: {fileID: 1318744923}
   - component: {fileID: 1318744929}
-  - component: {fileID: 1318744928}
   m_Layer: 0
   m_Name: Puzzle_3
   m_TagString: Puzzle
@@ -4231,20 +4110,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!114 &1318744928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318744922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &1318744929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4357,7 +4222,6 @@ GameObject:
   - component: {fileID: 1385046648}
   - component: {fileID: 1385046647}
   - component: {fileID: 1385046653}
-  - component: {fileID: 1385046652}
   m_Layer: 0
   m_Name: Puzzle_1
   m_TagString: Puzzle
@@ -4521,20 +4385,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1385046652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385046646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &1385046653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4574,7 +4424,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404225308}
   m_LocalRotation: {x: -0, y: -0, z: 0.7076525, w: 0.7065607}
-  m_LocalPosition: {x: -4.6100006, y: -1.704998, z: 0.26}
+  m_LocalPosition: {x: -4.6100006, y: -1.704998, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4658,7 +4508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514829152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1689987, y: 1.7040024, z: 0.26}
+  m_LocalPosition: {x: -3.1689987, y: 1.7040024, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4731,7 +4581,6 @@ GameObject:
   - component: {fileID: 1526918658}
   - component: {fileID: 1526918657}
   - component: {fileID: 1526918663}
-  - component: {fileID: 1526918662}
   m_Layer: 0
   m_Name: Puzzle_8
   m_TagString: Puzzle
@@ -4895,20 +4744,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!114 &1526918662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526918656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &1526918663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5021,7 +4856,6 @@ GameObject:
   - component: {fileID: 1634717802}
   - component: {fileID: 1634717801}
   - component: {fileID: 1634717808}
-  - component: {fileID: 1634717807}
   m_Layer: 0
   m_Name: Puzzle_9
   m_TagString: Puzzle
@@ -5185,20 +5019,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1634717807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634717800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &1634717808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5227,7 +5047,6 @@ GameObject:
   - component: {fileID: 1647423248}
   - component: {fileID: 1647423247}
   - component: {fileID: 1647423253}
-  - component: {fileID: 1647423252}
   m_Layer: 0
   m_Name: Puzzle_10
   m_TagString: Puzzle
@@ -5391,20 +5210,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &1647423252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647423246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &1647423253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5624,7 +5429,6 @@ GameObject:
   - component: {fileID: 1858199846}
   - component: {fileID: 1858199845}
   - component: {fileID: 1858199851}
-  - component: {fileID: 1858199850}
   m_Layer: 0
   m_Name: Puzzle_2
   m_TagString: Puzzle
@@ -5788,20 +5592,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1858199850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858199844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &1858199851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5830,7 +5620,6 @@ GameObject:
   - component: {fileID: 1878987338}
   - component: {fileID: 1878987337}
   - component: {fileID: 1878987343}
-  - component: {fileID: 1878987342}
   m_Layer: 0
   m_Name: Puzzle_7
   m_TagString: Puzzle
@@ -5994,20 +5783,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &1878987342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878987336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c1e33ebdf54c468d696adfc8100b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inRightPosition: 0
-  selected: 0
 --- !u!114 &1878987343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6131,7 +5906,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917671640}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4420013, y: -0.0019989014, z: 0.26}
+  m_LocalPosition: {x: -1.4420013, y: -0.0019989014, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6298,7 +6073,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037110804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 105, y: -57.45, z: -10.345037}
+  m_LocalPosition: {x: 105, y: -57.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6414,7 +6189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114512795}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.26}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
