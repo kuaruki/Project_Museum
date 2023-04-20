@@ -362,8 +362,6 @@
 "Assets/Scripts/MoveCam.cs"
 "Assets/Scripts/PlayerCam.cs"
 "Assets/Scripts/PlayerMovement.cs"
-"Assets/Scripts/PlayerMovementAdvanced.cs"
-"Assets/Scripts/Puzzle_Mixer.cs"
 "Assets/Scripts/SuperMechanic.cs"
 -langversion:9.0
 
