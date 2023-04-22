@@ -46,6 +46,9 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+    //Variavel Inventory
+    public Inventory inventory;
+
     public MovementState state;
     public enum MovementState
     {
@@ -185,4 +188,13 @@ public class PlayerMovement : MonoBehaviour
         readyToJump = true;
     }
 
+    //Inventory Player Script
+    private void OnTriggerEnter(Collider other)
+    {
+        IInventoryItem item = other.GetComponent<IInventoryItem>();
+        if(item != null)
+        {
+            inventory.AddItem(item);
+        }
+    }
 }
