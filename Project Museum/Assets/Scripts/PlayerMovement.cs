@@ -83,8 +83,9 @@ public class PlayerMovement : MonoBehaviour
             rb.drag = groundDrag;
         else
             rb.drag = 0;
-
     }
+
+
     private void FixedUpdate()
     {
         movePlayer();
@@ -188,13 +189,17 @@ public class PlayerMovement : MonoBehaviour
         readyToJump = true;
     }
 
-    //Inventory Player Script
+    //pickup key inv
     private void OnTriggerEnter(Collider other)
     {
         IInventoryItem item = other.GetComponent<IInventoryItem>();
-        if(item != null)
+
+        if (item != null)
         {
             inventory.AddItem(item);
         }
+
+        //if (item != null && Input.GetKeyDown(KeyCode.F))
+        //{inventory.AddItem(item);}
     }
 }
