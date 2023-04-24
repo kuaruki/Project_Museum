@@ -68,10 +68,21 @@ public class PlayerMovement : MonoBehaviour
         air
     }
 
+
+
+    [SerializeField] private GameObject Safe_UI_canvas;
+
+    private void Awake() {
+        Time.timeScale = 1; //isto faz com que o jogo comece assim que a cena e carregada,
+                            //o que impede o jogo de ficar parado no inicio do nivel assim
+                            //que se muda de mapa
+    }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        Safe_UI_canvas.SetActive(false);
 
         readyToJump = true;
         startYScale = transform.localScale.y; //saves the inicial y of the player in the startYScale variable
@@ -102,10 +113,21 @@ public class PlayerMovement : MonoBehaviour
         stateHandler();
 
         //Handle Drag
-        if (grounded)
+        if (grounded) //drag on the floor
             rb.drag = groundDrag;
-        else
+        else //drag on air
             rb.drag = 0;
+
+        //Pause mechanic
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (Time.timeScale == 1) {
+                pause();
+            }
+            else {
+                resume();
+            }
+        }
+
     }
 
     private void FixedUpdate()
@@ -264,4 +286,18 @@ public class PlayerMovement : MonoBehaviour
             mItemToPickup = null;
         }
     }
+    
+
+
+    //PAUSE
+    public void pause() {
+        Time.timeScale = 0;
+        Safe_UI_canvas.SetActive(true);
+    }
+    //RESUME
+    public void resume() {
+        Time.timeScale = 1;
+        Safe_UI_canvas.SetActive(false);
+    }
+
 } 
