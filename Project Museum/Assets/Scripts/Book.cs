@@ -2,28 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Book : MonoBehaviour, IInventoryItem
+public class Book : InventoryItemBase
 {
-   public string Name
-    {
-      get
-      {
-          return "Axe";
-      }
-    }
-
-    public Sprite _Image = null;
-
-    public Sprite Image
+    public override string Name
     {
         get
         {
-            return _Image;
+            return "Book";
         }
     }
 
-    public void OnPickup()
+    public override void OnUse()
     {
-        gameObject.SetActive(false);
+        // do something with the object
+        base.OnUse();
     }
 }

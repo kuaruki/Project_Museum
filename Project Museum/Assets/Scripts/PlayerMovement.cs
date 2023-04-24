@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -46,10 +47,19 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
-    //Variavel Inventory
+    // Reference to Inventory script
     public Inventory inventory;
+         
+    // Reference to HUD script
+    public HUD Hud;
+    
+    // Players hand, where he can see object
+    public GameObject Hand;
+
+    public bool mLockPickup;
 
     public MovementState state;
+
     public enum MovementState
     {
         walking,
@@ -58,7 +68,6 @@ public class PlayerMovement : MonoBehaviour
         air
     }
 
-
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -66,11 +75,25 @@ public class PlayerMovement : MonoBehaviour
 
         readyToJump = true;
         startYScale = transform.localScale.y; //saves the inicial y of the player in the startYScale variable
+
+        // Event handlers
+        inventory.ItemUsed += Inventory_ItemUsed;
+        inventory.ItemRemoved += Inventory_ItemRemoved;
     }
 
     // Update is called once per frame
     private void Update()
     {
+        //Pick up key INVENTORY
+        // If the user presses the f key and there is an item he can pick up
+        if (mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
+        {
+            inventory.AddItem(mItemToPickup);
+            mItemToPickup.OnPickup();
+
+            Hud.CloseMessagePanel();
+        }
+
         //Ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
         
@@ -85,10 +108,34 @@ public class PlayerMovement : MonoBehaviour
             rb.drag = 0;
     }
 
-
     private void FixedUpdate()
     {
         movePlayer();
+    }
+
+    // event handler for item removed
+    private void Inventory_ItemRemoved(object sender, InventoryEventArgs e)
+    {
+        IInventoryItem item = e.Item;
+
+        GameObject goItem = (item as MonoBehaviour).gameObject;
+        goItem.SetActive(true);
+
+        // Detach item from players hand
+        goItem.transform.parent = null;
+    }
+
+    // event handler for item used
+    private void Inventory_ItemUsed(object sender, InventoryEventArgs e)
+    {
+        IInventoryItem item = e.Item;
+
+        // Do something with the item... e.g. put it in the hand of the player
+        GameObject goItem = (item as MonoBehaviour).gameObject;
+        goItem.SetActive(true);
+
+        // Put item on players hand
+        goItem.transform.parent = Hand.transform;
     }
 
     private void myInput()
@@ -117,7 +164,6 @@ public class PlayerMovement : MonoBehaviour
         //stop crouch
         if (Input.GetKeyUp(crouchKey))
             transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
-        
     }
 
     private void stateHandler()
@@ -145,9 +191,7 @@ public class PlayerMovement : MonoBehaviour
         {
             state = MovementState.air;
         }
-
     }
-
 
     private void movePlayer()
     {
@@ -163,7 +207,6 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultipier, ForceMode.Force);
 
     }
-
 
     private void speedControl()
     {
@@ -189,17 +232,36 @@ public class PlayerMovement : MonoBehaviour
         readyToJump = true;
     }
 
-    //pickup key inv
+    //INVENTORY
+
+    private IInventoryItem mItemToPickup = null;
+
     private void OnTriggerEnter(Collider other)
     {
         IInventoryItem item = other.GetComponent<IInventoryItem>();
 
         if (item != null)
         {
-            inventory.AddItem(item);
-        }
+            if (mLockPickup)
+                return;
 
-        //if (item != null && Input.GetKeyDown(KeyCode.F))
-        //{inventory.AddItem(item);}
+            mItemToPickup = item;
+
+            //inventory.AddItem(item);
+            //item.OnPickup();
+
+            Hud.OpenMessagePanel("");
+        }
     }
-}
+
+    private void OnTriggerExit(Collider other)
+    {
+        IInventoryItem item = other.GetComponent<IInventoryItem>();
+        if(item != null)
+        {
+            Hud.CloseMessagePanel();
+
+            mItemToPickup = null;
+        }
+    }
+} 

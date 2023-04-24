@@ -2,33 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Box : MonoBehaviour, IInventoryItem
+public class Box : InventoryItemBase
 {
-    public string Name
+    public override string Name
     {
-        //Add name item
         get 
         {
             return "Box";
         }
     }
 
-    //Add _Image
-    public Sprite _Image;
-
-    public Sprite Image
+    public override void OnUse()
     {
-        //Add sprite item
-        get
-        {
-            return _Image;
-        }
-    }
-
-
-    public void OnPickup()
-    {
-        //Add gameObject
-        gameObject.SetActive(false);
+        // do something with the object
+        base.OnUse();
     }
 }
