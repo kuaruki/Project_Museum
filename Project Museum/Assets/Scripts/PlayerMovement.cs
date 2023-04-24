@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    [SerializeField] private GameObject Safe_UI_canvas;
+    [SerializeField] private GameObject Pause_Canvas;
 
     private void Awake() {
         Time.timeScale = 1; //isto faz com que o jogo comece assim que a cena e carregada,
@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        Safe_UI_canvas.SetActive(false);
+        Pause_Canvas.SetActive(false);
 
         readyToJump = true;
         startYScale = transform.localScale.y; //saves the inicial y of the player in the startYScale variable
@@ -292,12 +292,12 @@ public class PlayerMovement : MonoBehaviour
     //PAUSE
     public void pause() {
         Time.timeScale = 0;
-        Safe_UI_canvas.SetActive(true);
+        Pause_Canvas.SetActive(true);
     }
     //RESUME
     public void resume() {
         Time.timeScale = 1;
-        Safe_UI_canvas.SetActive(false);
+        Pause_Canvas.SetActive(false);
     }
 
 } 

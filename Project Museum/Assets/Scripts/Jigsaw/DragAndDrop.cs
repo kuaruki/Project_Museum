@@ -21,7 +21,7 @@ public class DragAndDrop : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Museum");
         }
 
         if (Input.GetMouseButtonDown(0)) //Puzzle piece selected
