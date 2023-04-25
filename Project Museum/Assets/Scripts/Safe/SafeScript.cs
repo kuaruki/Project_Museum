@@ -22,6 +22,9 @@ public class SafeScript : MonoBehaviour
     public Text textNumber03;
 
     public bool Opened;
+    public float doorOpenAngle = 90f;
+    public float doorClosedAngle = 0f;
+    public float smooth = 2f; //This is the speed of the rotation
 
     private void Start()
     {
@@ -78,7 +81,9 @@ public class SafeScript : MonoBehaviour
         //If the safe was opened
         if (Opened == true)
         {
-            //For animating an actual cabinet: https://youtu.be/2utmOhzA59E?t=381
+            //For Opening the door: https://youtu.be/2utmOhzA59E?t=381
+            Quaternion targetRotationOpen = Quaternion.Euler(0, doorOpenAngle, 0);
+            transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotationOpen, smooth * Time.deltaTime);
 
             //locking the cursor and making it not visible
             Cursor.lockState = CursorLockMode.Locked;
