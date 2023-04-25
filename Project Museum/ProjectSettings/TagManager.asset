@@ -8,6 +8,7 @@ TagManager:
   - Puzzle
   - Safe
   - Jigsaw
+  - Cipher
   layers:
   - Default
   - TransparentFX

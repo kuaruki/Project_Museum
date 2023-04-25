@@ -355,6 +355,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Book.cs"
 "Assets/Scripts/Box.cs"
+"Assets/Scripts/Cipher/CipherScript.cs"
 "Assets/Scripts/Fix_mayhaps.cs"
 "Assets/Scripts/Gem.cs"
 "Assets/Scripts/HUD.cs"

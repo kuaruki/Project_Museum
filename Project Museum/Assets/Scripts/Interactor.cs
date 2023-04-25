@@ -55,6 +55,11 @@ public class Interactor : MonoBehaviour
                     Cursor.visible = true;
                     SceneManager.LoadScene("Jigsaw2D");
                 }
+                else if (hit.collider.CompareTag("Cipher"))
+                {
+                    //Show the Cipher UI
+                    hit.collider.GetComponent<CipherScript>().ShowCipherCanvas();
+                }
             }
         }
     }
