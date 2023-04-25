@@ -9,6 +9,5 @@ public class Open_Jigsaw : MonoBehaviour, IInteractable
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         SceneManager.LoadScene("Jigsaw2D");
-
     }
 }

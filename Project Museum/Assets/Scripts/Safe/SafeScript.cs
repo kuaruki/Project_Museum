@@ -1,67 +1,163 @@
+using Newtonsoft.Json.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //using static UnityEditor.Experimental.GraphView.GraphView;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 
 public class SafeScript : MonoBehaviour
 {
 
-    //[SerializeField] private GameObject pausePanel;
+    public Canvas Safe_Canvas;
+    public GameObject playerObject;
+    public GameObject CameraObject;
 
-    /*private void Awake() {
-        Time.timeScale = 1; //isto faz com que o jogo comece assim que a cena e carregada,
-                            //o que impede o jogo de ficar parado no inicio do nivel assim
-                            //que se muda de mapa
-    }*/
+    private int number01 = 1;
+    private int number02 = 1;
+    private int number03 = 1;
 
-    // Start is called before the first frame update
-    void Start() {
+    public Text textNumber01;
+    public Text textNumber02;
+    public Text textNumber03;
 
+    public bool Opened;
+
+    private void Start()
+    {
+        Safe_Canvas.enabled = false;
+        Opened = false;
+    }
+    public void ShowSafeCanvas()
+    {
+        Safe_Canvas.enabled = true;
+        
+        // disable both player movement and camera movement
+        playerObject.GetComponent<PlayerMovement>().enabled = false;
+        CameraObject.GetComponent<PlayerCam>().enabled = false;
+
+        //unlocking the mouse cursor and making it visible
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     // Update is called once per frame
-    void Update() {
-        /*
-        //Pause mechanic
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            if (Time.timeScale == 1) {
-                pause();
+    void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Escape) || Input.GetMouseButton(1))
+        {
+            //locking the cursor and making it not visible
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
+            // enable both player movement and camera movement
+            playerObject.GetComponent<PlayerMovement>().enabled = true;
+            CameraObject.GetComponent<PlayerCam>().enabled = true;
+
+            Safe_Canvas.enabled = false;
+        }
+
+
+        //-------------------------------
+        //CHECKING IF THE CODE IS CORRECT
+        //THE CODE IS: 420
+        if (number01 == 4 && number02 == 2 && number03 == 0)
+        {
+            Opened = true;
+
+        }
+        //-------------------------------
+        
+    }
+
+    public void UnlockSafe()
+    {
+        //TO:DO
+        //Open the Safe
+
+        //If the safe was opened
+        if (Opened == true)
+        {
+            //For animating an actual cabinet: https://youtu.be/2utmOhzA59E?t=381
+
+            //locking the cursor and making it not visible
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
+            // enable both player movement and camera movement
+            playerObject.GetComponent<PlayerMovement>().enabled = true;
+            CameraObject.GetComponent<PlayerCam>().enabled = true;
+
+            Safe_Canvas.enabled = false;
+
+            gameObject.layer = 0;
+        }
+    }
+
+    public void Increase(int _number)
+    {
+        if (_number == 1)
+        {
+            number01++;
+            textNumber01.text = number01.ToString();
+            if (number01 > 9)
+            {
+                number01 = 0;
+                textNumber01.text = number01.ToString();
             }
-            else {
-                resume();
+        }
+        else if (_number == 2)
+        {
+            number02++;
+            textNumber02.text = number02.ToString();
+            if (number02 > 9)
+            {
+                number02 = 0;
+                textNumber02.text = number02.ToString();
             }
-        }*/
+        }
+        else if (_number == 3)
+        {
+            number03++;
+            textNumber03.text = number03.ToString();
+            if (number03 > 9)
+            {
+                number03 = 0;
+                textNumber03.text = number03.ToString();
+            }
+        }
     }
-
-
-    // Is Dead?
-    /*
-    void Dead() {
-        animator.SetBool("Alive", false);
+    public void Decrease(int _number)
+    {
+        if (_number == 1)
+        {
+            number01--;
+            textNumber01.text = number01.ToString();
+            if (number01 < 0)
+            {
+                number01 = 9;
+                textNumber01.text = number01.ToString();
+            }
+        }
+        else if (_number == 2)
+        {
+            number02--;
+            textNumber02.text = number02.ToString();
+            if (number02 < 0)
+            {
+                number02 = 9;
+                textNumber02.text = number02.ToString();
+            }
+        }
+        else if (_number == 3)
+        {
+            number03--;
+            textNumber03.text = number03.ToString();
+            if (number03 < 0)
+            {
+                number03 = 9;
+                textNumber03.text = number03.ToString();
+            }
+        }
     }
-
-    IEnumerator ExampleCoroutine() {
-        Dead();
-        //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(2);
-        deathPanel.SetActive(true);
-        Time.timeScale = 0; //Stops the game
-    }
-    */
-
-    /*
-    //PAUSE
-    public void pause() {
-        Time.timeScale = 0;
-        pausePanel.SetActive(true);
-    }
-    //RESUME
-    public void resume() {
-        Time.timeScale = 1;
-        pausePanel.SetActive(false);
-    }
-    */
 }

@@ -160,6 +160,10 @@ public class PlayerMovement : MonoBehaviour
         goItem.transform.parent = Hand.transform;
     }
 
+
+    //---------------
+    //Player Movement
+    //---------------
     private void myInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -254,8 +258,10 @@ public class PlayerMovement : MonoBehaviour
         readyToJump = true;
     }
 
-    //INVENTORY
 
+    //---------
+    //INVENTORY
+    //---------
     private IInventoryItem mItemToPickup = null;
 
     private void OnTriggerEnter(Collider other)
