@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CipherScript : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class CipherScript : MonoBehaviour
     public GameObject playerObject;
     public GameObject CameraObject;
     public bool CipherCorrect;
+
+    public Button button;
 
     private string input;
     //THE ACTUAL CIPHER
@@ -53,25 +56,16 @@ public class CipherScript : MonoBehaviour
 
 
         //-------------------------------
-        //CHECKING IF THE CODE IS CORRECT
-        //THE CODE IS: 420
+        //CHECKING IF THE CIPHER IS CORRECT
+        //THE CIPHER IS: Boas (see line 18)
         
         if (input == cipher)
         {
             CipherCorrect = true;
-            /*if (Input.GetKey("enter"))
+            /*if (Input.GetKeyUp(KeyCode.Return))
             {
-                //locking the cursor and making it not visible
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-
-                // enable both player movement and camera movement
-                playerObject.GetComponent<PlayerMovement>().enabled = true;
-                CameraObject.GetComponent<PlayerCam>().enabled = true;
-
-                Cipher_Canvas.enabled = false;
-
-                gameObject.layer = 0;
+                Debug.Log("Entered Enter");
+                UnlockCipher();
             }*/
         }
         //-------------------------------
@@ -85,8 +79,7 @@ public class CipherScript : MonoBehaviour
 
     public void UnlockCipher()
     {
-
-        //If the safe was opened
+        //If the cipher is cracked
         if (CipherCorrect == true)
         {
             

@@ -9,6 +9,8 @@ TagManager:
   - Safe
   - Jigsaw
   - Cipher
+  - PaintingsPuz
+  - Mirror
   layers:
   - Default
   - TransparentFX
