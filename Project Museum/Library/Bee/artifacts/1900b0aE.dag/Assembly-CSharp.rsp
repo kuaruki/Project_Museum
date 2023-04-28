@@ -370,6 +370,7 @@
 "Assets/Scripts/Jigsaw/Open_Jigsaw.cs"
 "Assets/Scripts/Jigsaw/PiecesScript.cs"
 "Assets/Scripts/MoveCam.cs"
+"Assets/Scripts/Paintings/DragDrop.cs"
 "Assets/Scripts/Paintings/PaintingsScript.cs"
 "Assets/Scripts/PlayerCam.cs"
 "Assets/Scripts/PlayerMovement.cs"

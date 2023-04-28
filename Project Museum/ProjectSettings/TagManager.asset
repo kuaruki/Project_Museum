@@ -12,6 +12,7 @@ TagManager:
   - PaintingsPuz
   - Mirror
   - Bookshelf
+  - DropArea
   layers:
   - Default
   - TransparentFX
