@@ -11,6 +11,7 @@ TagManager:
   - Cipher
   - PaintingsPuz
   - Mirror
+  - Bookshelf
   layers:
   - Default
   - TransparentFX
