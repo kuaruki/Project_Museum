@@ -16,11 +16,12 @@ public class Interactor : MonoBehaviour
 
     //Safe
     public float InteractDistance = 15f;
-    public LayerMask interactLayer;    
+    public LayerMask interactLayer;
+    public GameObject PaintingPuzzleScript;
 
     void Start()
     {
-        
+        PaintingPuzzleScript.GetComponent<PaintingsScript>().enabled = false;
     }
 
     // Update is called once per frame
@@ -30,13 +31,7 @@ public class Interactor : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            /*
-             * Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
-            if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
-            {
-                if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
-                    interactObj.Interact();
-            }*/
+            //Here is where we can put a little hand to tell the player that he is facing an interactable object
 
 
             Ray ray = new Ray(transform.position, transform.forward);
@@ -59,6 +54,12 @@ public class Interactor : MonoBehaviour
                 {
                     //Show the Cipher UI
                     hit.collider.GetComponent<CipherScript>().ShowCipherCanvas();
+                }
+                else if (hit.collider.CompareTag("PaintingsPuz"))
+                {
+                    PaintingPuzzleScript.GetComponent<PaintingsScript>().enabled = true;
+                    //Run the Painting Puzzle
+                    hit.collider.GetComponent<PaintingsScript>().MoveCamera();
                 }
             }
         }
