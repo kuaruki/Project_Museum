@@ -9,7 +9,7 @@ public class Inventory : MonoBehaviour
     private const int SLOTS = 9;
 
     // lista com os itens do inventário
-    private List<IInventoryItem> mItems = new List<IInventoryItem>();
+    public List<IInventoryItem> mItems = new List<IInventoryItem>();
 
     // eventos
     public event EventHandler<InventoryEventArgs> ItemAdded;
