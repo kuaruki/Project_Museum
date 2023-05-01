@@ -17,6 +17,9 @@ TagManager:
   - PaintingPosition1
   - PaintingPosition2
   - PaintingPosition3
+  - WandPuzzle
+  - Point1
+  - PaintingsWall
   layers:
   - Default
   - TransparentFX

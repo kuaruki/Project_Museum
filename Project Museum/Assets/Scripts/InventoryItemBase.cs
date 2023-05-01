@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class InventoryItemBase : MonoBehaviour, IInventoryItem
 {
+    public Camera Camera;
+
     public virtual string Name
     {
         get
@@ -28,13 +31,17 @@ public class InventoryItemBase : MonoBehaviour, IInventoryItem
 
     public virtual void OnDrop()
     {
-        RaycastHit hit = new RaycastHit();
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 1000))
         {
-            gameObject.SetActive(true);
-            gameObject.transform.position = hit.point;
-            gameObject.transform.eulerAngles = DropRotation;
+            if (hit.collider.CompareTag("PaintingsWall"))
+            {
+                Debug.Log("Raycast HIT");
+                gameObject.SetActive(true);
+                gameObject.transform.position = hit.point;
+                gameObject.transform.eulerAngles = DropRotation;
+            }
         }
     }
 

@@ -9,9 +9,8 @@ public class ItemDropHandler : MonoBehaviour, IDropHandler
     {
         RectTransform invPanel = transform as RectTransform;
 
-        if (!RectTransformUtility.RectangleContainsScreenPoint(invPanel, 
-            Input.mousePosition))
-        {
+        if (!RectTransformUtility.RectangleContainsScreenPoint(invPanel, Input.mousePosition)) //Checks if the mouse coords are inside the slot panel of the inventory
+        { 
             Debug.Log("Drop Item");
         }
     }

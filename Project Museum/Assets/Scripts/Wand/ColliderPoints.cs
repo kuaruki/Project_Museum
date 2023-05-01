@@ -11,4 +11,9 @@ public class ColliderPoints : MonoBehaviour
             Debug.Log("Collided");
         }
     }
+    //private void OnCollisionEnter(Collision collider)
+    //{
+    //    if (collider.gameObject.tag == "Wand")
+    //        Debug.Log("COLLIDED");
+    //}
 }

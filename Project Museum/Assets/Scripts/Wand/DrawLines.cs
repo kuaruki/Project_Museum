@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DrawLines : MonoBehaviour
@@ -20,12 +21,22 @@ public class DrawLines : MonoBehaviour
 
     public float minimumDistance = 0.05f;
     public float distance = 0f;
+    public GameObject mouseCollider;
 
+
+    private void Start()
+    {
+        mouseCollider.GetComponent<Collider>().enabled = false;
+        //mouseCollider.GetComponent<SpriteRenderer>().enabled = false;
+        mouseCollider.transform.position = Input.mousePosition;
+    }
     void Update()
     {
         // When user first right clicks the mouse
         if (Input.GetMouseButtonDown(0))
         {
+            mouseCollider.GetComponent<Collider>().enabled = enabled;
+            
             // Clearing the list so everytime we click draws a new set of lines
             linePositions.Clear();
 
@@ -67,6 +78,14 @@ public class DrawLines : MonoBehaviour
                 lineRenderer.positionCount = linePositions.Count;
                 lineRenderer.SetPositions(linePositions.ToArray());
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Point1")
+        {
+            Debug.Log("Collided");
         }
     }
 }

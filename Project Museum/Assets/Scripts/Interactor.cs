@@ -13,28 +13,23 @@ public class Interactor : MonoBehaviour
 {
 
     //Paintings
-    private int paintOrder = 0;
+    //private int paintOrder = 0;
     //if the player puts the correct painting in the correct place paintOrder++
     //if 3 paintings are down and paintOrder = 3
-    //puzzle done
-    Inventory inventory;
-    [SerializeField] GameObject inventarioObject;
-    ItemClickHandler clickHandler;
-    [SerializeField] GameObject handlerDeCliques;
+    //  puzzle done
+
+    public Camera mainCamera;
+    public Camera paintingsCamera;
 
     //Safe
     public float InteractDistance = 15f;
     public LayerMask interactLayer;
 
-    private void Awake()
-    {
-        //get the items from the inventory
-        inventory = inventarioObject.GetComponent<Inventory>();
-        clickHandler = handlerDeCliques.GetComponent<ItemClickHandler>();
-    }
+
     void Start()
     {
-
+        mainCamera.enabled = true;
+        paintingsCamera.enabled = false;
     }
 
     // Update is called once per frame
@@ -68,39 +63,25 @@ public class Interactor : MonoBehaviour
                 //----------
                 //Painting Puzzle
                 //----------
-                else if (hit.collider.CompareTag("PaintingPosition1"))
+                else if (hit.collider.CompareTag("PaintingsPuz"))
                 {
-                    //check if there's a painting in the place
+                    mainCamera.enabled = false;
+                    paintingsCamera.enabled = true;
 
-                    //if there isn't...
-                    //check if a painting is selected in the inventory
-                    if (inventory.mItems.Count > 0)
-                    {
-                        foreach(IInventoryItem inventoryItem in inventory.mItems)
-                        {
-                            if (inventoryItem.OnUse())
-                            {
-                                clickHandler.GetComponent<IInventoryItem>();
-                            }
-                        }
-                    }
-
-                    //Snap painting to place
-                    if (hit.transform.tag == "PaintingPosition1")
-                    {
-                        transform.position = hit.transform.position;
-                    }
-                }
-                else if (hit.collider.CompareTag("PaintingPosition2"))
-                {
-
-                }else if (hit.collider.CompareTag("PaintingPosition3"))
-                {
-
+                    //Unlock Cursor
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
                 }
                 //----------
                 // EOF Painting Puzzle
                 //----------
+                else if (hit.collider.CompareTag("WandPuzzle"))
+                {
+                    //Open Wand Scene
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                    SceneManager.LoadScene("Wand");
+                }
             }
         }
     }

@@ -9,11 +9,13 @@ public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = Input.mousePosition;
+        //puts the image on the cursor
+        transform.position = Input.mousePosition; 
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        //resets the image position to the inventory slot
         transform.localPosition = Vector3.zero;
     }
 }

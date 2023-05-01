@@ -368,7 +368,6 @@
 "Assets/Scripts/ItemDragHandler.cs"
 "Assets/Scripts/ItemDropHandler.cs"
 "Assets/Scripts/Jigsaw/DragAndDrop.cs"
-"Assets/Scripts/Jigsaw/Open_Jigsaw.cs"
 "Assets/Scripts/Jigsaw/PiecesScript.cs"
 "Assets/Scripts/MoveCam.cs"
 "Assets/Scripts/Paintings/DragDrop.cs"
