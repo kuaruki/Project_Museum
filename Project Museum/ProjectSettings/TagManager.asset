@@ -13,6 +13,7 @@ TagManager:
   - Mirror
   - Bookshelf
   - DropArea
+  - Wand
   layers:
   - Default
   - TransparentFX
@@ -52,4 +53,7 @@ TagManager:
     locked: 0
   - name: Pieces
     uniqueID: 2169655963
+    locked: 0
+  - name: LineRenderer
+    uniqueID: 320401163
     locked: 0
