@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Book : InventoryItemBase
 {
-
     public override string Name
     {
         get

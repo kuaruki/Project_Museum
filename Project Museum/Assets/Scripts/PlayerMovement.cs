@@ -96,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         //Pick up key INVENTORY
-        // If the user presses the f key and there is an item he can pick up
+        // If the user presses the e key and there is an item he can pick up
         if (mItemToPickup != null && Input.GetKeyDown(KeyCode.E))
         {
             inventory.AddItem(mItemToPickup);

@@ -1,0 +1,647 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1683023171369316, "dur": 887429, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1683023171369603, "dur": 9805, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1683023171379412, "dur": 865629, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1683023172245042, "dur": 11702, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1683023172257193, "dur": 11, "ph": "X", "name": "", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1683023171411960, "dur":1434, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023171413408, "dur":167, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1683023171413608, "dur":28, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1683023171413636, "dur":218, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1683023171413881, "dur":709, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023171414590, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023172214193, "dur":83, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023172214276, "dur":52, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023172214328, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023172214332, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023172214343, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023172214346, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023172214353, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023172214355, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023172214361, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023172214405, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023172214428, "dur":1690, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1683023171414500, "dur":98, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171414601, "dur":3888, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171418504, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1683023171418508, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171418532, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1683023171418534, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171418565, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171419162, "dur":2626, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1683023171421789, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1683023171421807, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171421831, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171421837, "dur":913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1683023171422765, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1683023171422779, "dur":201, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171422985, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171423114, "dur":854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1683023171423982, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1683023171423998, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171424023, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171424029, "dur":814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1683023171424920, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1683023171424935, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171424960, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171424966, "dur":859, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1683023171425840, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":1, "ts":1683023171425856, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171425877, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171425883, "dur":761, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":1, "ts":1683023171426659, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171426677, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171426703, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171426899, "dur":5037, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171431956, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1683023171431986, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171432014, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171432022, "dur":1802, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1683023171433848, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum.exe" }}
+,{ "pid":12345, "tid":1, "ts":1683023171433868, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171433893, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171433900, "dur":1314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum.exe" }}
+,{ "pid":12345, "tid":1, "ts":1683023171435231, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1683023171435253, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171435294, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171435668, "dur":3013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1683023171438704, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171438763, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171438794, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171438801, "dur":1477, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171440296, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171440317, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171440347, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171440354, "dur":1061, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171441430, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171441451, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171441477, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171441482, "dur":1113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171442608, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171442628, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171442806, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171442907, "dur":1904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171444824, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171444841, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171444865, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171444870, "dur":2643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171447526, "dur":119894, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171567420, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171567456, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171567464, "dur":925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171568405, "dur":766, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171569172, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171569216, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171569224, "dur":2747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171571988, "dur":52216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171624205, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171624512, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171624521, "dur":943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171625478, "dur":52464, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171677943, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171677997, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171678004, "dur":2493, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171680518, "dur":25922, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171706441, "dur":164451, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171870939, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171870945, "dur":1093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171872055, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171872068, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171872119, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171872125, "dur":1993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171874130, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171874144, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171874198, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171874204, "dur":856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171875075, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023171875090, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171875117, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023171875122, "dur":219116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023172094266, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023172094294, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023172094324, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023172094330, "dur":2005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023172096348, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023172096410, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023172096438, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023172096443, "dur":5556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":1, "ts":1683023172102016, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1683023172102033, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023172102038, "dur":13220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1683023172115272, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1683023172115289, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023172115346, "dur":2947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1683023172118310, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/level1.resS" }}
+,{ "pid":12345, "tid":1, "ts":1683023172118329, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023172118334, "dur":1249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/level1.resS" }}
+,{ "pid":12345, "tid":1, "ts":1683023172119596, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1683023172119631, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023172119636, "dur":1188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1683023172120837, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1683023172120855, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1683023172120859, "dur":886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1683023172121759, "dur":92424, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171414548, "dur":64, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171414612, "dur":3883, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171418504, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1683023171418540, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171418580, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171420483, "dur":1248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1683023171421756, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1683023171421778, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171421800, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171421807, "dur":860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1683023171422683, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1683023171422703, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171422734, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171423054, "dur":862, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1683023171423930, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1683023171423950, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171423989, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171424008, "dur":803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1683023171424825, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1683023171424903, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171424927, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171424946, "dur":775, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1683023171425735, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1683023171425751, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171425784, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171425790, "dur":778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1683023171426582, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171426602, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171426631, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171426901, "dur":9012, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171435930, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171435958, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171435990, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171436711, "dur":1032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171437763, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171437793, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171437822, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171437842, "dur":938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171438795, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171438812, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171438846, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171438851, "dur":1559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171440431, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171440445, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171440469, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171440474, "dur":1175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171441663, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171441676, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171441744, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171441749, "dur":1067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171442897, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171442916, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171442953, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171442958, "dur":1442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171444421, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171444444, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171444470, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171444476, "dur":2822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171447310, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171447325, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171447350, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171447356, "dur":1515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171448887, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171448906, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171448941, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171448947, "dur":1294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171450255, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171450271, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171450346, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171450352, "dur":995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171451366, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171451382, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171451408, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171451413, "dur":1331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171452764, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171452778, "dur":177, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171452960, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171452966, "dur":1164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171454143, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171454156, "dur":325, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171454486, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171454499, "dur":815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171455326, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171455339, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171455363, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171455368, "dur":8047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171463428, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171463447, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171463492, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171463497, "dur":2219, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171465730, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171465742, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171465795, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171465801, "dur":985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171466805, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171466905, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171466933, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171466939, "dur":883, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171467835, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171467849, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171467883, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171467894, "dur":787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171468693, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171468706, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171468732, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171468738, "dur":1452, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171470205, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171470227, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171470253, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171470259, "dur":1075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171471348, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171471367, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171471394, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171471401, "dur":1079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171472494, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171472507, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171472541, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171472547, "dur":959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171473526, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171473539, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171473564, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171473570, "dur":1072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171474657, "dur":45705, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171520363, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171520420, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171520429, "dur":1457, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171521901, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171521916, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171521963, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171521970, "dur":827, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171522811, "dur":82607, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171605419, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171605467, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171605475, "dur":912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171606403, "dur":44658, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171651062, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171651115, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171651123, "dur":884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171652022, "dur":15928, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171667951, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171668002, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171668015, "dur":878, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171668909, "dur":12491, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171681401, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171681446, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171681454, "dur":854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171682325, "dur":3927, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171686252, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171686302, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171686310, "dur":882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171687207, "dur":21771, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171708979, "dur":161925, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171870930, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171870939, "dur":1286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171872240, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171872256, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171872282, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171872287, "dur":1368, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171873671, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171873693, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171873723, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171873730, "dur":1175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171874918, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023171874932, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171874960, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023171874965, "dur":219266, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023172094249, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023172094264, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023172094366, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023172094373, "dur":1996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023172096384, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023172096396, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023172096423, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023172096428, "dur":830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023172097273, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023172097286, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023172097313, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023172097320, "dur":2819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1683023172100154, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1683023172100196, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023172100216, "dur":1246, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1683023172101481, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1683023172101501, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023172101506, "dur":2686, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1683023172104208, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1683023172104244, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023172104251, "dur":10690, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1683023172114959, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1683023172114977, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023172114981, "dur":3488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1683023172118482, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1683023172118496, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1683023172118500, "dur":4259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1683023172122772, "dur":91410, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171414533, "dur":72, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171414605, "dur":3891, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171418504, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1683023171418556, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171418592, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171420269, "dur":1380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1683023171421669, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1683023171421683, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171421708, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171421748, "dur":864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1683023171422626, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1683023171422642, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171422672, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171423267, "dur":947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1683023171424228, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1683023171424246, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171424274, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171424791, "dur":733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1683023171425539, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1683023171425558, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171425580, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171425587, "dur":904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1683023171426505, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1683023171426521, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171426544, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171426550, "dur":1153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1683023171427735, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171427758, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171427784, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171427790, "dur":13541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171441346, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171441366, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171441390, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171441422, "dur":914, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171442350, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171442364, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171442389, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171442394, "dur":2693, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171445105, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171445122, "dur":202, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171445329, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171445336, "dur":1870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171447230, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171447253, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171447303, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171447311, "dur":957, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171448284, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171448306, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171448361, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171448368, "dur":1878, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171450260, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171450276, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171450451, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171450457, "dur":1075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171451545, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171451558, "dur":179, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171451742, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171451747, "dur":974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171452737, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171452755, "dur":166, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171452926, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171452932, "dur":928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171453872, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171453885, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171453909, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171453914, "dur":1008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171454934, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171454946, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171454972, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171454977, "dur":7848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171462840, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171462855, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171462881, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171462905, "dur":1950, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171464871, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171464885, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171464910, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171464917, "dur":1031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171465960, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171465972, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171466015, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171466020, "dur":805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171466923, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171466937, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171466964, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171466970, "dur":921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171467911, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171467935, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171467959, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171467964, "dur":1038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171469015, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171469026, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171469078, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171469084, "dur":1421, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171470517, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171470530, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171470556, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171470561, "dur":945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171471519, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171471532, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171471575, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171471587, "dur":1114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171472714, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171472731, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171472765, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171472770, "dur":871, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171473656, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171473669, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171473694, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171473704, "dur":11606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171485326, "dur":141277, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171626603, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171626648, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171626656, "dur":1275, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171627947, "dur":18984, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171646932, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171646990, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171646997, "dur":935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171647948, "dur":44298, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171692247, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171692298, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171692307, "dur":811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171693131, "dur":899, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171694030, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171694075, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171694087, "dur":177259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171871361, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171871376, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171871420, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171871425, "dur":1076, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171872515, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171872528, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171872607, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171872612, "dur":1330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171873956, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171873969, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171874062, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171874067, "dur":1006, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171875088, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023171875100, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171875126, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023171875131, "dur":219932, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023172095083, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023172095099, "dur":184, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172095311, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172095330, "dur":2266, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023172097611, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023172097625, "dur":167, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172097797, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172097803, "dur":1093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1683023172098910, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":3, "ts":1683023172099078, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172099117, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172099334, "dur":886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":3, "ts":1683023172100234, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1683023172100253, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172100257, "dur":1465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1683023172101735, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1683023172101752, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172101757, "dur":9735, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1683023172111532, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1683023172111557, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172111569, "dur":1343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1683023172112928, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1683023172113101, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172113133, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172113142, "dur":795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1683023172113953, "dur":907, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1683023172114861, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172114895, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172114902, "dur":1108, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1683023172116024, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/level2.resS" }}
+,{ "pid":12345, "tid":3, "ts":1683023172116041, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172116047, "dur":1971, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/level2.resS" }}
+,{ "pid":12345, "tid":3, "ts":1683023172118032, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1683023172118047, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172118053, "dur":1416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1683023172119483, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/level0.resS" }}
+,{ "pid":12345, "tid":3, "ts":1683023172119499, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172119505, "dur":1039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/level0.resS" }}
+,{ "pid":12345, "tid":3, "ts":1683023172120558, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1683023172120576, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172120582, "dur":931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":3, "ts":1683023172121527, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1683023172121690, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172121719, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1683023172121725, "dur":778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1683023172122517, "dur":91664, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171414579, "dur":38, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171414617, "dur":3876, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171418504, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1683023171418558, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171418608, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171441213, "dur":970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1683023171442197, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171442228, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171442267, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171442273, "dur":2122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171444418, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171444434, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171444464, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171444471, "dur":1546, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171446031, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171446049, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171446085, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171446091, "dur":1412, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171447517, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171447530, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171447635, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171447641, "dur":2250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171449909, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171449926, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171449976, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171449983, "dur":1226, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171451224, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171451244, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171451272, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171451278, "dur":1124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171452416, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171452430, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171452456, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171452462, "dur":1265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171453740, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171453752, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171453776, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171453785, "dur":1015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171454816, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171454832, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171454886, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171454892, "dur":4110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171459022, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171459044, "dur":3536, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171462587, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171462595, "dur":2548, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171465164, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171465178, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171465204, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171465210, "dur":877, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171466100, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171466117, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171466142, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171466148, "dur":837, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171466997, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171467010, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171467043, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171467048, "dur":837, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171467900, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171467916, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171467945, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171467950, "dur":887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171468850, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171468864, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171468941, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171468946, "dur":1427, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171470385, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171470399, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171470425, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171470430, "dur":1574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171472017, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171472036, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171472080, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171472086, "dur":806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171472904, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171472916, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171472941, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171472946, "dur":1028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171473987, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171474000, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171474025, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171474030, "dur":897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171474940, "dur":91001, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171565942, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171565991, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171566000, "dur":990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171567011, "dur":189381, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171756392, "dur":114672, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171871068, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171871074, "dur":1326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171872416, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171872430, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171872457, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171872467, "dur":1282, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171873764, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171873780, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171873826, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171873831, "dur":1203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171875048, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023171875061, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171875088, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023171875098, "dur":218538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023172093664, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023172093722, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023172093815, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023172093824, "dur":2341, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023172096179, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023172096193, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023172096219, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023172096226, "dur":2449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023172098691, "dur":114088, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023172212780, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023172212858, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1683023172212884, "dur":1236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1683023172214142, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":4, "ts":1683023172214143, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1683023172217556, "dur":2380, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1683023172257253, "dur": 1124, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1683023172257183, "dur": 1238, "ph": "X", "name": "Write chrome-trace events", "args": {} },

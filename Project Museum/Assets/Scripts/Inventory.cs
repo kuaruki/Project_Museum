@@ -41,11 +41,14 @@ public class Inventory : MonoBehaviour
     // remover um item do inventário
     public void RemoveItem(IInventoryItem item)
     {
+        Debug.Log("Itens" + mItems);
         if (mItems.Contains(item))
         {
             mItems.Remove(item);
 
+
             item.OnDrop();
+            Debug.Log("Item Dropped");
 
             Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
 
