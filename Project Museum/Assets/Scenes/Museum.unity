@@ -7314,7 +7314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 1.0619112
+  m_AspectRatio: 1.0622561
 --- !u!1 &831383700
 GameObject:
   m_ObjectHideFlags: 0
@@ -7333,7 +7333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &831383701
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14445,7 +14445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1612120508
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15432,7 +15432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 1.781453
+  m_AspectRatio: 1.7811918
 --- !u!1 &1727688488
 GameObject:
   m_ObjectHideFlags: 0
