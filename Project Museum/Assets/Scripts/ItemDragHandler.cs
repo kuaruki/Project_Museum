@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
 {
     public IInventoryItem Item { get; set; }
-    //public GameObject inventoryScript;
+    public GameObject inventoryScript;
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -16,7 +16,7 @@ public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        //inventoryScript.GetComponent<Inventory>().ItemRemoved(Item);
+        inventoryScript.GetComponent<Inventory>().RemoveItem(Item);
         //resets the image position to the inventory slot
         transform.localPosition = Vector3.zero;
         Debug.Log(transform.position);

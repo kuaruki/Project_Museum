@@ -35,12 +35,15 @@ public class InventoryItemBase : MonoBehaviour, IInventoryItem
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 1000))
         {
-            if (hit.collider.CompareTag("PaintingsWall"))
+            if (hit.collider.CompareTag("PaintingsWall") || hit.collider.CompareTag("DropArea"))
             {
+                Vector3 vector = new Vector3(90, 0, 0);
                 Debug.Log("Raycast HIT");
                 gameObject.SetActive(true);
                 gameObject.transform.position = hit.point;
                 gameObject.transform.eulerAngles = DropRotation;
+                gameObject.transform.localScale = new Vector3(14.17731f, 44.45306f, 1.002098f);
+                //gameObject.transform.Rotate(90, 0, 0);
             }
         }
     }
