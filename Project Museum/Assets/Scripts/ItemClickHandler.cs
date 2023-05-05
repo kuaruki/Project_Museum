@@ -53,8 +53,17 @@ public class ItemClickHandler : MonoBehaviour
 
         if (item != null)
         {
+            ClearHand();
             _Inventory.UseItem(item);
             item.OnUse();
+        }
+    }
+    public void ClearHand()
+    {
+        var playerHand = GameObject.Find("Hand").transform;
+        foreach (Transform item in playerHand)
+        {
+            item.gameObject.SetActive(false);
         }
     }
 }
