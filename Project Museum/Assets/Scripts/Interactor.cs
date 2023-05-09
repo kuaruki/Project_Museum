@@ -15,6 +15,7 @@ public class Interactor : MonoBehaviour
 
     public Camera mainCamera;
     public Camera paintingsCamera;
+    public GameObject playerObject;
 
     //Safe
     public float InteractDistance = 15f;
@@ -60,12 +61,17 @@ public class Interactor : MonoBehaviour
                 //----------
                 else if (hit.collider.CompareTag("PaintingsPuz"))
                 {
+                    //switch to the puzzle camera
                     mainCamera.enabled = false;
                     paintingsCamera.enabled = true;
 
                     //Unlock Cursor
                     Cursor.lockState = CursorLockMode.None;
                     Cursor.visible = true;
+
+                    // disable both player movement and camera movement
+                    playerObject.GetComponent<PlayerMovement>().enabled = false;
+                    mainCamera.GetComponent<PlayerCam>().enabled = false;
                 }
                 //----------
                 // EOF Painting Puzzle

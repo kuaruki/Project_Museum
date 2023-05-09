@@ -20,6 +20,11 @@ TagManager:
   - WandPuzzle
   - Point1
   - PaintingsWall
+  - Painting1
+  - Painting2
+  - Painting3
+  - DropArea2
+  - DropArea3
   layers:
   - Default
   - TransparentFX
@@ -34,9 +39,9 @@ TagManager:
   - whatIsGround
   - Interactable
   - PaintWall
-  - 
-  - 
-  - 
+  - DropArea1
+  - DropArea2
+  - DropArea3
   - 
   - 
   - 
