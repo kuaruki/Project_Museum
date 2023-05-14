@@ -19,7 +19,5 @@ public class ItemDragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
         inventoryScript.GetComponent<Inventory>().RemoveItem(Item);
         //resets the image position to the inventory slot
         transform.localPosition = Vector3.zero;
-        Debug.Log(transform.position);
-        Debug.Log(Input.mousePosition);
     }
 }

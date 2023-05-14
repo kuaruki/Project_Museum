@@ -49,7 +49,13 @@ public class DragDrop : MonoBehaviour
         return Camera.main.ScreenToWorldPoint(mouseScreenPos);
     }
 
-    private void Update() {
+    private void Update()
+    {
+        int layerMask = 1 << 13;
+        int HITS = 0;
+        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit[] hits = Physics.RaycastAll(ray, 100f, layerMask);
+
         if (Input.GetKey(KeyCode.Escape)) {
             //switch to the main camera
             mainCamera.enabled = true;
@@ -64,9 +70,50 @@ public class DragDrop : MonoBehaviour
             mainCamera.GetComponent<PlayerCam>().enabled = true;
         }
 
+        if (Input.GetMouseButton(2))
+        {
+            foreach (RaycastHit hit in hits)
+            {
+                if (hit.collider.CompareTag("Painting1"))
+                {
+                    HITS++;
+                }
+                if (hit.collider.CompareTag("DropArea"))
+                {
+                    HITS++;
+                }
+            }
+            if (HITS == 2)
+                Debug.Log("Raycast HIT both Painting1 and DropArea");
+        }
+
         if(key == 3) {
             //Puzzle is done
         }
+    }
+
+
+    private void CheckPositions()
+    {
+
+        int layerMask = 1 << 13;
+        int HITS = 0;
+        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit[] hits = Physics.RaycastAll(ray, 100f, layerMask);
+        
+        foreach(RaycastHit hit in hits)
+        {
+            if (hit.collider.CompareTag("Painting1"))
+            {
+                HITS++;
+            }
+            if (hit.collider.CompareTag("DropArea"))
+            {
+                HITS++;
+            }
+        }
+        if(HITS == 2)
+            Debug.Log("Raycast HIT both Painting1 and DropArea");
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {

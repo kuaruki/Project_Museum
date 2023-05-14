@@ -3053,15 +3053,6 @@ MonoBehaviour:
   mainCamera: {fileID: 963194227}
   paintingsCamera: {fileID: 1593162136}
   playerObject: {fileID: 563191540}
-  Painting1:
-    serializedVersion: 2
-    m_Bits: 0
-  Painting2:
-    serializedVersion: 2
-    m_Bits: 0
-  Painting3:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &407227256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6023,15 +6014,6 @@ MonoBehaviour:
   mainCamera: {fileID: 963194227}
   paintingsCamera: {fileID: 1593162136}
   playerObject: {fileID: 563191540}
-  Painting1:
-    serializedVersion: 2
-    m_Bits: 0
-  Painting2:
-    serializedVersion: 2
-    m_Bits: 0
-  Painting3:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &680372422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9906,15 +9888,6 @@ MonoBehaviour:
   mainCamera: {fileID: 963194227}
   paintingsCamera: {fileID: 1593162136}
   playerObject: {fileID: 563191540}
-  Painting1:
-    serializedVersion: 2
-    m_Bits: 0
-  Painting2:
-    serializedVersion: 2
-    m_Bits: 0
-  Painting3:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!1 &1031093803
 GameObject:
   m_ObjectHideFlags: 0
@@ -15482,6 +15455,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5677395426993626764, guid: 11ff2f0f956cf224ab691b055c0d55a4, type: 3}
+      propertyPath: m_TagString
+      value: Painting1
+      objectReference: {fileID: 0}
     - target: {fileID: 5677395426993626765, guid: 11ff2f0f956cf224ab691b055c0d55a4, type: 3}
       propertyPath: mainCamera
       value: 
@@ -15536,7 +15513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5677395427847595230, guid: 11ff2f0f956cf224ab691b055c0d55a4, type: 3}
       propertyPath: m_Layer
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5677395427847595230, guid: 11ff2f0f956cf224ab691b055c0d55a4, type: 3}
       propertyPath: m_TagString
@@ -15560,7 +15537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5677395428870230453, guid: 11ff2f0f956cf224ab691b055c0d55a4, type: 3}
       propertyPath: m_Layer
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5677395428870230453, guid: 11ff2f0f956cf224ab691b055c0d55a4, type: 3}
       propertyPath: m_TagString
@@ -17314,15 +17291,6 @@ MonoBehaviour:
   mainCamera: {fileID: 963194227}
   paintingsCamera: {fileID: 1593162136}
   playerObject: {fileID: 563191540}
-  Painting1:
-    serializedVersion: 2
-    m_Bits: 8192
-  Painting2:
-    serializedVersion: 2
-    m_Bits: 16384
-  Painting3:
-    serializedVersion: 2
-    m_Bits: 32768
 --- !u!114 &1884702731
 MonoBehaviour:
   m_ObjectHideFlags: 0
