@@ -16,6 +16,7 @@ public class Interactor : MonoBehaviour
     public Camera mainCamera;
     public Camera paintingsCamera;
     public GameObject playerObject;
+    public GameObject DragDropScript;
 
     //Safe
     public float InteractDistance = 15f;
@@ -26,6 +27,8 @@ public class Interactor : MonoBehaviour
     {
         mainCamera.enabled = true;
         paintingsCamera.enabled = false;
+        DragDropScript.GetComponent<DragDrop>().enabled = false;
+
     }
 
     // Update is called once per frame
@@ -64,6 +67,10 @@ public class Interactor : MonoBehaviour
                     //switch to the puzzle camera
                     mainCamera.enabled = false;
                     paintingsCamera.enabled = true;
+
+                    //Enable the script and disable this one
+                    DragDropScript.GetComponent<DragDrop>().enabled = true;
+                    //this.enabled = false;
 
                     //Unlock Cursor
                     Cursor.lockState = CursorLockMode.None;

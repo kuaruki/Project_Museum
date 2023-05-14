@@ -48,7 +48,6 @@ public class Inventory : MonoBehaviour
 
 
             item.OnDrop();
-            Debug.Log("Item Dropped");
 
             Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
 

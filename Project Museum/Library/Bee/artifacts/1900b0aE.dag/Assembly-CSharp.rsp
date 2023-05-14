@@ -371,7 +371,6 @@
 "Assets/Scripts/Jigsaw/PiecesScript.cs"
 "Assets/Scripts/MoveCam.cs"
 "Assets/Scripts/Paintings/DragDrop.cs"
-"Assets/Scripts/Paintings/RightPosition.cs"
 "Assets/Scripts/PlayerCam.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/Safe/OpenSafe.cs"

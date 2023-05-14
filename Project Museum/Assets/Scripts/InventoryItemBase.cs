@@ -35,10 +35,9 @@ public class InventoryItemBase : MonoBehaviour, IInventoryItem
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 1000))
         {
-            if (hit.collider.CompareTag("PaintingsWall") || hit.collider.CompareTag("DropArea"))
+            if (hit.collider.CompareTag("PaintingsWall") || hit.collider.CompareTag("DropArea") || hit.collider.CompareTag("DropArea2") || hit.collider.CompareTag("DropArea3"))
             {
                 Vector3 vector = new Vector3(90, 0, 0);
-                Debug.Log("Raycast HIT");
                 gameObject.SetActive(true);
                 gameObject.transform.position = hit.point;
                 gameObject.transform.eulerAngles = DropRotation;

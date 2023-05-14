@@ -51,11 +51,6 @@ public class DragDrop : MonoBehaviour
 
     private void Update()
     {
-        int layerMask = 1 << 13;
-        int HITS = 0;
-        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-        RaycastHit[] hits = Physics.RaycastAll(ray, 100f, layerMask);
-
         if (Input.GetKey(KeyCode.Escape)) {
             //switch to the main camera
             mainCamera.enabled = true;
@@ -70,50 +65,95 @@ public class DragDrop : MonoBehaviour
             mainCamera.GetComponent<PlayerCam>().enabled = true;
         }
 
-        if (Input.GetMouseButton(2))
+        if (Input.GetMouseButtonUp(0))
         {
-            foreach (RaycastHit hit in hits)
-            {
-                if (hit.collider.CompareTag("Painting1"))
-                {
-                    HITS++;
-                }
-                if (hit.collider.CompareTag("DropArea"))
-                {
-                    HITS++;
-                }
-            }
-            if (HITS == 2)
-                Debug.Log("Raycast HIT both Painting1 and DropArea");
+            CheckPositions();
         }
 
         if(key == 3) {
             //Puzzle is done
+            //Go back
         }
     }
 
 
     private void CheckPositions()
     {
+        int HITS1 = 0;
+        int HITS2 = 0;
+        int HITS3 = 0;
 
-        int layerMask = 1 << 13;
-        int HITS = 0;
-        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-        RaycastHit[] hits = Physics.RaycastAll(ray, 100f, layerMask);
-        
-        foreach(RaycastHit hit in hits)
+        //
+        //CHECK FIRST PAINTING
+        //
+
+        Ray ray1 = paintingsCamera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit[] hits1 = Physics.RaycastAll(ray1, 1000f);
+        foreach (RaycastHit hit1 in hits1)
         {
-            if (hit.collider.CompareTag("Painting1"))
+            if (hit1.collider.CompareTag("Painting1"))
             {
-                HITS++;
+                HITS1++;
             }
-            if (hit.collider.CompareTag("DropArea"))
+            if (hit1.collider.CompareTag("DropArea"))
             {
-                HITS++;
+                HITS1++;
             }
         }
-        if(HITS == 2)
+        if (HITS1 == 2)
+        {
+            key++;
             Debug.Log("Raycast HIT both Painting1 and DropArea");
+
+        }
+
+        //
+        //CHECK SECOND PAINTING
+        //
+
+        Ray ray2 = paintingsCamera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit[] hits2 = Physics.RaycastAll(ray2, 1000f);
+        foreach (RaycastHit hit2 in hits2)
+        {
+            if (hit2.collider.CompareTag("Painting1"))
+            {
+                HITS2++;
+            }
+            if (hit2.collider.CompareTag("DropArea"))
+            {
+                HITS2++;
+            }
+        }
+        if (HITS2 == 2)
+        {
+            key++;
+            Debug.Log("Raycast HIT both Painting1 and DropArea");
+
+        }
+
+        //
+        //CHECK THIRD PAINTING
+        //
+
+        Ray ray3 = paintingsCamera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit[] hits3 = Physics.RaycastAll(ray3, 1000f);
+        foreach (RaycastHit hit3 in hits3)
+        {
+            if (hit3.collider.CompareTag("Painting1"))
+            {
+                HITS3++;
+            }
+            if (hit3.collider.CompareTag("DropArea"))
+            {
+                HITS3++;
+            }
+        }
+        if (HITS3 == 2)
+        {
+            key++;
+            Debug.Log("Raycast HIT both Painting1 and DropArea");
+
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
