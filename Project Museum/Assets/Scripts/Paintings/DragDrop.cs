@@ -83,98 +83,128 @@ public class DragDrop : MonoBehaviour
         int HITS2 = 0;
         int HITS3 = 0;
 
-        //
-        //CHECK FIRST PAINTING
-        //
 
-        Ray ray1 = paintingsCamera.ScreenPointToRay(Input.mousePosition);
-        RaycastHit[] hits1 = Physics.RaycastAll(ray1, 1000f);
-        foreach (RaycastHit hit1 in hits1)
+        Ray ray = paintingsCamera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit[] hits = Physics.RaycastAll(ray, 1000f);
+        foreach (RaycastHit hit in hits) 
         {
-            if (hit1.collider.CompareTag("Painting1"))
+
+            //
+            //CHECK FIRST PAINTING
+            //
+            if (hit.collider.CompareTag("Painting1"))
             {
                 HITS1++;
             }
-            if (hit1.collider.CompareTag("DropArea"))
+            if (hit.collider.CompareTag("DropArea"))
             {
                 HITS1++;
             }
-        }
+
+            //
+            //CHECK SECOND PAINTING
+            //
+            if (hit.collider.CompareTag("Painting2")) {
+                HITS2++;
+            }
+            if (hit.collider.CompareTag("DropArea2")) {
+                HITS2++;
+            }
+
+            //
+            //CHECK THIRD PAINTING
+            //
+            if (hit.collider.CompareTag("Painting3")) {
+                HITS3++;
+            }
+            if (hit.collider.CompareTag("DropArea3")) {
+                HITS3++;
+            }
+        }//End of foreach
+
         if (HITS1 == 2)
         {
             key++;
             Debug.Log("Raycast HIT both Painting1 and DropArea");
 
         }
-
-        //
-        //CHECK SECOND PAINTING
-        //
-
-        Ray ray2 = paintingsCamera.ScreenPointToRay(Input.mousePosition);
-        RaycastHit[] hits2 = Physics.RaycastAll(ray2, 1000f);
-        foreach (RaycastHit hit2 in hits2)
-        {
-            if (hit2.collider.CompareTag("Painting1"))
-            {
-                HITS2++;
-            }
-            if (hit2.collider.CompareTag("DropArea"))
-            {
-                HITS2++;
-            }
-        }
-        if (HITS2 == 2)
-        {
+        if (HITS2 == 2) {
             key++;
-            Debug.Log("Raycast HIT both Painting1 and DropArea");
+            Debug.Log("Raycast HIT both Painting2 and DropArea2");
 
         }
-
-        //
-        //CHECK THIRD PAINTING
-        //
-
-        Ray ray3 = paintingsCamera.ScreenPointToRay(Input.mousePosition);
-        RaycastHit[] hits3 = Physics.RaycastAll(ray3, 1000f);
-        foreach (RaycastHit hit3 in hits3)
-        {
-            if (hit3.collider.CompareTag("Painting1"))
-            {
-                HITS3++;
-            }
-            if (hit3.collider.CompareTag("DropArea"))
-            {
-                HITS3++;
-            }
-        }
-        if (HITS3 == 2)
-        {
+        if (HITS3 == 2) {
             key++;
-            Debug.Log("Raycast HIT both Painting1 and DropArea");
+            Debug.Log("Raycast HIT both Painting3 and DropArea3");
 
         }
+
+
+        ////
+        ////CHECK SECOND PAINTING
+        ////
+        //Ray ray2 = paintingsCamera.ScreenPointToRay(Input.mousePosition);
+        //RaycastHit[] hits2 = Physics.RaycastAll(ray2, 1000f);
+        //foreach (RaycastHit hit2 in hits2)
+        //{
+        //    if (hit2.collider.CompareTag("Painting2")) {
+        //        HITS2++;
+        //    }
+        //    if (hit2.collider.CompareTag("DropArea2")) {
+        //        HITS2++;
+        //    }
+        //}
+        //if (HITS2 == 2)
+        //{
+        //    key++;
+        //    Debug.Log("Raycast HIT both Painting1 and DropArea");
+
+        //}
+
+        ////
+        ////CHECK THIRD PAINTING
+        ////
+
+        //Ray ray3 = paintingsCamera.ScreenPointToRay(Input.mousePosition);
+        //RaycastHit[] hits3 = Physics.RaycastAll(ray3, 1000f);
+        //foreach (RaycastHit hit3 in hits3)
+        //{
+        //    if (hit3.collider.CompareTag("Painting3"))
+        //    {
+        //        HITS3++;
+        //    }
+        //    if (hit3.collider.CompareTag("DropArea3"))
+        //    {
+        //        HITS3++;
+        //    }
+        //}
+        //if (HITS3 == 2)
+        //{
+        //    key++;
+        //    Debug.Log("Raycast HIT both Painting1 and DropArea");
+
+        //}
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.transform.tag == "DropArea") {
-            Debug.Log("Collided with DropArea");
-            if(collision.gameObject.tag == "Painting1") {
-                key++;
-            }
-        }
-        if (collision.transform.tag == "DropArea2") {
-            Debug.Log("Collided with DropArea2");
-            if (collision.gameObject.tag == "Painting2") {
-                key++;
-            }
-        }
-        if (collision.transform.tag == "DropArea3") {
-            Debug.Log("Collided with DropArea3");
-            if (collision.gameObject.tag == "Painting3") {
-                key++;
-            }
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision) {
+    //    if (collision.transform.tag == "DropArea") {
+    //        Debug.Log("Collided with DropArea");
+    //        if(collision.gameObject.tag == "Painting1") {
+    //            key++;
+    //        }
+    //    }
+    //    if (collision.transform.tag == "DropArea2") {
+    //        Debug.Log("Collided with DropArea2");
+    //        if (collision.gameObject.tag == "Painting2") {
+    //            key++;
+    //        }
+    //    }
+    //    if (collision.transform.tag == "DropArea3") {
+    //        Debug.Log("Collided with DropArea3");
+    //        if (collision.gameObject.tag == "Painting3") {
+    //            key++;
+    //        }
+    //    }
+    //}
 
 }
