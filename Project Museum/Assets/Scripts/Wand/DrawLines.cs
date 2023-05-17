@@ -15,6 +15,7 @@ public class DrawLines : MonoBehaviour
     private Vector3 mousePos;
     private Vector3 pos;
     private Vector3 previousPos;
+    public GameObject Sphere;
 
     // List to store mouse positions to draw lines
     public List<Vector3> linePositions = new List<Vector3>();
@@ -25,18 +26,18 @@ public class DrawLines : MonoBehaviour
 
     private void Start()
     {
-
+        Sphere.GetComponent<Renderer>().enabled = false;
     }
     void Update()
     {
         // When user first right clicks the mouse
         if (Input.GetMouseButtonDown(0))
         {
-            
             // Clearing the list so everytime we click draws a new set of lines
             linePositions.Clear();
 
             mousePos = Input.mousePosition;
+
             // Mouse position z axis positions always is positive
             mousePos.z = 10;
 
@@ -55,9 +56,12 @@ public class DrawLines : MonoBehaviour
             mousePos = Input.mousePosition;
             // Mouse position z axis positions always is positive
             mousePos.z = 10;
-
+            
             // Converting screen space mouse positions into world space mousepositions
             pos = cam.ScreenToWorldPoint(mousePos);
+
+            //Attach the sphere to the mouse
+            Sphere.transform.position = pos;
 
             distance = Vector3.Distance(pos, previousPos);
 
@@ -74,14 +78,7 @@ public class DrawLines : MonoBehaviour
                 lineRenderer.positionCount = linePositions.Count;
                 lineRenderer.SetPositions(linePositions.ToArray());
             }
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Wand")
-        {
-            Debug.Log("Collided");
+            //Debug.Log(mousePos);
         }
     }
 }

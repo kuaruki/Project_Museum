@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class ColliderPoints : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (other.tag == "Wand")
-        {
-            Debug.Log("Collided");
-        }
+            Debug.Log("COLLIDED");
+        
     }
-    //private void OnCollisionEnter(Collision collider)
-    //{
-    //    if (collider.gameObject.tag == "Wand")
-    //        Debug.Log("COLLIDED");
-    //}
 }
