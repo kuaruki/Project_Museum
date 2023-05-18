@@ -38,6 +38,9 @@ public class Interactor : MonoBehaviour
         CenterDot.enabled = false;//enable the center dot
     }
 
+    void Awake() {
+        DontDestroyOnLoad(transform.gameObject);
+    }
     // Update is called once per frame
     void Update()
     {
