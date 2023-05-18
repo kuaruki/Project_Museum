@@ -16,7 +16,11 @@ public class Interactor : MonoBehaviour
     public Camera mainCamera;
     public Camera paintingsCamera;
     public GameObject playerObject;
-    public GameObject DragDropScript;
+    public GameObject DragDropScript1;
+    public GameObject DragDropScript2;
+    public GameObject DragDropScript3;
+    public Canvas InteractHand;
+    public Canvas CenterDot;
 
     //Safe
     public float InteractDistance = 15f;
@@ -27,8 +31,11 @@ public class Interactor : MonoBehaviour
     {
         mainCamera.enabled = true;
         paintingsCamera.enabled = false;
-        DragDropScript.GetComponent<DragDrop>().enabled = false;
-
+        DragDropScript1.GetComponent<DragDrop>().enabled = false;
+        DragDropScript2.GetComponent<DragDrop>().enabled = false;
+        DragDropScript3.GetComponent<DragDrop>().enabled = false;
+        InteractHand.enabled = false;//disable interact hand 
+        CenterDot.enabled = false;//enable the center dot
     }
 
     // Update is called once per frame
@@ -39,6 +46,8 @@ public class Interactor : MonoBehaviour
         if (Physics.Raycast(ray, out hit, InteractDistance, interactLayer))
         {
             //Here is where we can put a little hand to tell the player that he is facing an interactable object
+            InteractHand.enabled = true;//enable interact hand 
+            CenterDot.enabled = false;//disable center dot
 
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -69,7 +78,10 @@ public class Interactor : MonoBehaviour
                     paintingsCamera.enabled = true;
 
                     //Enable the script and disable this one
-                    DragDropScript.GetComponent<DragDrop>().enabled = true;
+                    DragDropScript1.GetComponent<DragDrop>().enabled = true;
+                    DragDropScript2.GetComponent<DragDrop>().enabled = true;
+                    DragDropScript3.GetComponent<DragDrop>().enabled = true;
+
                     //this.enabled = false;
 
                     //Unlock Cursor
@@ -91,6 +103,12 @@ public class Interactor : MonoBehaviour
                     SceneManager.LoadScene("Wand");
                 }
             }
+        }//might not be like this
+        else {
+            //else disable interact Hand
+            InteractHand.enabled = false;
+            //and enable center Dot
+            CenterDot.enabled = true;
         }
     }
 }
