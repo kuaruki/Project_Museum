@@ -50,9 +50,6 @@ public class Interactor : MonoBehaviour
         playerObject.transform.position = new Vector3(position_x.Value_X, position_y.Value_Y, position_z.Value_Z);
     }
 
-    void Awake() {
-        DontDestroyOnLoad(transform.gameObject);
-    }
     // Update is called once per frame
     void Update()
     {
