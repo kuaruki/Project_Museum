@@ -27,6 +27,14 @@ public class Interactor : MonoBehaviour
     public LayerMask interactLayer;
 
 
+    //Save position of player between scenes
+    [SerializeField]
+    private FloatSO position_x;
+    [SerializeField]
+    private FloatSO position_y;
+    [SerializeField]
+    private FloatSO position_z;
+
     void Start()
     {
         mainCamera.enabled = true;
@@ -36,6 +44,10 @@ public class Interactor : MonoBehaviour
         DragDropScript3.GetComponent<DragDrop>().enabled = false;
         InteractHand.enabled = false;//disable interact hand 
         CenterDot.enabled = false;//enable the center dot
+
+
+        //Start in players last pos... maybe?
+        playerObject.transform.position = new Vector3(position_x.Value_X, position_y.Value_Y, position_z.Value_Z);
     }
 
     void Awake() {
@@ -64,6 +76,11 @@ public class Interactor : MonoBehaviour
                     //Open Jigsaw Scene
                     Cursor.lockState = CursorLockMode.None;
                     Cursor.visible = true;
+
+                    //Save players pos
+                    position_x.Value_X = playerObject.transform.position.x;
+                    position_y.Value_Y = playerObject.transform.position.y;
+                    position_z.Value_Z = playerObject.transform.position.z;
                     SceneManager.LoadScene("Jigsaw2D");
                 }
                 else if (hit.collider.CompareTag("Cipher"))
@@ -103,6 +120,12 @@ public class Interactor : MonoBehaviour
                     //Open Wand Scene
                     Cursor.lockState = CursorLockMode.None;
                     Cursor.visible = true;
+
+                    //Save players pos
+                    position_x.Value_X = playerObject.transform.position.x;
+                    position_y.Value_Y = playerObject.transform.position.y;
+                    position_z.Value_Z = playerObject.transform.position.z;
+
                     SceneManager.LoadScene("Wand");
                 }
             }
