@@ -45,7 +45,6 @@ public class Interactor : MonoBehaviour
         InteractHand.enabled = false;//disable interact hand 
         CenterDot.enabled = false;//enable the center dot
 
-
         //Start in players last pos... maybe?
         playerObject.transform.position = new Vector3(position_x.Value_X, position_y.Value_Y, position_z.Value_Z);
     }
