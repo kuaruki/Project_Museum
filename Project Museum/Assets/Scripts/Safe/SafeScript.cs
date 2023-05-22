@@ -73,6 +73,8 @@ public class SafeScript : MonoBehaviour
         
     }
 
+
+    //This function is called when the button is clicked
     public void UnlockSafe()
     {
         //TO:DO
@@ -82,8 +84,8 @@ public class SafeScript : MonoBehaviour
         if (Opened == true)
         {
             //For Opening the door: https://youtu.be/2utmOhzA59E?t=381
-            Quaternion targetRotationOpen = Quaternion.Euler(0, doorOpenAngle, 0);
-            transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotationOpen, smooth * Time.deltaTime);
+            //Quaternion targetRotationOpen = Quaternion.Euler(0, doorOpenAngle, 0);
+            //transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotationOpen, smooth * Time.deltaTime);
 
             //locking the cursor and making it not visible
             Cursor.lockState = CursorLockMode.Locked;
@@ -95,8 +97,11 @@ public class SafeScript : MonoBehaviour
 
             Safe_Canvas.enabled = false;
 
-            gameObject.layer = 0;
-        }
+            //opens the safe door (doesn't work)
+            gameObject.transform.rotation = Quaternion.Euler(new Vector3(-90f, -90f, 0f));
+
+            gameObject.layer = 0; //sets the object to the layer 0 making it not interactable anymore
+        }//else send a visual cue that it's incorrect
     }
 
     public void Increase(int _number)

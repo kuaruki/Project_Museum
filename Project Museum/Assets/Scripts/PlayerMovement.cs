@@ -82,7 +82,11 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+
         Pause_Canvas.SetActive(false);
+        ////locking the cursor and making it not visible
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
 
         readyToJump = true;
         startYScale = transform.localScale.y; //saves the inicial y of the player in the startYScale variable
@@ -121,10 +125,24 @@ public class PlayerMovement : MonoBehaviour
         //Pause mechanic
         if (Input.GetKeyDown(KeyCode.Escape)) {
             if (Time.timeScale == 1) {
-                pause();
+                Time.timeScale = 0;
+
+                //Unlock Cursor
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                
+                Pause_Canvas.SetActive(true);
+                //pause();
             }
             else {
-                resume();
+                Time.timeScale = 1;
+
+                //locking the cursor and making it not visible
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+
+                Pause_Canvas.SetActive(false);
+                //resume();
             }
         }
 
@@ -298,12 +316,25 @@ public class PlayerMovement : MonoBehaviour
     //PAUSE
     public void pause() {
         Time.timeScale = 0;
+
+
+        //Debug.Log("Lock State = " + Cursor.lockState + "\nVisible = " + Cursor.visible);
+        ////Unlock Cursor
+        //Cursor.lockState = CursorLockMode.None;
+        //Cursor.visible = true;
+        //Debug.Log("---\n---\n---");
+        //Debug.Log("Lock State = " + Cursor.lockState + "\nVisible = " +  Cursor.visible);
+
         Pause_Canvas.SetActive(true);
     }
     //RESUME
     public void resume() {
         Time.timeScale = 1;
+
+        ////locking the cursor and making it not visible
+        //Cursor.lockState = CursorLockMode.None;
+        //Cursor.visible = true;
+
         Pause_Canvas.SetActive(false);
     }
-
 } 

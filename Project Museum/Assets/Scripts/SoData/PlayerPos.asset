@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308bd79dc1f472e47ace4a0adecda1fb, type: 3}
   m_Name: PlayerPos
   m_EditorClassIdentifier: 
-  _value_x: -0.84830856
-  _value_y: 1.041
-  _value_z: 9.72408
+  _value_x: -1.75
+  _value_y: 1.44
+  _value_z: 22.12

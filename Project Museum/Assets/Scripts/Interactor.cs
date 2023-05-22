@@ -69,7 +69,7 @@ public class Interactor : MonoBehaviour
                 }
                 else if (hit.collider.CompareTag("Jigsaw"))
                 {
-                    //Open Jigsaw Scene
+                    //Unlock cursor
                     Cursor.lockState = CursorLockMode.None;
                     Cursor.visible = true;
 
@@ -77,6 +77,8 @@ public class Interactor : MonoBehaviour
                     position_x.Value_X = playerObject.transform.position.x;
                     position_y.Value_Y = playerObject.transform.position.y;
                     position_z.Value_Z = playerObject.transform.position.z;
+                    
+                    //Open Jigsaw Scene
                     SceneManager.LoadScene("Jigsaw2D");
                 }
                 else if (hit.collider.CompareTag("Cipher"))

@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - DragAndDrop
     - DragDrop
     - DrawLines
+    - FloatSO
     - Gem
     - HUD
     - Interactor
@@ -21,6 +22,7 @@ ScriptsOnlyBuild:
     - PlayerMovement
     - SafeScript
     - SuperMechanic
+    - TMPro.Examples.SimpleScript
     - Teleport
     - Vase
     Unity.Rider.Editor.dll:
@@ -201,6 +203,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 68
@@ -213,6 +217,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 2018}
     - Class: 114
       Script: {instanceID: 2358}
     - Class: 114
@@ -253,8 +259,6 @@ ScriptsOnlyBuild:
     - Class: 49
       Script: {instanceID: 0}
     - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -329,9 +333,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7068}
     - Class: 114
-      Script: {instanceID: 7210}
+      Script: {instanceID: 7208}
     - Class: 114
-      Script: {instanceID: 7434}
+      Script: {instanceID: 7432}
+    - Class: 114
+      Script: {instanceID: 7534}
     - Class: 114
       Script: {instanceID: 7560}
     - Class: 114
@@ -339,6 +345,8 @@ ScriptsOnlyBuild:
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 134
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -1085,7 +1093,7 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: d711f6cd36962c55abe23fc44fe903c0
+      Hash: 8fae247d5076adfcadb69c0ff8abd439
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Interactor
@@ -1127,13 +1135,13 @@ ScriptsOnlyBuild:
     className: OpenSafe
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: f75c437df42213525a2f82801dec73d8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ItemDragHandler
   - hash:
       serializedVersion: 2
-      Hash: e87edb2980b25c03f2517d5e8ad097a1
+      Hash: d36686fb2d4e7c21c7ad23d86e1f14d6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DragDrop
@@ -1187,7 +1195,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 81b011df12a90c1b4ffd83b92a5399d9
+      Hash: 8453eaa803b711741461a0bb05603041
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DrawLines
@@ -1251,12 +1259,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: VertexJitter
-  - hash:
-      serializedVersion: 2
-      Hash: 94c48e97c76944343a6597fcbd11c0bf
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PaintingsScript
   - hash:
       serializedVersion: 2
       Hash: d79840e7a33549e2891f65d61bad55a8
@@ -1347,6 +1349,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: d187e11fb14b6b8e8faae7d4b27f5a1e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FloatSO
   - hash:
       serializedVersion: 2
       Hash: ff3456dbe4fdde7b874cbfa68ea6c630
