@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CipherScript : MonoBehaviour
 {
-    public Canvas Cipher_Canvas;
+    public GameObject Cipher_Canvas;
     public GameObject playerObject;
     public GameObject CameraObject;
     public bool CipherCorrect;
@@ -20,14 +20,14 @@ public class CipherScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cipher_Canvas.enabled = false;
+        Cipher_Canvas.SetActive(false);
         CipherCorrect = false;
         
     }
 
     public void ShowCipherCanvas()
     {
-        Cipher_Canvas.enabled = true;
+        Cipher_Canvas.SetActive(true);
 
         // disable both player movement and camera movement
         playerObject.GetComponent<PlayerMovement>().enabled = false;
@@ -41,17 +41,18 @@ public class CipherScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape) || Input.GetMouseButton(1))
-        {
-            //locking the cursor and making it not visible
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+        if (Cipher_Canvas.activeInHierarchy) {
+            if (Input.GetKeyUp(KeyCode.Escape) || Input.GetMouseButton(1)) {
+                //locking the cursor and making it not visible
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
 
-            // enable both player movement and camera movement
-            playerObject.GetComponent<PlayerMovement>().enabled = true;
-            CameraObject.GetComponent<PlayerCam>().enabled = true;
+                // enable both player movement and camera movement
+                playerObject.GetComponent<PlayerMovement>().enabled = true;
+                CameraObject.GetComponent<PlayerCam>().enabled = true;
 
-            Cipher_Canvas.enabled = false;
+                Cipher_Canvas.SetActive(false);
+            }
         }
 
 
@@ -91,7 +92,7 @@ public class CipherScript : MonoBehaviour
             playerObject.GetComponent<PlayerMovement>().enabled = true;
             CameraObject.GetComponent<PlayerCam>().enabled = true;
 
-            Cipher_Canvas.enabled = false;
+            Cipher_Canvas.SetActive(false);
 
             gameObject.layer = 0;
         }

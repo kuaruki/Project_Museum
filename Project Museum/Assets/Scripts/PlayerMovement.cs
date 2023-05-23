@@ -124,28 +124,8 @@ public class PlayerMovement : MonoBehaviour
 
         //Pause mechanic
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            if (Time.timeScale == 1) {
-                Time.timeScale = 0;
-
-                //Unlock Cursor
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-                
-                Pause_Canvas.SetActive(true);
-                //pause();
-            }
-            else {
-                Time.timeScale = 1;
-
-                //locking the cursor and making it not visible
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-
-                Pause_Canvas.SetActive(false);
-                //resume();
-            }
+            pause();
         }
-
     }
 
     private void FixedUpdate()
@@ -315,26 +295,24 @@ public class PlayerMovement : MonoBehaviour
 
     //PAUSE
     public void pause() {
-        Time.timeScale = 0;
+        if (Pause_Canvas.activeInHierarchy) { //Canvas is active
+            
+            Pause_Canvas.SetActive(false);
 
+            //locking the cursor and making it not visible
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Time.timeScale = 1;
+        }
+        else { //Pause menu ctivated
+            Time.timeScale = 0;
 
-        //Debug.Log("Lock State = " + Cursor.lockState + "\nVisible = " + Cursor.visible);
-        ////Unlock Cursor
-        //Cursor.lockState = CursorLockMode.None;
-        //Cursor.visible = true;
-        //Debug.Log("---\n---\n---");
-        //Debug.Log("Lock State = " + Cursor.lockState + "\nVisible = " +  Cursor.visible);
+            Pause_Canvas.SetActive(true);
 
-        Pause_Canvas.SetActive(true);
-    }
-    //RESUME
-    public void resume() {
-        Time.timeScale = 1;
+            //Unlock Cursor
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
 
-        ////locking the cursor and making it not visible
-        //Cursor.lockState = CursorLockMode.None;
-        //Cursor.visible = true;
-
-        Pause_Canvas.SetActive(false);
+        }
     }
 } 

@@ -167,9 +167,9 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 7700}
+      Script: {instanceID: 7764}
     - Class: 114
-      Script: {instanceID: 7816}
+      Script: {instanceID: 7880}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -218,11 +218,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2018}
+      Script: {instanceID: 2084}
     - Class: 114
-      Script: {instanceID: 2358}
+      Script: {instanceID: 2424}
     - Class: 114
-      Script: {instanceID: 6754}
+      Script: {instanceID: 6818}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -273,75 +273,75 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1694}
     - Class: 114
-      Script: {instanceID: 2362}
+      Script: {instanceID: 2428}
     - Class: 114
-      Script: {instanceID: 2496}
+      Script: {instanceID: 2562}
     - Class: 114
-      Script: {instanceID: 2806}
+      Script: {instanceID: 2872}
     - Class: 114
-      Script: {instanceID: 3034}
+      Script: {instanceID: 3100}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 3402}
     - Class: 114
-      Script: {instanceID: 4298}
+      Script: {instanceID: 4364}
     - Class: 114
-      Script: {instanceID: 4412}
+      Script: {instanceID: 4478}
     - Class: 114
-      Script: {instanceID: 4482}
+      Script: {instanceID: 4548}
     - Class: 114
-      Script: {instanceID: 4530}
+      Script: {instanceID: 4596}
     - Class: 114
-      Script: {instanceID: 4636}
+      Script: {instanceID: 4702}
     - Class: 114
-      Script: {instanceID: 4672}
+      Script: {instanceID: 4738}
     - Class: 114
-      Script: {instanceID: 4694}
+      Script: {instanceID: 4760}
     - Class: 114
-      Script: {instanceID: 4952}
+      Script: {instanceID: 5018}
     - Class: 114
-      Script: {instanceID: 5400}
+      Script: {instanceID: 5466}
     - Class: 114
-      Script: {instanceID: 5478}
+      Script: {instanceID: 5544}
     - Class: 114
-      Script: {instanceID: 5524}
+      Script: {instanceID: 5590}
     - Class: 114
-      Script: {instanceID: 5654}
+      Script: {instanceID: 5720}
     - Class: 114
-      Script: {instanceID: 5760}
+      Script: {instanceID: 5826}
     - Class: 114
-      Script: {instanceID: 5902}
+      Script: {instanceID: 5968}
     - Class: 114
-      Script: {instanceID: 5944}
+      Script: {instanceID: 6010}
     - Class: 114
-      Script: {instanceID: 6044}
+      Script: {instanceID: 6110}
     - Class: 114
-      Script: {instanceID: 6098}
-    - Class: 114
-      Script: {instanceID: 6190}
+      Script: {instanceID: 6164}
     - Class: 114
       Script: {instanceID: 6256}
     - Class: 114
-      Script: {instanceID: 6384}
+      Script: {instanceID: 6322}
     - Class: 114
-      Script: {instanceID: 6416}
+      Script: {instanceID: 6448}
     - Class: 114
-      Script: {instanceID: 6612}
+      Script: {instanceID: 6480}
     - Class: 114
-      Script: {instanceID: 6636}
+      Script: {instanceID: 6676}
     - Class: 114
-      Script: {instanceID: 7068}
+      Script: {instanceID: 6700}
     - Class: 114
-      Script: {instanceID: 7208}
+      Script: {instanceID: 7132}
     - Class: 114
-      Script: {instanceID: 7432}
+      Script: {instanceID: 7272}
     - Class: 114
-      Script: {instanceID: 7534}
+      Script: {instanceID: 7496}
     - Class: 114
-      Script: {instanceID: 7560}
+      Script: {instanceID: 7598}
     - Class: 114
-      Script: {instanceID: 8266}
+      Script: {instanceID: 7624}
+    - Class: 114
+      Script: {instanceID: 8330}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -853,7 +853,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: e3e131954c21850a8be93f2569c7a9a2
+      Hash: c9f4f08832e5aab8abe0889be8dc1f74
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CipherScript
@@ -1129,19 +1129,13 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: OpenSafe
-  - hash:
-      serializedVersion: 2
       Hash: f75c437df42213525a2f82801dec73d8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ItemDragHandler
   - hash:
       serializedVersion: 2
-      Hash: d36686fb2d4e7c21c7ad23d86e1f14d6
+      Hash: caae7d1b393aa09a224cc5e23e5472bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DragDrop
@@ -1243,7 +1237,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 54d2d10d91e7961fca3040d1b7fe1ac6
+      Hash: 8642cb228d6d756b6e892ea72a0f8056
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SafeScript
@@ -1510,4 +1504,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Museum.unity
   - Assets/Scenes/1_Sala/Jigsaw2D.unity
   - Assets/Scenes/2_Sala/Wand.unity
-  playerPath: D:/EnsinoSup/Mestrado/2_Semestre/Museum GAME/Project Museum.exe
+  playerPath: C:/Mestrado/1_Ano/2_Semestre/GAMe/Project Museum.exe

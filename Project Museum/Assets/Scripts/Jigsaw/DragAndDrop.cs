@@ -15,8 +15,8 @@ public class DragAndDrop : MonoBehaviour
     void Update(){
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
             SceneManager.LoadScene("Museum");
         }
 
