@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class DrawLines : MonoBehaviour
-{
+public class DrawLines : MonoBehaviour {
     // Camera component, reads world space equivalent mouse positions
     public Camera cam = null;
 
@@ -15,7 +15,18 @@ public class DrawLines : MonoBehaviour
     private Vector3 mousePos;
     private Vector3 pos;
     private Vector3 previousPos;
-    public GameObject Sphere;
+    [SerializeField]
+    private GameObject Sphere;
+
+    public string CollidedTag;
+    public bool colliding;
+    private bool IsRight;
+    //Here put an array with all the collided Tags
+    [SerializeField]
+    private List<string> CollidedTagsList = new List<string>();
+    //The right sequence
+    [SerializeField]
+    private List<string> RightSequence = new List<string> { "Point 1", "Point 5", "Point 6", "Point 7", "Point 8", "Point 2", "Point 3", "Point 4" };
 
     // List to store mouse positions to draw lines
     public List<Vector3> linePositions = new List<Vector3>();
@@ -23,16 +34,14 @@ public class DrawLines : MonoBehaviour
     public float minimumDistance = 0.05f;
     public float distance = 0f;
 
-
-    private void Start()
-    {
+    private void Start() {
         Sphere.GetComponent<Renderer>().enabled = false;
+        colliding = false;
+        IsRight = false;
     }
-    void Update()
-    {
+    void Update() {
         // When user first right clicks the mouse
-        if (Input.GetMouseButtonDown(0))
-        {
+        if (Input.GetMouseButtonDown(0)) {
             // Clearing the list so everytime we click draws a new set of lines
             linePositions.Clear();
 
@@ -51,12 +60,11 @@ public class DrawLines : MonoBehaviour
             linePositions.Add(pos);
         }
         // Condition to check if user holding the mouse
-        else if (Input.GetMouseButton(0))
-        {
+        else if (Input.GetMouseButton(0)) {
             mousePos = Input.mousePosition;
             // Mouse position z axis positions always is positive
             mousePos.z = 10;
-            
+
             // Converting screen space mouse positions into world space mousepositions
             pos = cam.ScreenToWorldPoint(mousePos);
 
@@ -66,8 +74,7 @@ public class DrawLines : MonoBehaviour
             distance = Vector3.Distance(pos, previousPos);
 
             // Check to avoid adding duplicate vector values into the list
-            if (distance >= minimumDistance)
-            {
+            if (distance >= minimumDistance) {
                 // Saving previous mouse position
                 previousPos = pos;
 
@@ -78,7 +85,44 @@ public class DrawLines : MonoBehaviour
                 lineRenderer.positionCount = linePositions.Count;
                 lineRenderer.SetPositions(linePositions.ToArray());
             }
-            //Debug.Log(mousePos);
+        }
+
+        //If there's collision add to the CollisionTagsList (list of collided tags). Also removes repeated strings from list.
+        if (colliding == true) {
+            if (!CollidedTagsList.Contains(CollidedTag)) { //if the tag is already in the list it won't be added
+                CollidedTagsList.Add(CollidedTag);
+            }
+        }
+        //
+        //
+        //This here checks if the sequence is right
+        //------|
+        //------V
+        if (IsRight == false) {
+            if(CompareStringLists(RightSequence, CollidedTagsList) == true) {
+                IsRight = true;
+                Debug.Log("LESSGUUU BOIII YOU GOT IT");
+
+                //Success canvas?
+                //With button that sends the user to the Museum
+                SceneManager.LoadScene("Museum");
+            }
         }
     }
+
+    //Compares the right sequence with the players sequence
+    public static bool CompareStringLists(List<string> list1, List<string> list2) {
+        if (list1.Count != list2.Count) {
+            return false;
+        }
+
+        for (int i = 0; i < list1.Count; i++) {
+            if (list1[i] != list2[i]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
 }
