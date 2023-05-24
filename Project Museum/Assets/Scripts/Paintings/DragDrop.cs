@@ -9,7 +9,7 @@ public class DragDrop : MonoBehaviour
     public string destinationTag2 = "DropArea2";
     public string destinationTag3 = "DropArea3";
 
-    public GameObject mainCamera;
+    public Camera mainCamera;
     public Camera paintingsCamera;
     public GameObject playerObject;
 
@@ -51,22 +51,6 @@ public class DragDrop : MonoBehaviour
 
     private void Update()
     {
-        if(!mainCamera.activeInHierarchy) {
-            if (Input.GetKey(KeyCode.Escape)) {
-                //switch to the main camera
-                mainCamera.SetActive(true);
-                paintingsCamera.enabled = false;
-
-                //locking the cursor and making it not visible
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-
-                // enable both player movement and camera movement
-                playerObject.GetComponent<PlayerMovement>().enabled = true;
-                mainCamera.GetComponent<PlayerCam>().enabled = true;
-            }
-
-        }
 
         if (Input.GetMouseButtonUp(0))
         {

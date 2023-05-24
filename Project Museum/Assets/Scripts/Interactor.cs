@@ -15,12 +15,18 @@ public class Interactor : MonoBehaviour
 
     public Camera mainCamera;
     public Camera paintingsCamera;
+    public Camera JigsawCamera;
     public GameObject playerObject;
     public GameObject DragDropScript1;
     public GameObject DragDropScript2;
     public GameObject DragDropScript3;
+    [SerializeField]
+    private GameObject InventoryCanvas;
     public Canvas InteractHand;
     public Canvas CenterDot;
+
+    [SerializeField]
+    private GameObject JigsawCanvas;
 
     //Safe
     public float InteractDistance = 15f;
@@ -39,6 +45,8 @@ public class Interactor : MonoBehaviour
     {
         mainCamera.enabled = true;
         paintingsCamera.enabled = false;
+        JigsawCamera.enabled = false;
+        paintingsCamera.GetComponent<Escape>().enabled = false; 
         DragDropScript1.GetComponent<DragDrop>().enabled = false;
         DragDropScript2.GetComponent<DragDrop>().enabled = false;
         DragDropScript3.GetComponent<DragDrop>().enabled = false;
@@ -69,17 +77,20 @@ public class Interactor : MonoBehaviour
                 }
                 else if (hit.collider.CompareTag("Jigsaw"))
                 {
-                    //Unlock cursor
+                    //switch to the puzzle camera
+                    mainCamera.enabled = false;
+                    JigsawCamera.enabled = true;
+                    JigsawCanvas.SetActive(true);
+                    //Set Inventory Canvas off
+                    InventoryCanvas.SetActive(false);
+
+                    //Unlock Cursor
                     Cursor.lockState = CursorLockMode.None;
                     Cursor.visible = true;
 
-                    //Save players pos
-                    position_x.Value_X = playerObject.transform.position.x;
-                    position_y.Value_Y = playerObject.transform.position.y;
-                    position_z.Value_Z = playerObject.transform.position.z;
-                    
-                    //Open Jigsaw Scene
-                    SceneManager.LoadScene("Jigsaw2D");
+                    // disable both player movement and camera movement
+                    playerObject.GetComponent<PlayerMovement>().enabled = false;
+                    mainCamera.GetComponent<PlayerCam>().enabled = false;
                 }
                 else if (hit.collider.CompareTag("Cipher"))
                 {
@@ -109,6 +120,8 @@ public class Interactor : MonoBehaviour
                     // disable both player movement and camera movement
                     playerObject.GetComponent<PlayerMovement>().enabled = false;
                     mainCamera.GetComponent<PlayerCam>().enabled = false;
+
+                    paintingsCamera.GetComponent<Escape>().enabled = true;
                 }
                 //----------
                 // EOF Painting Puzzle

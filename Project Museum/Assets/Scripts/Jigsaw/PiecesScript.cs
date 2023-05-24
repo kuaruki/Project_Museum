@@ -7,19 +7,21 @@ public class PiecesScript : MonoBehaviour
     Vector3 RightPosition;
     public bool inRightPosition = false;
     public bool selected;
-    public int PiecesInPlace = 0;
+
+    [SerializeField]
+    private GameObject MainCamera;
 
     void Start()
     {
         RightPosition = transform.position;
         Debug.Log("Right Position" + RightPosition);
-        transform.position = new Vector3 (Random.Range(105f, 113f), Random.Range(-57f,-50.44f), RightPosition.z);
+        transform.position = new Vector3 (Random.Range(104f, 110f), Random.Range(-56.5f, -50f), RightPosition.z);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(transform.position, RightPosition) < 1f) //"Distance" returns the distance between to positions
+        if(Vector3.Distance(transform.position, RightPosition) < 1f) //"Distance" returns the distance between to positions (snaps the piece to place)
         {
             if (!selected)
             {
@@ -29,7 +31,8 @@ public class PiecesScript : MonoBehaviour
                     GetComponent<SortingGroup>().sortingOrder = 0;
 
                     //Increment PiecesInPlace
-                    PiecesInPlace++;
+                    MainCamera.GetComponent<DragAndDrop>().PiecesInPlace++;
+                    Debug.Log(MainCamera.GetComponent<DragAndDrop>().PiecesInPlace);
 
                     //Pieces have the inRightPosition each
                     //Maybe there's a way to count all that

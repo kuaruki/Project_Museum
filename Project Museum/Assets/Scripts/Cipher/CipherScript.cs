@@ -42,7 +42,7 @@ public class CipherScript : MonoBehaviour
     void Update()
     {
         if (Cipher_Canvas.activeInHierarchy) {
-            if (Input.GetKeyUp(KeyCode.Escape) || Input.GetMouseButton(1)) {
+            if (Input.GetKeyUp(KeyCode.Escape)) {
                 //locking the cursor and making it not visible
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
