@@ -7,6 +7,8 @@ public class PiecesScript : MonoBehaviour
     Vector3 RightPosition;
     public bool inRightPosition = false;
     public bool selected;
+    public int PiecesInPlace = 0;
+
     void Start()
     {
         RightPosition = transform.position;
@@ -17,7 +19,7 @@ public class PiecesScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(transform.position, RightPosition) < 1f) //"Distance" returns the distance between to positions (useful for the wand puzzle)
+        if(Vector3.Distance(transform.position, RightPosition) < 1f) //"Distance" returns the distance between to positions
         {
             if (!selected)
             {
@@ -25,6 +27,14 @@ public class PiecesScript : MonoBehaviour
                     transform.position = RightPosition;
                     inRightPosition = true;
                     GetComponent<SortingGroup>().sortingOrder = 0;
+
+                    //Increment PiecesInPlace
+                    PiecesInPlace++;
+
+                    //Pieces have the inRightPosition each
+                    //Maybe there's a way to count all that
+                    //or
+                    //Maybe put them all inside a gameobject 
                 }
             }
         } 

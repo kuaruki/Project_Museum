@@ -98,7 +98,7 @@ public class SafeScript : MonoBehaviour
 
 
             //opens the safe door (doesn't work)
-            gameObject.transform.rotation = Quaternion.Euler(new Vector3(-90f, -90f, 0f));
+            gameObject.transform.rotation = Quaternion.Euler(new Vector3(-90f, -180f, 0f));
             gameObject.transform.position = OpenedPosition.transform.position;
 
 
