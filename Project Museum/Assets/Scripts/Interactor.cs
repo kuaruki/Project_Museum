@@ -16,6 +16,7 @@ public class Interactor : MonoBehaviour
     public Camera mainCamera;
     public Camera paintingsCamera;
     public Camera JigsawCamera;
+    public Camera WandCamera;
     public GameObject playerObject;
     public GameObject DragDropScript1;
     public GameObject DragDropScript2;
@@ -27,6 +28,8 @@ public class Interactor : MonoBehaviour
 
     [SerializeField]
     private GameObject JigsawCanvas;
+    [SerializeField]
+    private GameObject WandCanvas;
 
     //Safe
     public float InteractDistance = 15f;
@@ -128,16 +131,23 @@ public class Interactor : MonoBehaviour
                 //----------
                 else if (hit.collider.CompareTag("WandPuzzle"))
                 {
-                    //Open Wand Scene
+                    //switch to the puzzle camera
+                    mainCamera.enabled = false;
+                    WandCamera.enabled = true;
+
+                    //Activate the Canvas
+                    WandCanvas.SetActive(true);
+
+                    //Set Inventory Canvas off
+                    InventoryCanvas.SetActive(false);
+
+                    //Unlock Cursor
                     Cursor.lockState = CursorLockMode.None;
                     Cursor.visible = true;
 
-                    //Save players pos
-                    position_x.Value_X = playerObject.transform.position.x;
-                    position_y.Value_Y = playerObject.transform.position.y;
-                    position_z.Value_Z = playerObject.transform.position.z;
-
-                    SceneManager.LoadScene("Wand");
+                    // disable both player movement and camera movement
+                    playerObject.GetComponent<PlayerMovement>().enabled = false;
+                    mainCamera.GetComponent<PlayerCam>().enabled = false;
                 }
             }
         }//might not be like this

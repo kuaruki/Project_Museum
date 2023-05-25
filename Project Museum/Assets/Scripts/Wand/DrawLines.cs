@@ -18,9 +18,22 @@ public class DrawLines : MonoBehaviour {
     [SerializeField]
     private GameObject Sphere;
 
+    [SerializeField]
+    private GameObject playerObject;
+    [SerializeField]
+    private Camera mainCamera;
+    [SerializeField]
+    private GameObject WandCanvas;
+    [SerializeField]
+    private Camera WandCamera;
+    [SerializeField]
+    private GameObject Door;
+    [SerializeField]
+    private GameObject InventoryCanvas;
+
     public string CollidedTag;
     public bool colliding;
-    private bool IsRight;
+    public bool IsRight;
     //Here put an array with all the collided Tags
     [SerializeField]
     private List<string> CollidedTagsList = new List<string>();
@@ -38,74 +51,96 @@ public class DrawLines : MonoBehaviour {
         Sphere.GetComponent<Renderer>().enabled = false;
         colliding = false;
         IsRight = false;
+        WandCanvas.SetActive(false);
     }
     void Update() {
-        // When user first right clicks the mouse
-        if (Input.GetMouseButtonDown(0)) {
-            // Clearing the list so everytime we click draws a new set of lines
-            linePositions.Clear();
+        if (WandCanvas.activeInHierarchy) {
 
-            mousePos = Input.mousePosition;
+            //Exit puzzle
+            if (Input.GetKeyUp(KeyCode.Escape)) {
+                //locking the cursor and making it not visible
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
 
-            // Mouse position z axis positions always is positive
-            mousePos.z = 10;
+                //switch to the puzzle camera
+                mainCamera.enabled = true;
+                WandCamera.enabled = false;
+                // enable both player movement and camera movement
+                playerObject.GetComponent<PlayerMovement>().enabled = true;
+                mainCamera.GetComponent<PlayerCam>().enabled = true;
 
-            // Converting screen space mouse positions into world space mousepositions
-            pos = cam.ScreenToWorldPoint(mousePos);
+                WandCanvas.SetActive(false);
+                WandCanvas.SetActive(true);
+            }
 
-            // Saving previous mouse position
-            previousPos = pos;
+            // When user first right clicks the mouse
+            if (Input.GetMouseButtonDown(0)) {
+                // Clearing the list so everytime we click draws a new set of lines
+                linePositions.Clear();
 
-            // Storing mouse positions into the list array
-            linePositions.Add(pos);
-        }
-        // Condition to check if user holding the mouse
-        else if (Input.GetMouseButton(0)) {
-            mousePos = Input.mousePosition;
-            // Mouse position z axis positions always is positive
-            mousePos.z = 10;
 
-            // Converting screen space mouse positions into world space mousepositions
-            pos = cam.ScreenToWorldPoint(mousePos);
+                mousePos = Input.mousePosition;
 
-            //Attach the sphere to the mouse
-            Sphere.transform.position = pos;
+                // Mouse position z axis positions always is positive
+                mousePos.z = 10;
 
-            distance = Vector3.Distance(pos, previousPos);
+                // Converting screen space mouse positions into world space mousepositions
+                pos = cam.ScreenToWorldPoint(mousePos);
 
-            // Check to avoid adding duplicate vector values into the list
-            if (distance >= minimumDistance) {
                 // Saving previous mouse position
                 previousPos = pos;
 
                 // Storing mouse positions into the list array
                 linePositions.Add(pos);
 
-                // Adding mouse positions to line renderer component to draw lines on these points
-                lineRenderer.positionCount = linePositions.Count;
-                lineRenderer.SetPositions(linePositions.ToArray());
+                // Clearing the list so everytime we click draws a new set of Collided tags
+                CollidedTagsList.Clear();
             }
-        }
+            // Condition to check if user holding the mouse
+            else if (Input.GetMouseButton(0)) {
+                mousePos = Input.mousePosition;
+                // Mouse position z axis positions always is positive
+                mousePos.z = 10;
 
-        //If there's collision add to the CollisionTagsList (list of collided tags). Also removes repeated strings from list.
-        if (colliding == true) {
-            if (!CollidedTagsList.Contains(CollidedTag)) { //if the tag is already in the list it won't be added
-                CollidedTagsList.Add(CollidedTag);
+                // Converting screen space mouse positions into world space mousepositions
+                pos = cam.ScreenToWorldPoint(mousePos);
+
+                //Attach the sphere to the mouse
+                Sphere.transform.position = pos;
+
+                distance = Vector3.Distance(pos, previousPos);
+
+                // Check to avoid adding duplicate vector values into the list
+                if (distance >= minimumDistance) {
+                    // Saving previous mouse position
+                    previousPos = pos;
+
+                    // Storing mouse positions into the list array
+                    linePositions.Add(pos);
+
+                    // Adding mouse positions to line renderer component to draw lines on these points
+                    lineRenderer.positionCount = linePositions.Count;
+                    lineRenderer.SetPositions(linePositions.ToArray());
+                }
             }
-        }
-        //
-        //
-        //This here checks if the sequence is right
-        //------|
-        //------V
-        if (IsRight == false) {
-            if(CompareStringLists(RightSequence, CollidedTagsList) == true) {
-                IsRight = true;
-                Debug.Log("LESSGUUU BOIII YOU GOT IT");
 
-                //Success canvas?
-                //With button that sends the user to the Museum
-                SceneManager.LoadScene("Museum");
+            //If there's collision add to the CollisionTagsList (list of collided tags). Also removes repeated strings from list.
+            if (colliding == true) {
+                if (!CollidedTagsList.Contains(CollidedTag)) { //if the tag is already in the list it won't be added
+                    CollidedTagsList.Add(CollidedTag);
+                }
+            }
+            //
+            //
+            //This here checks if the sequence is right
+            //------|
+            //------V
+            if (IsRight == false) {
+                if (CompareStringLists(RightSequence, CollidedTagsList) == true) {
+                    IsRight = true;
+                    Debug.Log("LESSGUUU BOIII YOU GOT IT");
+                    //Solved();
+                }
             }
         }
     }
@@ -125,4 +160,37 @@ public class DrawLines : MonoBehaviour {
         return true;
     }
 
+    public void Solved() 
+    {
+        if (IsRight) {
+            Debug.Log("Wand SOLVED");
+
+            //switch to the puzzle camera
+            mainCamera.enabled = true;
+            WandCamera.enabled = false;
+
+            //locking the cursor and making it not visible
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
+
+            // enable both player movement and camera movement
+            playerObject.GetComponent<PlayerMovement>().enabled = true;
+            mainCamera.GetComponent<PlayerCam>().enabled = true;
+
+            //Set Inventory Canvas on
+            InventoryCanvas.SetActive(true);
+
+            //Make the jigsaw board not interactible after puzzle completion
+            //JigsawBoard.layer = 0;
+
+            Door.GetComponent<MeshRenderer>().enabled = false;
+            Door.GetComponent<Collider>().enabled = false;
+
+            WandCanvas.SetActive(false);
+        }
+        else {//Not Solved
+            //Feedback to the player
+        }
+    }
 }

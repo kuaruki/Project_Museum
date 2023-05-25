@@ -14,7 +14,6 @@ public class Escape : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         if (!playerObject.GetComponent<PlayerMovement>().enabled) {
             if (Input.GetKey(KeyCode.Escape)) {
                 Debug.Log("ESCAPE");

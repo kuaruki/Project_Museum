@@ -75,11 +75,26 @@ public class CipherScript : MonoBehaviour
     public void ReadStringInput(string s)
     {
         input = s;
-        Debug.Log(input);
+        //Debug.Log(input);
+        if (Input.GetKeyDown(KeyCode.Return)) {
+            Debug.Log(s + "Through Enter Key");
+            //locking the cursor and making it not visible
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
+            // enable both player movement and camera movement
+            playerObject.GetComponent<PlayerMovement>().enabled = true;
+            CameraObject.GetComponent<PlayerCam>().enabled = true;
+
+            Cipher_Canvas.SetActive(false);
+
+            gameObject.layer = 0;
+        }
     }
 
     public void UnlockCipher()
     {
+        Debug.Log(input + "Through Button");
         //If the cipher is cracked
         if (CipherCorrect == true)
         {
