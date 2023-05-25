@@ -11,12 +11,14 @@ public class Interactor : MonoBehaviour
     //private int paintOrder = 0;
     //if the player puts the correct painting in the correct place paintOrder++
     //if 3 paintings are down and paintOrder = 3
-    //  puzzle done
+    //puzzle done
 
     public Camera mainCamera;
     public Camera paintingsCamera;
     public Camera JigsawCamera;
     public Camera WandCamera;
+    public Camera LivrosCamera;
+
     public GameObject playerObject;
     public GameObject DragDropScript1;
     public GameObject DragDropScript2;
@@ -30,6 +32,12 @@ public class Interactor : MonoBehaviour
     private GameObject JigsawCanvas;
     [SerializeField]
     private GameObject WandCanvas;
+
+    public GameObject Note1;
+    public GameObject Note1Canvas;
+
+    public GameObject LivrosDoor;
+    public GameObject OpenedLivrosPosition;
 
     //Safe
     public float InteractDistance = 15f;
@@ -49,12 +57,14 @@ public class Interactor : MonoBehaviour
         mainCamera.enabled = true;
         paintingsCamera.enabled = false;
         JigsawCamera.enabled = false;
+        LivrosCamera.enabled = false;
         paintingsCamera.GetComponent<Escape>().enabled = false; 
         DragDropScript1.GetComponent<DragDrop>().enabled = false;
         DragDropScript2.GetComponent<DragDrop>().enabled = false;
         DragDropScript3.GetComponent<DragDrop>().enabled = false;
         InteractHand.enabled = false;//disable interact hand 
         CenterDot.enabled = false;//enable the center dot
+        Note1Canvas.SetActive(false);
 
         //Start in players last pos... maybe?
         playerObject.transform.position = new Vector3(position_x.Value_X, position_y.Value_Y, position_z.Value_Z);
@@ -78,6 +88,9 @@ public class Interactor : MonoBehaviour
                     //Show the Safe UI
                     hit.collider.GetComponent<SafeScript>().ShowSafeCanvas();
                 }
+                //----------
+                //Jigsaw Puzzle
+                //----------
                 else if (hit.collider.CompareTag("Jigsaw"))
                 {
                     //switch to the puzzle camera
@@ -140,6 +153,28 @@ public class Interactor : MonoBehaviour
 
                     //Set Inventory Canvas off
                     InventoryCanvas.SetActive(false);
+
+                    //Unlock Cursor
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+
+                    // disable both player movement and camera movement
+                    playerObject.GetComponent<PlayerMovement>().enabled = false;
+                    mainCamera.GetComponent<PlayerCam>().enabled = false;
+                }
+                //----------
+                //Livros Door
+                //----------
+                else if (hit.collider.CompareTag("LivrosDoor")) {
+                    LivrosDoor.transform.position = OpenedLivrosPosition.transform.position;
+                }
+
+
+                //----------
+                //First Note
+                //----------
+                else if(hit.collider.CompareTag("Note1")){
+                    Note1Canvas.SetActive(true);
 
                     //Unlock Cursor
                     Cursor.lockState = CursorLockMode.None;
