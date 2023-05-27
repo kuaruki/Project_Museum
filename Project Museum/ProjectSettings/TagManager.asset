@@ -35,6 +35,14 @@ TagManager:
   - Point 8
   - Note1
   - LivrosDoor
+  - GreenPotion
+  - PurplePotion
+  - WhitePotion
+  - RedPotion
+  - GreenPosition
+  - RedPosition
+  - WhitePosition
+  - PurplePosition
   layers:
   - Default
   - TransparentFX
@@ -50,8 +58,8 @@ TagManager:
   - Interactable
   - PaintWall
   - DropArea
-  - 
-  - 
+  - Potions
+  - Potions2
   - 
   - 
   - 

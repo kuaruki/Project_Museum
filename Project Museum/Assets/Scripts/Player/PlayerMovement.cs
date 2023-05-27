@@ -133,30 +133,6 @@ public class PlayerMovement : MonoBehaviour
         movePlayer();
     }
 
-    // event handler for item removed
-    private void Inventory_ItemRemoved(object sender, InventoryEventArgs e)
-    {
-        IInventoryItem item = e.Item;
-
-        GameObject goItem = (item as MonoBehaviour).gameObject;
-        goItem.SetActive(true);
-
-        // Detach item from players hand
-        goItem.transform.parent = null;
-    }
-
-    // event handler for item used
-    private void Inventory_ItemUsed(object sender, InventoryEventArgs e)
-    {
-        IInventoryItem item = e.Item;
-
-        // Do something with the item... e.g. put it in the hand of the player
-        GameObject goItem = (item as MonoBehaviour).gameObject;
-        goItem.SetActive(true);
-
-        // Put item on players hand
-        goItem.transform.parent = Hand.transform;
-    }
 
 
     //---------------
@@ -290,7 +266,31 @@ public class PlayerMovement : MonoBehaviour
             mItemToPickup = null;
         }
     }
-    
+
+
+
+    // event handler for item removed
+    private void Inventory_ItemRemoved(object sender, InventoryEventArgs e) {
+        IInventoryItem item = e.Item;
+
+        GameObject goItem = (item as MonoBehaviour).gameObject;
+        goItem.SetActive(true);
+
+        // Detach item from players hand
+        goItem.transform.parent = null;
+    }
+
+    // event handler for item used
+    private void Inventory_ItemUsed(object sender, InventoryEventArgs e) {
+        IInventoryItem item = e.Item;
+
+        // Do something with the item... e.g. put it in the hand of the player
+        GameObject goItem = (item as MonoBehaviour).gameObject;
+        goItem.SetActive(true);
+
+        // Put item on players hand
+        goItem.transform.parent = Hand.transform;
+    }
 
 
     //PAUSE

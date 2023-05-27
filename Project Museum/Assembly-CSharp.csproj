@@ -56,16 +56,18 @@
     <Analyzer Include="E:\Programas\Visual Studio IDE\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Fix_mayhaps.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Interatibles script\PotionRed.cs" />
     <Compile Include="Assets\Scripts\Wand\ColliderPoints.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryItemBase.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Interatibles script\PotionWhite.cs" />
     <Compile Include="Assets\Scripts\Jigsaw\OpenDrawer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Interatibles script\PotionPurple.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
@@ -75,14 +77,14 @@
     <Compile Include="Assets\Scripts\Wand_Chest\Open_Chest.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
-    <Compile Include="Assets\Scripts\MoveCam.cs" />
+    <Compile Include="Assets\Scripts\Player\MoveCam.cs" />
     <Compile Include="Assets\Scripts\Cipher\CipherScript.cs" />
     <Compile Include="Assets\Scripts\Inventory\Gem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
@@ -99,12 +101,13 @@
     <Compile Include="Assets\Scripts\Paintings\DragDrop.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Inventory\Wand.cs" />
-    <Compile Include="Assets\Scripts\PlayerCam.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerCam.cs" />
     <Compile Include="Assets\Scripts\Wand\DrawLines.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Interatibles script\PotionGreen.cs" />
     <Compile Include="Assets\Scripts\Safe\SafeScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\Scripts\HUD.cs" />
+    <Compile Include="Assets\Scripts\Inventory\HUD.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\Inventory\Box.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
@@ -120,6 +123,15 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\InfiniteCorridor\Teleport.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\Scripts\Menus\MainMenuHandler.cs" />
+    <Compile Include="Assets\Scripts\Menus\AboutHandler.cs" />
+    <Compile Include="Assets\Scripts\Menus\PauseHandler.cs" />
+    <Compile Include="Assets\Scripts\Potions\PurplePotion.cs" />
+    <Compile Include="Assets\Scripts\Potions\RedPotion.cs" />
+    <Compile Include="Assets\Scripts\Potions\WhitePotion.cs" />
+    <Compile Include="Assets\Scripts\Potions\GreenPotion.cs" />
+    <Compile Include="Assets\Scripts\Potions\MovePotions.cs" />
+    <Compile Include="Assets\Scripts\Potions\PotionsPickup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

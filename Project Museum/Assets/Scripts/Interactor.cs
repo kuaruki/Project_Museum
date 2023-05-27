@@ -165,7 +165,8 @@ public class Interactor : MonoBehaviour
                 //----------
                 //Livros Door
                 //----------
-                else if (hit.collider.CompareTag("LivrosDoor")) {
+                else if (hit.collider.CompareTag("LivrosDoor")) 
+                {
                     LivrosDoor.transform.position = OpenedLivrosPosition.transform.position;
                 }
 
@@ -173,7 +174,8 @@ public class Interactor : MonoBehaviour
                 //----------
                 //First Note
                 //----------
-                else if(hit.collider.CompareTag("Note1")){
+                else if (hit.collider.CompareTag("Note1")) 
+                {
                     Note1Canvas.SetActive(true);
 
                     //Unlock Cursor
@@ -184,9 +186,38 @@ public class Interactor : MonoBehaviour
                     playerObject.GetComponent<PlayerMovement>().enabled = false;
                     mainCamera.GetComponent<PlayerCam>().enabled = false;
                 }
+
+                //------------------------
+                //Potions - Not Working...
+                //------------------------
+                else if (hit.collider.CompareTag("PurplePotion")) 
+                {
+                    //Here is where we can put a little hand to tell the player that he is facing an interactable object
+                    InteractHand.enabled = true;//enable interact hand 
+                    CenterDot.enabled = false;//disable center dot
+                }
+                else if (hit.collider.CompareTag("WhitePotion")) 
+                {
+                    //Here is where we can put a little hand to tell the player that he is facing an interactable object
+                    InteractHand.enabled = true;//enable interact hand 
+                    CenterDot.enabled = false;//disable center dot
+                }
+                else if (hit.collider.CompareTag("RedPotion")) 
+                {
+                    //Here is where we can put a little hand to tell the player that he is facing an interactable object
+                    InteractHand.enabled = true;//enable interact hand 
+                    CenterDot.enabled = false;//disable center dot
+                }
+                else if (hit.collider.CompareTag("GreenPotion")) 
+                {
+                    //Here is where we can put a little hand to tell the player that he is facing an interactable object
+                    InteractHand.enabled = true;//enable interact hand 
+                    CenterDot.enabled = false;//disable center dot
+                }
             }
         }//might not be like this
-        else {
+        else 
+        {
             //else disable interact Hand
             InteractHand.enabled = false;
             //and enable center Dot
