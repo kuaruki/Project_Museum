@@ -360,6 +360,7 @@
 "Assets/Scripts/Inventory/Gem.cs"
 "Assets/Scripts/Inventory/HUD.cs"
 "Assets/Scripts/Inventory/Interatibles script/Book.cs"
+"Assets/Scripts/Inventory/Interatibles script/Painting.cs"
 "Assets/Scripts/Inventory/Interatibles script/PotionGreen.cs"
 "Assets/Scripts/Inventory/Interatibles script/PotionPurple.cs"
 "Assets/Scripts/Inventory/Interatibles script/PotionRed.cs"
