@@ -41334,7 +41334,7 @@ MonoBehaviour:
     m_Bits: 512
   ignoreTargetMask:
     serializedVersion: 2
-    m_Bits: 31799
+    m_Bits: 7216
   offsetFactor: 1
 --- !u!114 &963194231
 MonoBehaviour:

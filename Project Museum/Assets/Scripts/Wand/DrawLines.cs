@@ -185,7 +185,9 @@ public class DrawLines : MonoBehaviour {
             //JigsawBoard.layer = 0;
 
             Door.GetComponent<MeshRenderer>().enabled = false;
-            Door.GetComponent<Collider>().enabled = false;
+            //Door.GetComponent<Collider>().enabled = false;
+            Door.layer = default;
+            //Mudar de layer
 
             WandCanvas.SetActive(false);
         }
