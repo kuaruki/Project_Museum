@@ -77,6 +77,7 @@ public class DrawLines : MonoBehaviour {
             if (Input.GetMouseButtonDown(0)) {
                 // Clearing the list so everytime we click draws a new set of lines
                 linePositions.Clear();
+                Sphere.GetComponent<Collider>().enabled = true;
 
 
                 mousePos = Input.mousePosition;
@@ -123,8 +124,14 @@ public class DrawLines : MonoBehaviour {
                     lineRenderer.SetPositions(linePositions.ToArray());
                 }
             }
+            else if (Input.GetMouseButtonUp(0)) {
+                Sphere.GetComponent<Collider>().enabled = false;
+                //lineRenderer.enabled = false;
+                CollidedTagsList.Clear();
+                linePositions.Clear();
+            }
 
-            //If there's collision add to the CollisionTagsList (list of collided tags). Also removes repeated strings from list.
+            //If there's collision add to the CollidedTagsList (list of collided tags). Only adds unique strings from list.
             if (colliding == true) {
                 if (!CollidedTagsList.Contains(CollidedTag)) { //if the tag is already in the list it won't be added
                     CollidedTagsList.Add(CollidedTag);
@@ -145,19 +152,30 @@ public class DrawLines : MonoBehaviour {
         }
     }
 
-    //Compares the right sequence with the players sequence
-    public static bool CompareStringLists(List<string> list1, List<string> list2) {
+    ////Compares the right sequence with the players sequence
+    //public static bool CompareStringLists(List<string> list1, List<string> list2) {
+    //    if (list1.Count != list2.Count) {
+    //        return false;
+    //    }
+
+    //    for (int i = 0; i < list1.Count; i++) {
+    //        if (list1[i] != list2[i]) {
+    //            return false;
+    //        }
+    //    }
+
+    //    return true;
+    //}
+
+    public static bool CompareStringLists<T>(List<T> list1, List<T> list2) {
         if (list1.Count != list2.Count) {
             return false;
         }
 
-        for (int i = 0; i < list1.Count; i++) {
-            if (list1[i] != list2[i]) {
-                return false;
-            }
-        }
+        HashSet<T> set1 = new HashSet<T>(list1);
+        HashSet<T> set2 = new HashSet<T>(list2);
 
-        return true;
+        return set1.SetEquals(set2);
     }
 
     public void Solved() 

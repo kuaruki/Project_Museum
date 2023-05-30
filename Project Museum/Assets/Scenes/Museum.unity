@@ -31856,6 +31856,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 5.18272, z: 0.17215289}
   m_Center: {x: -0.00000017881399, y: 2.3913598, z: -1.9139237}
+--- !u!1 &741617914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2016893724557525614, guid: 60758a17fc642924d868fff4eabe7d0b, type: 3}
+  m_PrefabInstance: {fileID: 1481658280}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &741718265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55870,6 +55875,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1750736418}
+  - {fileID: 1930280942}
   m_Father: {fileID: 1293171693}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -80927,15 +80933,13 @@ GameObject:
   - component: {fileID: 1750736418}
   - component: {fileID: 1750736421}
   - component: {fileID: 1750736420}
-  - component: {fileID: 1750736419}
-  - component: {fileID: 1750736422}
   m_Layer: 0
-  m_Name: Drawer
+  m_Name: DrawerOpened
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1750736418
 Transform:
   m_ObjectHideFlags: 0
@@ -80944,26 +80948,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750736417}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.064, y: -1.38, z: 0.002}
-  m_LocalScale: {x: 1.6432765, y: 0.923991, z: 1.110904}
+  m_LocalPosition: {x: -1.2887449, y: -1.38, z: 0.00200039}
+  m_LocalScale: {x: 1.6432763, y: 0.923991, z: 1.1109039}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1280538052}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1750736419
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750736417}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1750736420
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -81014,19 +81005,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750736417}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1750736422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750736417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0f5dd26b840abf499178ad9c35a6894, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JigsawBoard: {fileID: 1280538047}
 --- !u!1 &1753450929
 GameObject:
   m_ObjectHideFlags: 0
@@ -88055,10 +88033,103 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 18f63ff904099034daf971dac5b32582, type: 2}
     - target: {fileID: 919132149155446097, guid: 3066f3393cb36b049b91b30bdb04c3ae, type: 3}
       propertyPath: m_Name
-      value: Book_09
+      value: Book_wJigsaw
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3066f3393cb36b049b91b30bdb04c3ae, type: 3}
+--- !u!1001 &1930280941
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1280538052}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 73.11347
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 58.63949
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 73.78661
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.029
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.65
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+      propertyPath: m_Name
+      value: Drawer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+--- !u!4 &1930280942 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+  m_PrefabInstance: {fileID: 1930280941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1930280943 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c4bd31e4e1263db4093721883e058083, type: 3}
+  m_PrefabInstance: {fileID: 1930280941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1930280944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930280943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f5dd26b840abf499178ad9c35a6894, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JigsawCamera: {fileID: 741617914}
+  OpenedDrawerPosition: {fileID: 1750736417}
 --- !u!1001 &1931380216
 PrefabInstance:
   m_ObjectHideFlags: 0
