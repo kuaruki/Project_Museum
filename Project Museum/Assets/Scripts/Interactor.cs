@@ -39,6 +39,18 @@ public class Interactor : MonoBehaviour
     public GameObject LivrosDoor;
     public GameObject OpenedLivrosPosition;
 
+
+    public GameObject LabDoor;
+    public GameObject OpenedLabDoorPosition;
+    public bool isLabDoorOpen;
+
+    public GameObject HallDoor;
+    public GameObject OpenedHallDoorPosition;
+    public bool isHallDoorOpen;
+    public GameObject ReceptionDoor;
+    public GameObject OpenedReceptionDoorPosition;
+    public bool isReceptionDoorOpen;
+
     //Safe
     public float InteractDistance = 15f;
     public LayerMask interactLayer;
@@ -68,6 +80,10 @@ public class Interactor : MonoBehaviour
 
         //Start in players last pos... maybe?
         playerObject.transform.position = new Vector3(position_x.Value_X, position_y.Value_Y, position_z.Value_Z);
+
+        isHallDoorOpen = false;
+        isReceptionDoorOpen = false;
+        isLabDoorOpen = false;
     }
 
     // Update is called once per frame
@@ -162,14 +178,59 @@ public class Interactor : MonoBehaviour
                     playerObject.GetComponent<PlayerMovement>().enabled = false;
                     mainCamera.GetComponent<PlayerCam>().enabled = false;
                 }
+
+
+
+                //-----------------
+                //-----------------
+                //----- Doors -----
+                //-----------------
+                //-----------------
+
                 //----------
                 //Livros Door
                 //----------
-                else if (hit.collider.CompareTag("LivrosDoor")) 
-                {
+                else if (hit.collider.CompareTag("LivrosDoor")) {
                     LivrosDoor.transform.position = OpenedLivrosPosition.transform.position;
+                    LivrosDoor.layer = 0;
+                }
+                //----------
+                //Lab Door
+                //----------
+                else if (hit.collider.CompareTag("LabDoor")) {
+                    if (!isLabDoorOpen) { //Door closed
+                        LabDoor.transform.rotation = OpenedLabDoorPosition.transform.rotation;
+                        LabDoor.layer = 0;
+                        isLabDoorOpen = true;
+                    }
+                }
+                //----------
+                //Hall Door
+                //----------
+                else if (hit.collider.CompareTag("HallDoor")) {
+                    if (!isHallDoorOpen) {//Door closed
+                        HallDoor.transform.rotation = OpenedHallDoorPosition.transform.rotation;
+                        HallDoor.layer = 0;
+                        isHallDoorOpen = true;
+                    }
+                }
+                //----------
+                //Reception Door
+                //----------
+                else if (hit.collider.CompareTag("ReceptionDoor")) {
+                    if (!isReceptionDoorOpen) {//Door closed
+                        ReceptionDoor.transform.rotation = OpenedReceptionDoorPosition.transform.rotation;
+                        ReceptionDoor.layer = 0;
+                        isReceptionDoorOpen = true;
+                    }
                 }
 
+
+                //-----------------
+                //-----------------
+                //----- Notes -----
+                //-----------------
+                //-----------------
 
                 //----------
                 //First Note

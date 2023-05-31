@@ -43,6 +43,9 @@ TagManager:
   - RedPosition
   - WhitePosition
   - PurplePosition
+  - LabDoor
+  - HallDoor
+  - ReceptionDoor
   layers:
   - Default
   - TransparentFX
