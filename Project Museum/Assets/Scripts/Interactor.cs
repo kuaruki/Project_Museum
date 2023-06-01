@@ -51,18 +51,12 @@ public class Interactor : MonoBehaviour
     public GameObject OpenedReceptionDoorPosition;
     public bool isReceptionDoorOpen;
 
+    public int PotionsInPlace; //Each Potion script increments this
+
     //Safe
     public float InteractDistance = 15f;
     public LayerMask interactLayer;
 
-
-    //Save position of player between scenes
-    [SerializeField]
-    private FloatSO position_x;
-    [SerializeField]
-    private FloatSO position_y;
-    [SerializeField]
-    private FloatSO position_z;
 
     void Start()
     {
@@ -78,9 +72,7 @@ public class Interactor : MonoBehaviour
         CenterDot.enabled = false;//enable the center dot
         Note1Canvas.SetActive(false);
 
-        //Start in players last pos... maybe?
-        playerObject.transform.position = new Vector3(position_x.Value_X, position_y.Value_Y, position_z.Value_Z);
-
+        
         isHallDoorOpen = false;
         isReceptionDoorOpen = false;
         isLabDoorOpen = false;
@@ -275,6 +267,8 @@ public class Interactor : MonoBehaviour
                     InteractHand.enabled = true;//enable interact hand 
                     CenterDot.enabled = false;//disable center dot
                 }
+
+
             }
         }//might not be like this
         else 
