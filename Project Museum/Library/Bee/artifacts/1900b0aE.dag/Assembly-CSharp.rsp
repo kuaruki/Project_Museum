@@ -378,6 +378,7 @@
 "Assets/Scripts/Player/MoveCam.cs"
 "Assets/Scripts/Player/PlayerCam.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"
+"Assets/Scripts/Room1/AltPaintings/PaintingsPickup.cs"
 "Assets/Scripts/Room1/Jigsaw/DragAndDrop.cs"
 "Assets/Scripts/Room1/Jigsaw/OpenDrawer.cs"
 "Assets/Scripts/Room1/Jigsaw/PiecesScript.cs"

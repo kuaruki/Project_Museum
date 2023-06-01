@@ -43,7 +43,7 @@ public class PotionsPickup : MonoBehaviour {
             }
         }
 
-        if (!CurrentPotion) {
+        if (!CurrentPotion) { //checks if player is holding the Potion
             if (Input.GetKeyDown(KeyCode.E)) { //Drops the object
                 if (CurrentPotion) {
                     CurrentPotion.useGravity = true;
