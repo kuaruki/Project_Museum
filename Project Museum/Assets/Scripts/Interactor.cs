@@ -52,6 +52,7 @@ public class Interactor : MonoBehaviour
     public bool isReceptionDoorOpen;
 
     public int PotionsInPlace; //Each Potion script increments this
+    public int PaintingsInPlace; //Each Painting script increments this
 
     //Safe
     public float InteractDistance = 15f;
@@ -68,8 +69,8 @@ public class Interactor : MonoBehaviour
         DragDropScript1.GetComponent<DragDrop>().enabled = false;
         DragDropScript2.GetComponent<DragDrop>().enabled = false;
         DragDropScript3.GetComponent<DragDrop>().enabled = false;
-        InteractHand.enabled = false;//disable interact hand 
-        CenterDot.enabled = false;//enable the center dot
+        InteractHand.enabled = false; //disable interact hand 
+        CenterDot.enabled = false; //enable the center dot
         Note1Canvas.SetActive(false);
 
         
