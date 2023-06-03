@@ -19109,6 +19109,22 @@ PrefabInstance:
       propertyPath: InventoryCanvas
       value: 
       objectReference: {fileID: 1564319533}
+    - target: {fileID: 1330363505483177728, guid: 31fd6124a61d83a449f5393207c375a5, type: 3}
+      propertyPath: RightSequence.Array.data[0]
+      value: Point 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330363505483177728, guid: 31fd6124a61d83a449f5393207c375a5, type: 3}
+      propertyPath: RightSequence.Array.data[1]
+      value: Point 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330363505483177728, guid: 31fd6124a61d83a449f5393207c375a5, type: 3}
+      propertyPath: RightSequence.Array.data[2]
+      value: Point 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330363505483177728, guid: 31fd6124a61d83a449f5393207c375a5, type: 3}
+      propertyPath: RightSequence.Array.data[3]
+      value: Point 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1330363506204178464, guid: 31fd6124a61d83a449f5393207c375a5, type: 3}
       propertyPath: m_RootOrder
       value: 3

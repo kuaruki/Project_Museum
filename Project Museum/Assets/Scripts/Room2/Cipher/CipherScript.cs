@@ -15,12 +15,11 @@ public class CipherScript : MonoBehaviour
 
     public bool CipherCorrect;
 
-
     public Button button;
 
     private string input;
     //THE ACTUAL CIPHER
-    private string cipher = "Boas";
+    private string cipher = "wand";
 
     // Start is called before the first frame update
     void Start()
@@ -68,38 +67,35 @@ public class CipherScript : MonoBehaviour
         if (input == cipher)
         {
             CipherCorrect = true;
-            /*if (Input.GetKeyUp(KeyCode.Return))
-            {
-                Debug.Log("Entered Enter");
-                UnlockCipher();
-            }*/
         }
         //-------------------------------
     }
 
     public void ReadStringInput(string s)
     {
-        input = s;
-        //Debug.Log(input);
-        if (Input.GetKeyDown(KeyCode.Return)) {
-            Debug.Log(s + "Through Enter Key");
-            //locking the cursor and making it not visible
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+        if (s.ToLower() == cipher) {
+            CipherCorrect = true;
+            //Debug.Log(input);
+            if (Input.GetKeyDown(KeyCode.Return)) {
+                Debug.Log(s + " Through Enter Key");
+                //locking the cursor and making it not visible
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
 
-            // enable both player movement and camera movement
-            playerObject.GetComponent<PlayerMovement>().enabled = true;
-            CameraObject.GetComponent<PlayerCam>().enabled = true;
+                // enable both player movement and camera movement
+                playerObject.GetComponent<PlayerMovement>().enabled = true;
+                CameraObject.GetComponent<PlayerCam>().enabled = true;
 
-            Cipher_Canvas.SetActive(false);
+                Cipher_Canvas.SetActive(false);
 
-            gameObject.layer = 0;
+                gameObject.layer = 0;
 
-            LabDoor.GetComponent<Room2_Progress>().Cipher = true;
-            Debug.Log("Cipher Puzzle is Done" + LabDoor.GetComponent<Room2_Progress>().Cipher);
+                LabDoor.GetComponent<Room2_Progress>().Cipher = true;
+                Debug.Log("Cipher Puzzle is Done" + LabDoor.GetComponent<Room2_Progress>().Cipher);
 
-            //Enable Wand Puzzle by setting its layer to interactable
-            Mirror.layer = 11;
+                //Enable Wand Puzzle by setting its layer to interactable
+                Mirror.layer = 11;
+            }
         }
     }
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -35,12 +36,14 @@ public class DrawLines : MonoBehaviour {
     public string CollidedTag;
     public bool colliding;
     public bool IsRight;
+
     //Here put an array with all the collided Tags
-    [SerializeField]
-    private List<string> CollidedTagsList = new List<string>();
+    [SerializeField] private List<string> CollidedTagsList = new List<string>();
+
     //The right sequence
-    [SerializeField]
-    private List<string> RightSequence = new List<string> { "Point 1", "Point 5", "Point 6", "Point 7", "Point 8", "Point 2", "Point 3", "Point 4" };
+    [SerializeField] private List<string> RightSequence = new List<string> { "Point 7", "Point 6", "Point 5", "Point 1", "Point 8", "Point 2", "Point 3", "Point 4" };
+    //The right sequence backward
+    [SerializeField] private List<string> RightSequenceBackwards = new List<string> { "Point 4", "Point 3", "Point 2", "Point 8", "Point 1", "Point 5", "Point 6", "Point 7" };
 
     // List to store mouse positions to draw lines
     public List<Vector3> linePositions = new List<Vector3>();
@@ -74,19 +77,18 @@ public class DrawLines : MonoBehaviour {
                 WandCanvas.SetActive(true);
             }
 
+
             // When user first right clicks the mouse
             if (Input.GetMouseButtonDown(0)) {
-                // Clearing the list so everytime we click draws a new set of lines
+                // Clearing the list so every time we click draws a new set of lines
                 linePositions.Clear();
                 Sphere.GetComponent<Collider>().enabled = true;
 
-
                 mousePos = Input.mousePosition;
-
                 // Mouse position z axis positions always is positive
                 mousePos.z = 10;
 
-                // Converting screen space mouse positions into world space mousepositions
+                // Converting screen space mouse positions into world space mouse positions
                 pos = cam.ScreenToWorldPoint(mousePos);
 
                 // Saving previous mouse position
@@ -95,19 +97,21 @@ public class DrawLines : MonoBehaviour {
                 // Storing mouse positions into the list array
                 linePositions.Add(pos);
 
-                // Clearing the list so everytime we click draws a new set of Collided tags
-                CollidedTagsList.Clear();
+
+                StartCoroutine(ClearList());
+
             }
-            // Condition to check if user holding the mouse
+
+            // Condition to check if user is holding the mouse
             else if (Input.GetMouseButton(0)) {
                 mousePos = Input.mousePosition;
                 // Mouse position z axis positions always is positive
                 mousePos.z = 10;
 
-                // Converting screen space mouse positions into world space mousepositions
+                // Converting screen space mouse positions into world space mouse positions
                 pos = cam.ScreenToWorldPoint(mousePos);
 
-                //Attach the sphere to the mouse
+                // Attach the sphere to the mouse
                 Sphere.transform.position = pos;
 
                 distance = Vector3.Distance(pos, previousPos);
@@ -125,15 +129,15 @@ public class DrawLines : MonoBehaviour {
                     lineRenderer.SetPositions(linePositions.ToArray());
                 }
             }
+
+            // Mouse button released
             else if (Input.GetMouseButtonUp(0)) {
                 Sphere.GetComponent<Collider>().enabled = false;
-                //lineRenderer.enabled = false;
-                CollidedTagsList.Clear();
-                linePositions.Clear();
+                //lineRenderer.positionCount = 0;
             }
 
             //If there's collision add to the CollidedTagsList (list of collided tags). Only adds unique strings from list.
-            if (colliding == true) {
+            if (colliding) {
                 if (!CollidedTagsList.Contains(CollidedTag)) { //if the tag is already in the list it won't be added
                     CollidedTagsList.Add(CollidedTag);
                 }
@@ -144,7 +148,7 @@ public class DrawLines : MonoBehaviour {
             //------|
             //------V
             if (IsRight == false) {
-                if (CompareStringLists(RightSequence, CollidedTagsList) == true) {
+                if (CompareStringListsOrder(RightSequence, CollidedTagsList) || CompareStringListsOrder(RightSequenceBackwards, CollidedTagsList)) {
                     IsRight = true;
                     Debug.Log("LESSGUUU BOIII YOU GOT IT");
                     //Solved();
@@ -153,6 +157,11 @@ public class DrawLines : MonoBehaviour {
         }
     }
 
+    IEnumerator ClearList() {
+        yield return new WaitForSeconds(0.3f);
+        // Clearing the list of collided tags
+        CollidedTagsList.Clear();
+    }
 
     public static bool CompareStringLists<T>(List<T> list1, List<T> list2) {
         if (list1.Count != list2.Count) {
@@ -163,6 +172,20 @@ public class DrawLines : MonoBehaviour {
         HashSet<T> set2 = new HashSet<T>(list2);
 
         return set1.SetEquals(set2);
+    }
+
+    public static bool CompareStringListsOrder(List<string> list1, List<string> list2) {
+        if (list1.Count != list2.Count) {
+            return false;
+        }
+
+        for (int i = 0; i < list1.Count; i++) {
+            if (list1[i] != list2[i]) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public void Solved() 
@@ -202,7 +225,12 @@ public class DrawLines : MonoBehaviour {
             playerObject.GetComponent<PotionsPickup>().SetPositionsTrue();
         }
         else {//Not Solved
-            //Feedback to the player
+              //Feedback to the player
+
+            //Clear everything
+            linePositions.Clear();
+            CollidedTagsList.Clear();
+            lineRenderer.positionCount = 0;
         }
     }
 }
