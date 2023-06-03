@@ -46,6 +46,11 @@ TagManager:
   - LabDoor
   - HallDoor
   - ReceptionDoor
+  - Room1Check
+  - ReceptionDoorCheck
+  - LivrosDoorCheck
+  - LabDoorCheck
+  - PaintingCatcher
   layers:
   - Default
   - TransparentFX

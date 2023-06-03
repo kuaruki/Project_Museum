@@ -25,8 +25,9 @@ public class Room1_Progress : MonoBehaviour
         
         if (Jigsaw && Safe && Paintings) { //if all puzzles are solved
             //Opens door to Room 2
+            MainCamera.GetComponent<Interactor>().isLivrosDoorOpen = true; //atualiza isLivrosDoorOpen on the interactor script to true
             transform.position = OpenedLivrosPosition.transform.position;
-            gameObject.layer = default;
+            gameObject.layer = 0;
         }
     }
 }

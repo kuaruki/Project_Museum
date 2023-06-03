@@ -1,31 +1,10 @@
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-
-//public class Painting1 : MonoBehaviour
-//{
-//    [SerializeField] private Camera MainCamera;
-//    private void OnTriggerEnter(Collider other) {
-//        if (other.gameObject.CompareTag("PaintingPosition1")) {
-//            Debug.Log("Painting 1 in place");
-//            //Lock the object in place
-//            gameObject.layer = default;
-//            //disable collider or make is kinematic
-
-//            //Give the Player some Feedback
-
-//            //Atualizar variavel no interactor
-//            MainCamera.GetComponent<Interactor>().PaintingsInPlace += 1;
-//        }
-//    }
-//}
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Painting1 : MonoBehaviour {
     [SerializeField] private Camera MainCamera;
+    [SerializeField] private Transform ReturnPoint;
     private Rigidbody rb;
     private Collider coll;
 
@@ -46,6 +25,9 @@ public class Painting1 : MonoBehaviour {
 
             // Atualizar variavel no interactor
             MainCamera.GetComponent<Interactor>().PaintingsInPlace += 1;
+        }
+        if (other.gameObject.CompareTag("PaintingCatcher")) {
+            gameObject.transform.position = ReturnPoint.position;
         }
     }
 }

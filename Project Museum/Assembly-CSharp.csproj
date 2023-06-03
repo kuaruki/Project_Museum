@@ -80,6 +80,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Room2\Wand_Chest\Open_Chest.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Room1\AltPaintings\Painting1.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\Player\MoveCam.cs" />
     <Compile Include="Assets\Scripts\Room2\Cipher\CipherScript.cs" />
@@ -107,11 +108,12 @@
     <Compile Include="Assets\Scripts\Room2\Potions\GreenPotion.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Scripts\Inventory\ItemDragHandler.cs" />
-    <Compile Include="Assets\Scripts\Room1\Paintings\DragDrop.cs" />
+    <Compile Include="Assets\Scripts\Room1\AltPaintings\Painting2.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Inventory\Wand.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCam.cs" />
     <Compile Include="Assets\Scripts\Room2\Wand\DrawLines.cs" />
+    <Compile Include="Assets\Scripts\Room1\AltPaintings\Painting3.cs" />
     <Compile Include="Assets\Scripts\Room2\Potions\PotionsPickup.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Inventory\Interatibles script\PotionGreen.cs" />
@@ -129,14 +131,10 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
-    <Compile Include="Assets\Scripts\Room1\Paintings\Escape.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\InfiniteCorridor\Teleport.cs" />
     <Compile Include="Assets\Scripts\Room2\Potions\PurplePotion.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\Scripts\Room1\AltPaintings\Painting1.cs" />
-    <Compile Include="Assets\Scripts\Room1\AltPaintings\Painting2.cs" />
-    <Compile Include="Assets\Scripts\Room1\AltPaintings\Painting3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

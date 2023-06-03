@@ -14,42 +14,45 @@ public class Interactor : MonoBehaviour
     //puzzle done
 
     public Camera mainCamera;
-    public Camera paintingsCamera;
     public Camera JigsawCamera;
     public Camera WandCamera;
-    public Camera LivrosCamera;
 
     public GameObject playerObject;
-    public GameObject DragDropScript1;
-    public GameObject DragDropScript2;
-    public GameObject DragDropScript3;
-    [SerializeField]
-    private GameObject InventoryCanvas;
+
+    [SerializeField] private GameObject InventoryCanvas;
     public Canvas InteractHand;
     public Canvas CenterDot;
 
-    [SerializeField]
-    private GameObject JigsawCanvas;
-    [SerializeField]
-    private GameObject WandCanvas;
+    [SerializeField] private GameObject JigsawCanvas;
+    [SerializeField] private GameObject WandCanvas;
 
     public GameObject Note1;
     public GameObject Note1Canvas;
 
+    //Livros Door
     public GameObject LivrosDoor;
+    public Vector3 LivrosDoorClosedPosition;
     public GameObject OpenedLivrosPosition;
+    public bool isLivrosDoorOpen;
 
-
+    //Lab Door
     public GameObject LabDoor;
+    public Quaternion LabDoorInitialRotation;
     public GameObject OpenedLabDoorPosition;
     public bool isLabDoorOpen;
 
+    //Hall Door
     public GameObject HallDoor;
+    public Quaternion HallDoorInitialRotation;
     public GameObject OpenedHallDoorPosition;
     public bool isHallDoorOpen;
+
+    //Reception Door
     public GameObject ReceptionDoor;
+    public Quaternion ReceptionDoorInitialRotation;
     public GameObject OpenedReceptionDoorPosition;
     public bool isReceptionDoorOpen;
+
 
     public int PotionsInPlace; //Each Potion script increments this
     public int PaintingsInPlace; //Each Painting script increments this
@@ -57,26 +60,33 @@ public class Interactor : MonoBehaviour
     //Safe
     public float InteractDistance = 15f;
     public LayerMask interactLayer;
+    public LayerMask PaintingsLayer;
+    public LayerMask PotionsLayer;
 
 
     void Start()
     {
         mainCamera.enabled = true;
-        paintingsCamera.enabled = false;
         JigsawCamera.enabled = false;
-        LivrosCamera.enabled = false;
-        paintingsCamera.GetComponent<Escape>().enabled = false; 
-        DragDropScript1.GetComponent<DragDrop>().enabled = false;
-        DragDropScript2.GetComponent<DragDrop>().enabled = false;
-        DragDropScript3.GetComponent<DragDrop>().enabled = false;
         InteractHand.enabled = false; //disable interact hand 
         CenterDot.enabled = false; //enable the center dot
         Note1Canvas.SetActive(false);
 
         
+        //Hall
         isHallDoorOpen = false;
+        HallDoorInitialRotation = HallDoor.transform.rotation;
+        //Reception
         isReceptionDoorOpen = false;
+        ReceptionDoorInitialRotation = ReceptionDoor.transform.rotation;
+        //Lab
         isLabDoorOpen = false;
+        LabDoorInitialRotation = LabDoor.transform.rotation;
+        //Livros
+        isLivrosDoorOpen = false;
+        LivrosDoorClosedPosition = LivrosDoor.transform.position;
+        Debug.Log("Closed Position saved on Interactor Start" + LivrosDoor.transform.position);
+
     }
 
     // Update is called once per frame
@@ -84,7 +94,7 @@ public class Interactor : MonoBehaviour
     {
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, InteractDistance, interactLayer))
+        if (Physics.Raycast(ray, out hit, InteractDistance, interactLayer) || Physics.Raycast(ray, out hit, InteractDistance, PaintingsLayer) || Physics.Raycast(ray, out hit, InteractDistance, PotionsLayer))
         {
             //Here is where we can put a little hand to tell the player that he is facing an interactable object
             InteractHand.enabled = true;//enable interact hand 
@@ -122,35 +132,6 @@ public class Interactor : MonoBehaviour
                     //Show the Cipher UI
                     hit.collider.GetComponent<CipherScript>().ShowCipherCanvas();
                 }
-                //----------
-                //Painting Puzzle
-                //----------
-                else if (hit.collider.CompareTag("PaintingsPuz"))
-                {
-                    //switch to the puzzle camera
-                    mainCamera.enabled = false;
-                    paintingsCamera.enabled = true;
-
-                    //Enable the script and disable this one
-                    DragDropScript1.GetComponent<DragDrop>().enabled = true;
-                    DragDropScript2.GetComponent<DragDrop>().enabled = true;
-                    DragDropScript3.GetComponent<DragDrop>().enabled = true;
-
-                    //this.enabled = false;
-
-                    //Unlock Cursor
-                    Cursor.lockState = CursorLockMode.None;
-                    Cursor.visible = true;
-
-                    // disable both player movement and camera movement
-                    playerObject.GetComponent<PlayerMovement>().enabled = false;
-                    mainCamera.GetComponent<PlayerCam>().enabled = false;
-
-                    paintingsCamera.GetComponent<Escape>().enabled = true;
-                }
-                //----------
-                // EOF Painting Puzzle
-                //----------
                 else if (hit.collider.CompareTag("WandPuzzle"))
                 {
                     //switch to the puzzle camera
@@ -184,14 +165,17 @@ public class Interactor : MonoBehaviour
                 //Livros Door
                 //----------
                 else if (hit.collider.CompareTag("LivrosDoor")) {
-                    LivrosDoor.transform.position = OpenedLivrosPosition.transform.position;
-                    LivrosDoor.layer = 0;
+                    if (!isLivrosDoorOpen) {//Door Closed
+                        LivrosDoor.transform.position = OpenedLivrosPosition.transform.position;
+                        LivrosDoor.layer = 0;
+                        isLivrosDoorOpen = true;
+                    }
                 }
                 //----------
                 //Lab Door
                 //----------
                 else if (hit.collider.CompareTag("LabDoor")) {
-                    if (!isLabDoorOpen) { //Door closed
+                    if (!isLabDoorOpen) {//Door closed
                         LabDoor.transform.rotation = OpenedLabDoorPosition.transform.rotation;
                         LabDoor.layer = 0;
                         isLabDoorOpen = true;
@@ -264,6 +248,25 @@ public class Interactor : MonoBehaviour
                 }
                 else if (hit.collider.CompareTag("GreenPotion")) 
                 {
+                    //Here is where we can put a little hand to tell the player that he is facing an interactable object
+                    InteractHand.enabled = true;//enable interact hand 
+                    CenterDot.enabled = false;//disable center dot
+                }
+
+                //----------
+                //Paintings
+                //---------
+                else if (hit.collider.CompareTag("Painting1")) {
+                    //Here is where we can put a little hand to tell the player that he is facing an interactable object
+                    InteractHand.enabled = true;//enable interact hand 
+                    CenterDot.enabled = false;//disable center dot
+                }
+                else if (hit.collider.CompareTag("Painting2")) {
+                    //Here is where we can put a little hand to tell the player that he is facing an interactable object
+                    InteractHand.enabled = true;//enable interact hand 
+                    CenterDot.enabled = false;//disable center dot
+                }
+                else if (hit.collider.CompareTag("Painting3")) {
                     //Here is where we can put a little hand to tell the player that he is facing an interactable object
                     InteractHand.enabled = true;//enable interact hand 
                     CenterDot.enabled = false;//disable center dot

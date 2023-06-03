@@ -71,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     [SerializeField] private GameObject Pause_Canvas;
+    [SerializeField] private Camera MainCamera;
 
     private void Awake() {
         Time.timeScale = 1; //isto faz com que o jogo comece assim que a cena e carregada,
@@ -254,7 +255,50 @@ public class PlayerMovement : MonoBehaviour
 
             Hud.OpenMessagePanel("");
         }
+
+
+
+        //---------------------------
+        //CLOSING DOORS AUTOMATICALLY
+        //---------------------------
+        if (other.gameObject.CompareTag("ReceptionDoorCheck")) {
+            if (MainCamera.GetComponent<Interactor>().isReceptionDoorOpen) {
+                Debug.Log("Reception Door Closed");
+                //close Reception Door
+                MainCamera.GetComponent<Interactor>().ReceptionDoor.transform.rotation = MainCamera.GetComponent<Interactor>().ReceptionDoorInitialRotation;
+                MainCamera.GetComponent<Interactor>().isReceptionDoorOpen = false;
+            }
+        }
+        if (other.gameObject.CompareTag("Room1Check")) {
+            if (MainCamera.GetComponent<Interactor>().isHallDoorOpen) {
+                Debug.Log("Hall Door Closed");
+                //close Hall Door
+                MainCamera.GetComponent<Interactor>().HallDoor.transform.rotation = MainCamera.GetComponent<Interactor>().HallDoorInitialRotation;
+                MainCamera.GetComponent<Interactor>().isHallDoorOpen = false;
+            }
+        }
+        if (other.gameObject.CompareTag("LivrosDoorCheck")) {
+            Debug.Log("Livros Door Checked");
+            if (MainCamera.GetComponent<Interactor>().isLivrosDoorOpen) {
+                Debug.Log("Livros Door Closed");
+                //close Livros Door
+                MainCamera.GetComponent<Interactor>().LivrosDoor.GetComponent<Room1_Progress>().Jigsaw = false; //sets one of the room 1 puzzles to false so it doesn't constantly change the doors position
+                MainCamera.GetComponent<Interactor>().LivrosDoor.transform.position = MainCamera.GetComponent<Interactor>().LivrosDoorClosedPosition;
+                MainCamera.GetComponent<Interactor>().isLivrosDoorOpen = false;
+            }
+        }
+        if (other.gameObject.CompareTag("LabDoorCheck")) {
+            if (MainCamera.GetComponent<Interactor>().isLabDoorOpen) {
+                Debug.Log("Labyrinth Door Closed");
+                //close Labyrinth Door
+                MainCamera.GetComponent<Interactor>().LabDoor.transform.rotation = MainCamera.GetComponent<Interactor>().LabDoorInitialRotation;
+                MainCamera.GetComponent<Interactor>().isLabDoorOpen = false;
+            }
+        }
+
     }
+
+
 
     private void OnTriggerExit(Collider other)
     {
@@ -291,6 +335,7 @@ public class PlayerMovement : MonoBehaviour
         // Put item on players hand
         goItem.transform.parent = Hand.transform;
     }
+
 
 
     //PAUSE

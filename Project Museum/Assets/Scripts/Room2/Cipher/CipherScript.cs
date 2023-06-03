@@ -10,6 +10,7 @@ public class CipherScript : MonoBehaviour
     public GameObject playerObject;
     public GameObject CameraObject;
     public GameObject LabDoor;
+    public GameObject Mirror;
 
 
     public bool CipherCorrect;
@@ -26,7 +27,7 @@ public class CipherScript : MonoBehaviour
     {
         Cipher_Canvas.SetActive(false);
         CipherCorrect = false;
-        
+        Mirror.layer = 0;
     }
 
     public void ShowCipherCanvas()
@@ -96,6 +97,9 @@ public class CipherScript : MonoBehaviour
 
             LabDoor.GetComponent<Room2_Progress>().Cipher = true;
             Debug.Log("Cipher Puzzle is Done" + LabDoor.GetComponent<Room2_Progress>().Cipher);
+
+            //Enable Wand Puzzle by setting its layer to interactable
+            Mirror.layer = 11;
         }
     }
 
@@ -120,6 +124,9 @@ public class CipherScript : MonoBehaviour
 
             LabDoor.GetComponent<Room2_Progress>().Cipher = true;
             Debug.Log("Cipher Puzzle is Done" + LabDoor.GetComponent<Room2_Progress>().Cipher);
+
+            //Enable Wand Puzzle by setting its layer to interactable
+            Mirror.layer = 11;
         }
     }
 }

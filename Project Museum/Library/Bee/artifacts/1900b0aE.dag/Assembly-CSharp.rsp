@@ -385,8 +385,6 @@
 "Assets/Scripts/Room1/Jigsaw/DragAndDrop.cs"
 "Assets/Scripts/Room1/Jigsaw/OpenDrawer.cs"
 "Assets/Scripts/Room1/Jigsaw/PiecesScript.cs"
-"Assets/Scripts/Room1/Paintings/DragDrop.cs"
-"Assets/Scripts/Room1/Paintings/Escape.cs"
 "Assets/Scripts/Room1/Room1_Progress.cs"
 "Assets/Scripts/Room1/Safe/SafeScript.cs"
 "Assets/Scripts/Room2/Cipher/CipherScript.cs"
