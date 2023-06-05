@@ -36,7 +36,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
+    public LayerMask Targetable;
     bool grounded;
+    bool grounded2;
 
     public Transform orientation;
 
@@ -112,13 +114,15 @@ public class PlayerMovement : MonoBehaviour
 
         //Ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+        grounded2 = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, Targetable);
+        Debug.DrawRay(transform.position, Vector3.down * 10f, Color.red);
         
         myInput();
         speedControl();
         stateHandler();
 
         //Handle Drag
-        if (grounded) //drag on the floor
+        if (grounded || grounded2) //drag on the floor
             rb.drag = groundDrag;
         else //drag on air
             rb.drag = 0;
@@ -145,7 +149,7 @@ public class PlayerMovement : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
 
         //Jumping
-        if (Input.GetKey(jumpKey) && readyToJump && grounded)
+        if ((Input.GetKey(jumpKey) && readyToJump && grounded) || (Input.GetKey(jumpKey) && readyToJump && grounded2))
         {
             readyToJump = false;
 
@@ -176,14 +180,14 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = crouchSpeed;
         }
         //Mode - Sprinting 
-        else if(grounded && Input.GetKey(sprintKey))
+        else if((grounded && Input.GetKey(sprintKey)) || (grounded2 && Input.GetKey(sprintKey)))
         {
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;   
         }
         
         //Mode - walking
-        else if (grounded)
+        else if (grounded || grounded2)
         {
             state = MovementState.walking;
             moveSpeed = walkSpeed;
@@ -200,11 +204,11 @@ public class PlayerMovement : MonoBehaviour
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput; //walking in  the direction the player is looking
 
         //on ground
-        if (grounded)
+        if (grounded || grounded2)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 
         //on air
-        else if (!grounded)
+        else if (!grounded || !grounded2)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultipier, ForceMode.Force);
 
     }

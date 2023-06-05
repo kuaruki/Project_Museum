@@ -18,6 +18,7 @@ public class Interactor : MonoBehaviour
     public Camera WandCamera;
 
     public GameObject playerObject;
+    private NoteScript NoteScript;
 
     [SerializeField] private GameObject InventoryCanvas;
     public Canvas InteractHand;
@@ -57,11 +58,11 @@ public class Interactor : MonoBehaviour
     public int PotionsInPlace; //Each Potion script increments this
     public int PaintingsInPlace; //Each Painting script increments this
 
-    //Safe
-    public float InteractDistance = 15f;
+    public float InteractDistance = 6.5f;
     public LayerMask interactLayer;
     public LayerMask PaintingsLayer;
     public LayerMask PotionsLayer;
+    public LayerMask TargetableLayer;
 
 
     void Start()
@@ -72,7 +73,8 @@ public class Interactor : MonoBehaviour
         CenterDot.enabled = false; //enable the center dot
         Note1Canvas.SetActive(false);
 
-        
+        NoteScript = FindObjectOfType<NoteScript>();
+
         //Hall
         isHallDoorOpen = false;
         HallDoorInitialRotation = HallDoor.transform.rotation;
@@ -94,7 +96,7 @@ public class Interactor : MonoBehaviour
     {
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, InteractDistance, interactLayer) || Physics.Raycast(ray, out hit, InteractDistance, PaintingsLayer) || Physics.Raycast(ray, out hit, InteractDistance, PotionsLayer))
+        if (Physics.Raycast(ray, out hit, InteractDistance, interactLayer) || Physics.Raycast(ray, out hit, InteractDistance, PaintingsLayer) || Physics.Raycast(ray, out hit, InteractDistance, PotionsLayer) || Physics.Raycast(ray, out hit, InteractDistance, TargetableLayer))
         {
             //Here is where we can put a little hand to tell the player that he is facing an interactable object
             InteractHand.enabled = true;//enable interact hand 
@@ -209,13 +211,14 @@ public class Interactor : MonoBehaviour
                 //-----------------
                 //-----------------
 
-                //----------
-                //First Note
-                //----------
-                else if (hit.collider.CompareTag("Note1")) 
-                {
-                    Note1Canvas.SetActive(true);
+                else if (hit.collider.CompareTag("Note1")) {
+                    NoteScript noteScript = hit.collider.GetComponent<NoteScript>();
 
+                    Note1Canvas.SetActive(true);
+                    if (noteScript != null) {
+                        noteScript.GetNoteImage();
+                        noteScript.UIImageScaler();
+                    }
                     //Unlock Cursor
                     Cursor.lockState = CursorLockMode.None;
                     Cursor.visible = true;
@@ -281,6 +284,20 @@ public class Interactor : MonoBehaviour
             InteractHand.enabled = false;
             //and enable center Dot
             CenterDot.enabled = true;
+        }
+
+
+        if (Note1Canvas.activeInHierarchy) {
+            if (Input.GetKey(KeyCode.Escape)) {
+                //Unlock Cursor
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = false;
+                Note1Canvas.SetActive(false);
+
+                // disable both player movement and camera movement
+                playerObject.GetComponent<PlayerMovement>().enabled = true;
+                mainCamera.GetComponent<PlayerCam>().enabled = true;
+            }
         }
     }
 }
