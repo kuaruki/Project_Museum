@@ -30,4 +30,11 @@ public class Room1_Progress : MonoBehaviour
             gameObject.layer = 0;
         }
     }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.CompareTag("OpenedLivrosDoor")) {
+            Debug.Log("Should Play Sound");
+            MainCamera.GetComponent<Interactor>().SlidingOpen.Play();
+        }
+    }
 }

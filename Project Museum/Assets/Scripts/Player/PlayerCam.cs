@@ -19,6 +19,16 @@ public class PlayerCam : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
+        // Modify the initial rotation here
+        float initialXRotation = 0f; // Adjust this value as needed
+        float initialYRotation = 180f;  // Adjust this value as needed
+
+        // Set the initial rotation of the camera
+        xRotation = initialXRotation;
+        yRotation = initialYRotation;
+        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+        orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+
     }
 
     // Update is called once per frame

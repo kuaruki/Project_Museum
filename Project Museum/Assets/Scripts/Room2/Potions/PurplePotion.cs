@@ -14,6 +14,7 @@ public class PurplePotion : MonoBehaviour
             //Lock the object in place
             gameObject.layer = default;
             //Give the Player some Feedback
+            MainCamera.GetComponent<Interactor>().Correct.Play();
 
             //Atualizar variavel no interactor
             MainCamera.GetComponent<Interactor>().PotionsInPlace += 1;

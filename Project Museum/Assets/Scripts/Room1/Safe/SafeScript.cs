@@ -105,7 +105,11 @@ public class SafeScript : MonoBehaviour
             Safe_Canvas.SetActive(false);
             LivrosDoor.GetComponent<Room1_Progress>().Safe = true;
             Debug.Log("Safe is complete = " + LivrosDoor.GetComponent<Room1_Progress>().Safe);
-        }//else send a visual cue that it's incorrect
+            CameraObject.GetComponent<Interactor>().Correct.Play();
+        }
+        else {//else send a visual cue that it's incorrect
+            CameraObject.GetComponent<Interactor>().Wrong.Play();
+        }
     }
 
     public void Increase(int _number)

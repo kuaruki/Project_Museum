@@ -19,19 +19,13 @@ public class DrawLines : MonoBehaviour {
     [SerializeField]
     private GameObject Sphere;
 
-    [SerializeField]
-    private GameObject playerObject;
-    [SerializeField]
-    private Camera mainCamera;
+    [SerializeField] private GameObject playerObject;
+    [SerializeField] private Camera mainCamera;
+    [SerializeField] private GameObject WandCanvas;
+    [SerializeField] private Camera WandCamera;
+    [SerializeField] private GameObject Door;
+    [SerializeField] private GameObject InventoryCanvas;
     public GameObject LabDoor;
-    [SerializeField]
-    private GameObject WandCanvas;
-    [SerializeField]
-    private Camera WandCamera;
-    [SerializeField]
-    private GameObject Door;
-    [SerializeField]
-    private GameObject InventoryCanvas;
 
     public string CollidedTag;
     public bool colliding;
@@ -221,12 +215,16 @@ public class DrawLines : MonoBehaviour {
             LabDoor.GetComponent<Room2_Progress>().Wand = true;
             Debug.Log("Wand Puzzle is Done" + LabDoor.GetComponent<Room2_Progress>().Wand);
 
+            //Feedback to the player
+            mainCamera.GetComponent<Interactor>().Correct.Play();
+
             //Enables the colliders of the potions' right positions
             playerObject.GetComponent<PotionsPickup>().SetPositionsTrue();
         }
         else {//Not Solved
-              //Feedback to the player
-
+            //Feedback to the player
+            mainCamera.GetComponent<Interactor>().Wrong.Play();
+            
             //Clear everything
             linePositions.Clear();
             CollidedTagsList.Clear();

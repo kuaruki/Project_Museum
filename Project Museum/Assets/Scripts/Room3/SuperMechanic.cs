@@ -17,7 +17,7 @@ public class SuperMechanic : MonoBehaviour {
     Vector3 targetScale;
     [SerializeField] private RoomBounds roomBounds;
 
-    public float InteractDistance = 6.5f;
+    public float InteractDistance = 7f;
 
     // Update is called once per frame
     void Update() {

@@ -22,6 +22,7 @@ public class Painting1 : MonoBehaviour {
             coll.enabled = false;
 
             // Give the Player some Feedback
+            MainCamera.GetComponent<Interactor>().Correct.Play();
 
             // Atualizar variavel no interactor
             MainCamera.GetComponent<Interactor>().PaintingsInPlace += 1;

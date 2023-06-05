@@ -92,10 +92,15 @@ public class CipherScript : MonoBehaviour
 
                 LabDoor.GetComponent<Room2_Progress>().Cipher = true;
                 Debug.Log("Cipher Puzzle is Done" + LabDoor.GetComponent<Room2_Progress>().Cipher);
+                //Correct Feedback
+                CameraObject.GetComponent<Interactor>().Correct.Play();
 
                 //Enable Wand Puzzle by setting its layer to interactable
                 Mirror.layer = 11;
             }
+        }
+        else { // Wrong Feedback
+            CameraObject.GetComponent<Interactor>().Wrong.Play();
         }
     }
 
@@ -120,9 +125,14 @@ public class CipherScript : MonoBehaviour
 
             LabDoor.GetComponent<Room2_Progress>().Cipher = true;
             Debug.Log("Cipher Puzzle is Done" + LabDoor.GetComponent<Room2_Progress>().Cipher);
+            //Correct Feedback
+            CameraObject.GetComponent<Interactor>().Correct.Play();
 
             //Enable Wand Puzzle by setting its layer to interactable
             Mirror.layer = 11;
+        }
+        else { // Wrong Feedback
+            CameraObject.GetComponent<Interactor>().Wrong.Play();
         }
     }
 }

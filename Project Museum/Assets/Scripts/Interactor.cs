@@ -20,15 +20,20 @@ public class Interactor : MonoBehaviour
     public GameObject playerObject;
     private NoteScript NoteScript;
 
-    [SerializeField] private GameObject InventoryCanvas;
-    public Canvas InteractHand;
-    public Canvas CenterDot;
+    public LayerMask interactLayer;
+    public LayerMask PaintingsLayer;
+    public LayerMask PotionsLayer;
+    public LayerMask TargetableLayer;
 
+    //Canvases
+    [SerializeField] private GameObject InventoryCanvas;
     [SerializeField] private GameObject JigsawCanvas;
     [SerializeField] private GameObject WandCanvas;
-
-    public GameObject Note1;
+    [SerializeField] private GameObject Tutorial;
+    public Canvas InteractHand;
+    public Canvas CenterDot;
     public GameObject Note1Canvas;
+    public GameObject ScrollCanvas;
 
     //Livros Door
     public GameObject LivrosDoor;
@@ -54,15 +59,26 @@ public class Interactor : MonoBehaviour
     public GameObject OpenedReceptionDoorPosition;
     public bool isReceptionDoorOpen;
 
+    //Final Door
+    public GameObject FinalDoor;
+    public Quaternion FinalDoorInitialRotation;
+    public GameObject OpenedFinalDoorRotation;
+    public bool isFinalDoorOpen;
 
-    public int PotionsInPlace; //Each Potion script increments this
-    public int PaintingsInPlace; //Each Painting script increments this
 
-    public float InteractDistance = 6.5f;
-    public LayerMask interactLayer;
-    public LayerMask PaintingsLayer;
-    public LayerMask PotionsLayer;
-    public LayerMask TargetableLayer;
+    //AUDIO STUFF
+    public AudioSource DoorOpen;
+    public AudioSource DoorClose;
+    public AudioSource SlidingOpen;
+    public AudioSource SlidingClose;
+    public AudioSource Correct;
+    public AudioSource Wrong;
+
+    //Simple Variables
+    public int PotionsInPlace; //Each Potion script increments this -------- 4 total
+    public int PaintingsInPlace; //Each Painting script increments this ---- 3 total
+
+    private float InteractDistance = 7f;
 
 
     void Start()
@@ -72,8 +88,11 @@ public class Interactor : MonoBehaviour
         InteractHand.enabled = false; //disable interact hand 
         CenterDot.enabled = false; //enable the center dot
         Note1Canvas.SetActive(false);
+        Tutorial.SetActive(true);
+        ScrollCanvas.SetActive(false);
 
         NoteScript = FindObjectOfType<NoteScript>();
+
 
         //Hall
         isHallDoorOpen = false;
@@ -84,6 +103,9 @@ public class Interactor : MonoBehaviour
         //Lab
         isLabDoorOpen = false;
         LabDoorInitialRotation = LabDoor.transform.rotation;
+        //FinalDoor
+        isFinalDoorOpen = false;
+        FinalDoorInitialRotation = FinalDoor.transform.rotation;
         //Livros
         isLivrosDoorOpen = false;
         LivrosDoorClosedPosition = LivrosDoor.transform.position;
@@ -179,6 +201,7 @@ public class Interactor : MonoBehaviour
                 else if (hit.collider.CompareTag("LabDoor")) {
                     if (!isLabDoorOpen) {//Door closed
                         LabDoor.transform.rotation = OpenedLabDoorPosition.transform.rotation;
+                        DoorOpen.Play();
                         LabDoor.layer = 0;
                         isLabDoorOpen = true;
                     }
@@ -189,6 +212,7 @@ public class Interactor : MonoBehaviour
                 else if (hit.collider.CompareTag("HallDoor")) {
                     if (!isHallDoorOpen) {//Door closed
                         HallDoor.transform.rotation = OpenedHallDoorPosition.transform.rotation;
+                        DoorOpen.Play();
                         HallDoor.layer = 0;
                         isHallDoorOpen = true;
                     }
@@ -199,8 +223,20 @@ public class Interactor : MonoBehaviour
                 else if (hit.collider.CompareTag("ReceptionDoor")) {
                     if (!isReceptionDoorOpen) {//Door closed
                         ReceptionDoor.transform.rotation = OpenedReceptionDoorPosition.transform.rotation;
+                        DoorOpen.Play();
                         ReceptionDoor.layer = 0;
                         isReceptionDoorOpen = true;
+                    }
+                }
+                //----------
+                //Final Door
+                //----------
+                else if (hit.collider.CompareTag("FinalDoor")) {
+                    if (!isFinalDoorOpen) {//Door closed
+                        FinalDoor.transform.rotation = OpenedFinalDoorRotation.transform.rotation;
+                        DoorOpen.Play();
+                        FinalDoor.layer = 0;
+                        isFinalDoorOpen = true;
                     }
                 }
 
@@ -219,6 +255,24 @@ public class Interactor : MonoBehaviour
                         noteScript.GetNoteImage();
                         noteScript.UIImageScaler();
                     }
+                    //Unlock Cursor
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+
+                    // disable both player movement and camera movement
+                    playerObject.GetComponent<PlayerMovement>().enabled = false;
+                    mainCamera.GetComponent<PlayerCam>().enabled = false;
+                }
+                //-----------------
+                //-----------------
+                //----- END GAME -----
+                //-----------------
+                //-----------------
+
+                else if (hit.collider.CompareTag("FinalScroll")) {
+
+                    ScrollCanvas.SetActive(true);
+                    
                     //Unlock Cursor
                     Cursor.lockState = CursorLockMode.None;
                     Cursor.visible = true;
@@ -290,14 +344,62 @@ public class Interactor : MonoBehaviour
         if (Note1Canvas.activeInHierarchy) {
             if (Input.GetKey(KeyCode.Escape)) {
                 //Unlock Cursor
-                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 Note1Canvas.SetActive(false);
+
+                // enable both player movement and camera movement
+                playerObject.GetComponent<PlayerMovement>().enabled = true;
+                mainCamera.GetComponent<PlayerCam>().enabled = true;
+            }
+        }
+        if (ScrollCanvas.activeInHierarchy) {
+            if (Input.GetKey(KeyCode.Escape)) {
+                //Unlock Cursor
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                ScrollCanvas.SetActive(false);
+
+                // enable both player movement and camera movement
+                playerObject.GetComponent<PlayerMovement>().enabled = true;
+                mainCamera.GetComponent<PlayerCam>().enabled = true;
+            }
+        }
+        
+        if (Tutorial.activeInHierarchy) {
+            //Lock Cursor
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+
+            // disable both player movement and camera movement
+            playerObject.GetComponent<PlayerMovement>().enabled = false;
+            mainCamera.GetComponent<PlayerCam>().enabled = false;
+            
+            if (Input.GetKey(KeyCode.Escape)) {
+                //Unlock Cursor
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                Tutorial.SetActive(false);
 
                 // disable both player movement and camera movement
                 playerObject.GetComponent<PlayerMovement>().enabled = true;
                 mainCamera.GetComponent<PlayerCam>().enabled = true;
             }
         }
+        if(PotionsInPlace == 4) {
+            //Door Open Sound
+            DoorOpen.Play();
+        }
+    }
+
+    public void ExitTutorial() {
+        //Unlock Cursor
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Tutorial.SetActive(false);
+
+        // disable both player movement and camera movement
+        playerObject.GetComponent<PlayerMovement>().enabled = true;
+        mainCamera.GetComponent<PlayerCam>().enabled = true;
     }
 }

@@ -106,9 +106,11 @@ public class DragAndDrop : MonoBehaviour
             JigsawCanvas.SetActive(false);
             LivrosDoor.GetComponent<Room1_Progress>().Jigsaw = true;
             Debug.Log("Jigsaw is complete = " + LivrosDoor.GetComponent<Room1_Progress>().Jigsaw);
+            //Correct feedback
+            mainCamera.GetComponent<Interactor>().Correct.Play();
         }
-        else {
-            //Feedback to player saying its incomplete
+        else {//Feedback to player saying its incomplete
+            mainCamera.GetComponent<Interactor>().Wrong.Play();
         }
     }
 }

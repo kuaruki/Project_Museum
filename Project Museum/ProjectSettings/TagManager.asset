@@ -51,6 +51,10 @@ TagManager:
   - LivrosDoorCheck
   - LabDoorCheck
   - PaintingCatcher
+  - OpenedLivrosDoor
+  - FinalDoor
+  - FinalDoorChecker
+  - FinalScroll
   layers:
   - Default
   - TransparentFX
