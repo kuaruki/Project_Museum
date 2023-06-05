@@ -303,6 +303,7 @@ public class PlayerMovement : MonoBehaviour
             if (MainCamera.GetComponent<Interactor>().isLabDoorOpen) {
                 Debug.Log("Labyrinth Door Closed");
                 //close Labyrinth Door
+                MainCamera.GetComponent<Interactor>().LabDoor.GetComponent<Room2_Progress>().Cipher = false; //sets one of the room 2 puzzles to false so it doesn't constantly change the doors position
                 MainCamera.GetComponent<Interactor>().LabDoor.transform.rotation = MainCamera.GetComponent<Interactor>().LabDoorInitialRotation;
                 MainCamera.GetComponent<Interactor>().isLabDoorOpen = false;
                 //Door Close Audio

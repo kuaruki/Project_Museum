@@ -6,6 +6,8 @@ public class Room2_Progress : MonoBehaviour {
     public bool Cipher;
     public bool Wand;
     public bool Potions;
+
+    public bool HasPlayed = false;
     public GameObject OpenedLabDoorPosition;
     public GameObject LabDoor;
     public GameObject MainCamera;
@@ -13,6 +15,7 @@ public class Room2_Progress : MonoBehaviour {
         Cipher = false;
         Wand = false;
         Potions = false;
+
     }
 
     // Update is called once per frame
@@ -24,9 +27,18 @@ public class Room2_Progress : MonoBehaviour {
 
         if (Cipher && Wand && Potions) { //if all puzzles are solved
             //Opens door to Room 2
+            MainCamera.GetComponent<Interactor>().isLabDoorOpen = true;
             transform.rotation = OpenedLabDoorPosition.transform.rotation;
-            LabDoor.layer = default;
+            LabDoor.layer = 0;
+            if(!HasPlayed) {
+                MainCamera.GetComponent<Interactor>().DoorOpen.Play();
+                HasPlayed = true;
+            }
         }
+        
+    }
+    public void OpenDoor() {
+        
     }
 }
 

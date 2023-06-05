@@ -7,6 +7,8 @@ public class Room1_Progress : MonoBehaviour
     public bool Jigsaw;
     public bool Safe;
     public bool Paintings;
+
+    public bool HasPlayed = false;
     public GameObject OpenedLivrosPosition;
     [SerializeField] private Camera MainCamera;
     void Start()
@@ -28,13 +30,10 @@ public class Room1_Progress : MonoBehaviour
             MainCamera.GetComponent<Interactor>().isLivrosDoorOpen = true; //atualiza isLivrosDoorOpen on the interactor script to true
             transform.position = OpenedLivrosPosition.transform.position;
             gameObject.layer = 0;
-        }
-    }
-
-    private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("OpenedLivrosDoor")) {
-            Debug.Log("Should Play Sound");
-            MainCamera.GetComponent<Interactor>().SlidingOpen.Play();
+            if (!HasPlayed) {
+                MainCamera.GetComponent<Interactor>().SlidingOpen.Play();
+                HasPlayed = true;
+            }
         }
     }
 }

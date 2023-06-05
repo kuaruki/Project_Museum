@@ -85,11 +85,13 @@ public class Interactor : MonoBehaviour
     {
         mainCamera.enabled = true;
         JigsawCamera.enabled = false;
+        WandCamera.enabled = false;
         InteractHand.enabled = false; //disable interact hand 
         CenterDot.enabled = false; //enable the center dot
         Note1Canvas.SetActive(false);
         Tutorial.SetActive(true);
         ScrollCanvas.SetActive(false);
+        WandCanvas.SetActive(false);
 
         NoteScript = FindObjectOfType<NoteScript>();
 
@@ -188,24 +190,24 @@ public class Interactor : MonoBehaviour
                 //----------
                 //Livros Door
                 //----------
-                else if (hit.collider.CompareTag("LivrosDoor")) {
-                    if (!isLivrosDoorOpen) {//Door Closed
-                        LivrosDoor.transform.position = OpenedLivrosPosition.transform.position;
-                        LivrosDoor.layer = 0;
-                        isLivrosDoorOpen = true;
-                    }
-                }
+                //else if (hit.collider.CompareTag("LivrosDoor")) {
+                //    if (!isLivrosDoorOpen) {//Door Closed
+                //        LivrosDoor.transform.position = OpenedLivrosPosition.transform.position;
+                //        LivrosDoor.layer = 0;
+                //        isLivrosDoorOpen = true;
+                //    }
+                //}
                 //----------
                 //Lab Door
                 //----------
-                else if (hit.collider.CompareTag("LabDoor")) {
-                    if (!isLabDoorOpen) {//Door closed
-                        LabDoor.transform.rotation = OpenedLabDoorPosition.transform.rotation;
-                        DoorOpen.Play();
-                        LabDoor.layer = 0;
-                        isLabDoorOpen = true;
-                    }
-                }
+                //else if (hit.collider.CompareTag("LabDoor")) {
+                //    if (!isLabDoorOpen) {//Door closed
+                //        LabDoor.transform.rotation = OpenedLabDoorPosition.transform.rotation;
+                //        DoorOpen.Play();
+                //        LabDoor.layer = 0;
+                //        isLabDoorOpen = true;
+                //    }
+                //}
                 //----------
                 //Hall Door
                 //----------

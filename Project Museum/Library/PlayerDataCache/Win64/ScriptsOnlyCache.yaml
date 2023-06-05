@@ -1,30 +1,43 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AboutHandler
     - Book
-    - Box
     - CipherScript
     - ColliderPoints
     - DragAndDrop
-    - DragDrop
     - DrawLines
-    - FloatSO
-    - Gem
+    - GreenPotion
     - HUD
     - Interactor
     - Inventory
     - ItemClickHandler
     - ItemDragHandler
     - ItemDropHandler
+    - MainMenuHandler
     - MoveCam
+    - NoteScript
+    - OpenDrawer
+    - Open_Chest
+    - Painting1
+    - Painting2
+    - Painting3
+    - PaintingsPickup
+    - PauseHandler
     - PiecesScript
     - PlayerCam
     - PlayerMovement
+    - PotionsPickup
+    - PurplePotion
+    - RedPotion
+    - Room1_Progress
+    - Room2_Progress
+    - RoomBounds
     - SafeScript
     - SuperMechanic
-    - TMPro.Examples.SimpleScript
     - Teleport
-    - Vase
+    - Wand
+    - WhitePotion
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -89,6 +102,18 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: MainMenuHandler
+    methodName: QuitFunction
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenuHandler
+    methodName: StartFunction
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenuHandler
+    methodName: AboutFunction
+  - assembly: Assembly-CSharp
+    fullTypeName: AboutHandler
+    methodName: BackFunction
+  - assembly: Assembly-CSharp
     fullTypeName: SafeScript
     methodName: Increase
   - assembly: Assembly-CSharp
@@ -128,22 +153,40 @@ ScriptsOnlyBuild:
     fullTypeName: CipherScript
     methodName: ReadStringInput
   - assembly: Assembly-CSharp
+    fullTypeName: PauseHandler
+    methodName: MMFunction
+  - assembly: Assembly-CSharp
     fullTypeName: ItemClickHandler
     methodName: OnItemClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Interactor
+    methodName: ExitTutorial
   - assembly: Assembly-CSharp
     fullTypeName: SafeScript
     methodName: Decrease
   - assembly: Assembly-CSharp
+    fullTypeName: PauseHandler
+    methodName: QuitFunction
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseHandler
+    methodName: ResumeFunction
+  - assembly: Assembly-CSharp
     fullTypeName: ItemClickHandler
     methodName: OnItemClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: DrawLines
+    methodName: Solved
   - assembly: Assembly-CSharp
     fullTypeName: ItemClickHandler
     methodName: OnItemClicked
   - assembly: Assembly-CSharp
     fullTypeName: ItemClickHandler
     methodName: OnItemClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: DragAndDrop
+    methodName: IsSolved
   sceneClasses:
-    Assets/Scenes/1_Sala/Jigsaw2D.unity:
+    Assets/Scenes/About.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -156,8 +199,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
@@ -167,24 +208,38 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 7764}
+      Script: {instanceID: 1696}
     - Class: 114
-      Script: {instanceID: 7880}
+      Script: {instanceID: 2812}
+    - Class: 114
+      Script: {instanceID: 3042}
+    - Class: 114
+      Script: {instanceID: 3346}
+    - Class: 114
+      Script: {instanceID: 4766}
+    - Class: 114
+      Script: {instanceID: 5506}
+    - Class: 114
+      Script: {instanceID: 6126}
+    - Class: 114
+      Script: {instanceID: 6286}
+    - Class: 114
+      Script: {instanceID: 6642}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 210
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
-    - Class: 331
+    - Class: 222
       Script: {instanceID: 0}
-    Assets/Scenes/2_Sala/Wand.unity:
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -193,21 +248,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 68
+    - Class: 49
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -218,24 +263,46 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2084}
+      Script: {instanceID: 1696}
     - Class: 114
-      Script: {instanceID: 2424}
+      Script: {instanceID: 2366}
     - Class: 114
-      Script: {instanceID: 6818}
+      Script: {instanceID: 2646}
+    - Class: 114
+      Script: {instanceID: 2812}
+    - Class: 114
+      Script: {instanceID: 3042}
+    - Class: 114
+      Script: {instanceID: 3346}
+    - Class: 114
+      Script: {instanceID: 4316}
+    - Class: 114
+      Script: {instanceID: 4430}
+    - Class: 114
+      Script: {instanceID: 4714}
+    - Class: 114
+      Script: {instanceID: 5506}
+    - Class: 114
+      Script: {instanceID: 6126}
+    - Class: 114
+      Script: {instanceID: 6286}
+    - Class: 114
+      Script: {instanceID: 6642}
     - Class: 115
       Script: {instanceID: 0}
-    - Class: 120
-      Script: {instanceID: 0}
-    - Class: 135
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Museum.unity:
     - Class: 1
@@ -256,13 +323,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 54
+      Script: {instanceID: 0}
+    - Class: 61
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 68
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -273,76 +346,102 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1694}
     - Class: 114
-      Script: {instanceID: 2428}
+      Script: {instanceID: 1696}
     - Class: 114
-      Script: {instanceID: 2562}
+      Script: {instanceID: 2360}
     - Class: 114
-      Script: {instanceID: 2872}
+      Script: {instanceID: 2364}
     - Class: 114
-      Script: {instanceID: 3100}
+      Script: {instanceID: 2500}
     - Class: 114
-      Script: {instanceID: 3148}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 3402}
+      Script: {instanceID: 3042}
     - Class: 114
-      Script: {instanceID: 4364}
+      Script: {instanceID: 3090}
+    - Class: 114
+      Script: {instanceID: 3248}
+    - Class: 114
+      Script: {instanceID: 3346}
+    - Class: 114
+      Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 4306}
     - Class: 114
       Script: {instanceID: 4478}
     - Class: 114
-      Script: {instanceID: 4548}
+      Script: {instanceID: 4502}
     - Class: 114
-      Script: {instanceID: 4596}
+      Script: {instanceID: 4550}
     - Class: 114
-      Script: {instanceID: 4702}
+      Script: {instanceID: 4656}
     - Class: 114
-      Script: {instanceID: 4738}
+      Script: {instanceID: 4974}
     - Class: 114
-      Script: {instanceID: 4760}
+      Script: {instanceID: 5026}
     - Class: 114
-      Script: {instanceID: 5018}
+      Script: {instanceID: 5362}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 5426}
     - Class: 114
-      Script: {instanceID: 5544}
+      Script: {instanceID: 5434}
     - Class: 114
-      Script: {instanceID: 5590}
+      Script: {instanceID: 5506}
     - Class: 114
-      Script: {instanceID: 5720}
+      Script: {instanceID: 5534}
     - Class: 114
-      Script: {instanceID: 5826}
+      Script: {instanceID: 5554}
     - Class: 114
-      Script: {instanceID: 5968}
+      Script: {instanceID: 5684}
     - Class: 114
-      Script: {instanceID: 6010}
+      Script: {instanceID: 5930}
     - Class: 114
-      Script: {instanceID: 6110}
+      Script: {instanceID: 6072}
     - Class: 114
-      Script: {instanceID: 6164}
+      Script: {instanceID: 6126}
     - Class: 114
-      Script: {instanceID: 6256}
+      Script: {instanceID: 6134}
     - Class: 114
-      Script: {instanceID: 6322}
+      Script: {instanceID: 6220}
     - Class: 114
-      Script: {instanceID: 6448}
+      Script: {instanceID: 6286}
     - Class: 114
-      Script: {instanceID: 6480}
+      Script: {instanceID: 6412}
     - Class: 114
-      Script: {instanceID: 6676}
+      Script: {instanceID: 6502}
     - Class: 114
-      Script: {instanceID: 6700}
+      Script: {instanceID: 6522}
     - Class: 114
-      Script: {instanceID: 7132}
+      Script: {instanceID: 6642}
     - Class: 114
-      Script: {instanceID: 7272}
+      Script: {instanceID: 6666}
     - Class: 114
-      Script: {instanceID: 7496}
+      Script: {instanceID: 6784}
     - Class: 114
-      Script: {instanceID: 7598}
+      Script: {instanceID: 6842}
     - Class: 114
-      Script: {instanceID: 7624}
+      Script: {instanceID: 6900}
     - Class: 114
-      Script: {instanceID: 8330}
+      Script: {instanceID: 7100}
+    - Class: 114
+      Script: {instanceID: 7106}
+    - Class: 114
+      Script: {instanceID: 7246}
+    - Class: 114
+      Script: {instanceID: 7596}
+    - Class: 114
+      Script: {instanceID: 7736}
+    - Class: 114
+      Script: {instanceID: 7844}
+    - Class: 114
+      Script: {instanceID: 7852}
+    - Class: 114
+      Script: {instanceID: 8302}
+    - Class: 114
+      Script: {instanceID: 8484}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -356,6 +455,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 210
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -364,19 +467,25 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 331
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: 4a22b90a496fd42cb18ff26c95f130a8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Fix_mayhaps
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -445,10 +554,22 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerEnterMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: d2fdfa6a169ef32b7eba4b00a886073f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PotionRed
+  - hash:
+      serializedVersion: 2
+      Hash: a92f859a24656d65889d8dfb54bfaaec
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ColliderPoints
+  - hash:
+      serializedVersion: 2
+      Hash: a2d4f8a2ac979089923687e6f4ed4b7c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WhitePotion
   - hash:
       serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
@@ -491,6 +612,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 7e9ffc264ab2c1b12a6d4ca2d34922ef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuHandler
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -545,6 +672,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextSelector_A
+  - hash:
+      serializedVersion: 2
+      Hash: d2fdfa6a169ef32b7eba4b00a886073f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PotionWhite
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -607,6 +740,12 @@ ScriptsOnlyBuild:
     className: UnityOnDropdownValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: cc262acf880dc33c01be9b19f6fc73ec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OpenDrawer
+  - hash:
+      serializedVersion: 2
       Hash: 0784d4fd5b93bd75440d01eb2fac4233
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -631,6 +770,12 @@ ScriptsOnlyBuild:
     className: Benchmark04
   - hash:
       serializedVersion: 2
+      Hash: d2fdfa6a169ef32b7eba4b00a886073f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PotionPurple
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -653,6 +798,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnScrollMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 953c0109c9c10d5f621d393fa9e4b4b4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Room1_Progress
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -727,6 +878,12 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
+      Hash: d2fdfa6a169ef32b7eba4b00a886073f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Painting
+  - hash:
+      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Flow.dll
     namespaceName: Unity.VisualScripting
@@ -767,6 +924,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 7a11a7638c8820f67f554c9fd586f992
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Open_Chest
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -829,6 +992,12 @@ ScriptsOnlyBuild:
     className: CameraController
   - hash:
       serializedVersion: 2
+      Hash: c7d155b7f6aeb19a2251542b27b12d85
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Painting1
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -853,7 +1022,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: c9f4f08832e5aab8abe0889be8dc1f74
+      Hash: 5c03df6597ea1c5402c5615a97b39659
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CipherScript
@@ -883,6 +1052,12 @@ ScriptsOnlyBuild:
     className: TMPro_InstructionOverlay
   - hash:
       serializedVersion: 2
+      Hash: 4405d283c77bfe6ef0648f38746b48b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AboutHandler
+  - hash:
+      serializedVersion: 2
       Hash: e244702e0dc05782229aa524e4d757f5
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -907,7 +1082,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerClickMessageListener
   - hash:
       serializedVersion: 2
-      Hash: b2f61988b45492124352cefecedab719
+      Hash: 0ef867c3b86a45ec98c57c423c760ad2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -917,6 +1092,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextInfoDebugTool
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RoomBounds
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -985,6 +1166,12 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
+      Hash: 9234a7f773c03eef688d517025b9ea8d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PaintingsPickup
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1003,6 +1190,12 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 9c88768ea64271165b03475f81195190
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseHandler
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1019,6 +1212,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 11f51cb7128d0350200905c0612bfc7f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Room2_Progress
   - hash:
       serializedVersion: 2
       Hash: b3057781b9d53d5be667683ec03bfea4
@@ -1063,12 +1262,6 @@ ScriptsOnlyBuild:
     className: UnityOnDeselectMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: d2fdfa6a169ef32b7eba4b00a886073f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1093,7 +1286,7 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: 8fae247d5076adfcadb69c0ff8abd439
+      Hash: 7cdf31efa52fb8ed8fbc850e0c1c9fcd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Interactor
@@ -1103,6 +1296,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: a2d4f8a2ac979089923687e6f4ed4b7c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GreenPotion
   - hash:
       serializedVersion: 2
       Hash: 4d16cfbaa8e821a2b370e80844a0e9bc
@@ -1135,22 +1334,28 @@ ScriptsOnlyBuild:
     className: ItemDragHandler
   - hash:
       serializedVersion: 2
-      Hash: caae7d1b393aa09a224cc5e23e5472bc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DragDrop
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
+      Hash: c7d155b7f6aeb19a2251542b27b12d85
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Painting2
+  - hash:
+      serializedVersion: 2
       Hash: 6663435805926faf16934aed992cd26b
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: Benchmark03
+  - hash:
+      serializedVersion: 2
+      Hash: d2fdfa6a169ef32b7eba4b00a886073f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Wand
   - hash:
       serializedVersion: 2
       Hash: e09e8bebc0fcd32bb8af1287a6b44816
@@ -1189,7 +1394,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 8453eaa803b711741461a0bb05603041
+      Hash: 8504a7855926785c9463b0c19660023a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DrawLines
@@ -1199,6 +1404,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: c7d155b7f6aeb19a2251542b27b12d85
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Painting3
+  - hash:
+      serializedVersion: 2
+      Hash: 7e297f43625d0e25d09ceffd318bdaa4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PotionsPickup
   - hash:
       serializedVersion: 2
       Hash: bd3f0ca738703903e759f77536ed74fd
@@ -1219,6 +1436,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: d2fdfa6a169ef32b7eba4b00a886073f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PotionGreen
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1237,7 +1460,13 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 8642cb228d6d756b6e892ea72a0f8056
+      Hash: a2d4f8a2ac979089923687e6f4ed4b7c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RedPotion
+  - hash:
+      serializedVersion: 2
+      Hash: 83c966048751bb373abccf5464dc4f2b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SafeScript
@@ -1345,13 +1574,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: d187e11fb14b6b8e8faae7d4b27f5a1e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FloatSO
-  - hash:
-      serializedVersion: 2
-      Hash: ff3456dbe4fdde7b874cbfa68ea6c630
+      Hash: bfc34cb3d0508943d5b95aa6331e2b21
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SuperMechanic
@@ -1363,7 +1586,7 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 8409a8c93a520267feac13fab9cce05c
+      Hash: 960ab7096fdf456eb701a12cce1ca3c8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DragAndDrop
@@ -1381,7 +1604,13 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 80895fdefc5eb08ca1e2df05f76b470e
+      Hash: 24f27cfd14f6e111ba86d6135e2b933e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NoteScript
+  - hash:
+      serializedVersion: 2
+      Hash: 87bfaed9659fd27ec98856556c5caa1d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PiecesScript
@@ -1435,12 +1664,6 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManager
-  - hash:
-      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1469,6 +1692,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: a2d4f8a2ac979089923687e6f4ed4b7c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PurplePotion
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1501,7 +1730,7 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 19
   scenePathNames:
+  - Assets/Scenes/MainMenu.unity
+  - Assets/Scenes/About.unity
   - Assets/Scenes/Museum.unity
-  - Assets/Scenes/1_Sala/Jigsaw2D.unity
-  - Assets/Scenes/2_Sala/Wand.unity
-  playerPath: C:/Mestrado/1_Ano/2_Semestre/GAMe/Project Museum.exe
+  playerPath: C:/Mestrado/1_Ano/2_Semestre/Mystic_Museum/Project Museum.exe
