@@ -15,8 +15,8 @@ public class DragAndDrop : MonoBehaviour
     private Camera JigsawCamera;
     [SerializeField]
     private GameObject JigsawCanvas;
-    [SerializeField]
-    private GameObject InventoryCanvas;
+    //[SerializeField]
+    //private GameObject InventoryCanvas;
     [SerializeField]
     private GameObject JigsawBoard;
     public GameObject LivrosDoor;
@@ -45,7 +45,7 @@ public class DragAndDrop : MonoBehaviour
                 mainCamera.GetComponent<PlayerCam>().enabled = true;
 
                 JigsawCanvas.SetActive(false);
-                InventoryCanvas.SetActive(true);
+                //InventoryCanvas.SetActive(true);
             }
         
 
@@ -98,7 +98,7 @@ public class DragAndDrop : MonoBehaviour
             mainCamera.GetComponent<PlayerCam>().enabled = true;
 
             //Set Inventory Canvas on
-            InventoryCanvas.SetActive(true);
+            //InventoryCanvas.SetActive(true);
 
             //Make the jigsaw board not interactible after puzzle completion
             JigsawBoard.layer = 0;

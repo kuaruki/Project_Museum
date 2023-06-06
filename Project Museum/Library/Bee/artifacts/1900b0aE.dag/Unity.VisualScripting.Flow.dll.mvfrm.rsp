@@ -1,12 +1,6 @@
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Core.ref.dll_D75DF4EA1AFE54F4.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.UI.ref.dll_4C98D3F7040CD4F5.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.UI.ref.dll_08FEAA520A2EFD60.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.Plastic.Antlr3.Runtime.dll_EE9C4C209AA008C9.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.Plastic.Newtonsoft.Json.dll_A2E99B6831ECCF5C.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.IonicZip.dll_EFBA0E95BF743BF1.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.YamlDotNet.dll_83F2B7E122907EDB.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.TextureAssets.dll_1B10E134E35DDCD3.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Antlr3.Runtime.dll_355FDEC253598EFA.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.Graphs.dll_928C769D512B6FA4.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.CoreModule.dll_4D1D5608A9EED772.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.DeviceSimulatorModule.dll_6100947967016EEF.mvfrm
@@ -89,5 +83,10 @@ Library\Bee\artifacts\mvdfrm\UnityEngine.VirtualTexturingModule.dll_03A0003FB8B8
 Library\Bee\artifacts\mvdfrm\UnityEngine.VRModule.dll_64B83D1AA74AB6AA.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.WindModule.dll_E68D0483E32AC106.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.XRModule.dll_9777001F30850408.mvfrm
-Library\Bee\artifacts\mvdfrm\UnityEditor.WebGL.Extensions.dll_A032C0FB3C653B5E.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.WindowsStandalone.Extensions.dll_84DBE5ADE5D2F34E.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Plastic.Antlr3.Runtime.dll_5B059C8584DE454B.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Plastic.Newtonsoft.Json.dll_C7AE4377D7A7E1BA.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.IonicZip.dll_506814391D290A4F.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.YamlDotNet.dll_FDD75027C579CFDD.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.TextureAssets.dll_94F5797B86472DD5.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Antlr3.Runtime.dll_AF447708F642DFFC.mvfrm

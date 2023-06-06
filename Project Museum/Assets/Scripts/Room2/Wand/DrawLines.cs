@@ -24,7 +24,7 @@ public class DrawLines : MonoBehaviour {
     [SerializeField] private GameObject WandCanvas;
     [SerializeField] private Camera WandCamera;
     [SerializeField] private GameObject Door;
-    [SerializeField] private GameObject InventoryCanvas;
+    //[SerializeField] private GameObject InventoryCanvas;
     public GameObject LabDoor;
 
     public string CollidedTag;
@@ -201,7 +201,7 @@ public class DrawLines : MonoBehaviour {
             mainCamera.GetComponent<PlayerCam>().enabled = true;
 
             //Set Inventory Canvas on
-            InventoryCanvas.SetActive(true);
+            //InventoryCanvas.SetActive(true);
 
             //Make the jigsaw board not interactible after puzzle completion
             //JigsawBoard.layer = 0;

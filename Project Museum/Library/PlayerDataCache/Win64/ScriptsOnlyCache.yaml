@@ -2,7 +2,6 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AboutHandler
-    - Book
     - CipherScript
     - ColliderPoints
     - DragAndDrop
@@ -394,8 +393,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5684}
     - Class: 114
-      Script: {instanceID: 5930}
-    - Class: 114
       Script: {instanceID: 6072}
     - Class: 114
       Script: {instanceID: 6126}
@@ -466,6 +463,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -1214,7 +1217,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 11f51cb7128d0350200905c0612bfc7f
+      Hash: 3da8a75b2883bc995e1ce3ba837eeccd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Room2_Progress
@@ -1286,7 +1289,7 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: 7cdf31efa52fb8ed8fbc850e0c1c9fcd
+      Hash: 4db0787178f91dd70c32486bf5757987
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Interactor
@@ -1394,7 +1397,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 8504a7855926785c9463b0c19660023a
+      Hash: 4cc55fa4f536a0f3a699d03b99e8ec90
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DrawLines
@@ -1586,7 +1589,7 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 960ab7096fdf456eb701a12cce1ca3c8
+      Hash: d90b52ae495b671ceaa068aeab6ff296
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DragAndDrop
@@ -1733,4 +1736,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/About.unity
   - Assets/Scenes/Museum.unity
-  playerPath: C:/Mestrado/1_Ano/2_Semestre/Mystic_Museum/Project Museum.exe
+  playerPath: C:/Users/lbola/Desktop/Mystic_Museum_Build/Project Museum.exe

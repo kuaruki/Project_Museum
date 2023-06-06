@@ -26,7 +26,7 @@ public class Interactor : MonoBehaviour
     public LayerMask TargetableLayer;
 
     //Canvases
-    [SerializeField] private GameObject InventoryCanvas;
+    //[SerializeField] private GameObject InventoryCanvas;
     [SerializeField] private GameObject JigsawCanvas;
     [SerializeField] private GameObject WandCanvas;
     [SerializeField] private GameObject Tutorial;
@@ -143,7 +143,7 @@ public class Interactor : MonoBehaviour
                     JigsawCamera.enabled = true;
                     JigsawCanvas.SetActive(true);
                     //Set Inventory Canvas off
-                    InventoryCanvas.SetActive(false);
+                    //InventoryCanvas.SetActive(false);
 
                     //Unlock Cursor
                     Cursor.lockState = CursorLockMode.None;
@@ -168,7 +168,7 @@ public class Interactor : MonoBehaviour
                     WandCanvas.SetActive(true);
 
                     //Set Inventory Canvas off
-                    InventoryCanvas.SetActive(false);
+                    //InventoryCanvas.SetActive(false);
 
                     //Unlock Cursor
                     Cursor.lockState = CursorLockMode.None;
