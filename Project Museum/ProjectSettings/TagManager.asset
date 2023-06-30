@@ -55,6 +55,7 @@ TagManager:
   - FinalDoor
   - FinalDoorChecker
   - FinalScroll
+  - Walls
   layers:
   - Default
   - TransparentFX
